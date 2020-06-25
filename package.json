@@ -1,0 +1,25 @@
+{
+  "name": "generationnyc-patterns",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NYCOpportunity/generationnyc-patterns.git"
+  },
+  "scripts": {
+    "pttrn": "pttrn",
+    "start": "cross-env NODE_ENV=development cross-env PORT=7070 concurrently \"pttrn default -w\" \"pttrn serve -w\" -p \"none\"",
+    "default": "cross-env NODE_ENV=production pttrn default",
+    "version": "npm run default && git add .",
+    "prepublishOnly": "git push && git push --tags",
+    "publish": "cross-env NODE_ENV=production pttrn publish"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@nycopportunity/patterns-framework": "^1.0.0-6",
+    "css-mqpacker": "^7.0.0"
+  }
+}

@@ -1,0 +1,1 @@
+# Generation NYC Patterns - Work-in-progress
