@@ -1,0 +1,23 @@
+{
+  "name": "generationnyc-patterns",
+  "version": "1.0.0-1",
+  "description": "NYC teens and young adults can find help with navigating City resources, including a variety of topics, trips, and inspirational youth profiles.",
+  "author": "Mayor's Office for Economic Opportunity (NYC Opportunity)",
+  "license": "ISC",
+  "homepage": "https://github.com/NYCOpportunity/generationnyc-patterns#readme",
+  "keywords": [
+    "teens",
+    "young",
+    "adults"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NYCOpportunity/generationnyc-patterns.git"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development cross-env PORT=7000 concurrently \"pttrn -w\" \"pttrn serve -w\" -p \"none\""
+  },
+  "dependencies": {
+    "@nycopportunity/pttrn": "^1.0.0"
+  }
+}
