@@ -109,5 +109,11 @@ module.exports = {
     'mobile': '18px',
     'tablet': '20px',
     'desktop': '22px'
-  }
+  },
+  'icons': [
+    'icon-gen-chevron-up',
+    'icon-gen-chevron-down',
+    'icon-gen-chevron-left',
+    'icon-gen-chevron-right'
+  ]
 };

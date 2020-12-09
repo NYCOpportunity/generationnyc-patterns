@@ -24,4 +24,3 @@ article class='c-faq-card border-light-gray border-4'
         = 'Open'
       span class='hidden' 
         = 'Close'
-  
