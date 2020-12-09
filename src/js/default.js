@@ -1,9 +1,6 @@
 'use strict';
+
 import Faq from '../components/faq-card/faq-card';
-
-
-// import {{ Pattern }} from '../{{ type }}/{{ pattern }}/{{ pattern }}';
-/** import pattern modules here as they are written */
 
 /**
  * Methods for the main Patterns instance.
