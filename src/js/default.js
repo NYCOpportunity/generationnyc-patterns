@@ -1,4 +1,6 @@
 'use strict';
+import Faq from '../components/faq-card/faq-card';
+
 
 // import {{ Pattern }} from '../{{ type }}/{{ pattern }}/{{ pattern }}';
 /** import pattern modules here as they are written */
@@ -12,19 +14,9 @@ class Default {
       console.dir('@pttrn Development Mode'); // eslint-disable-line no-console
   }
 
-  // Sample method
-  // /**
-  //  * API for the {{ Pattern }} {{ type }}.
-  //  *
-  //  * @param  {Object}  config  A configuration object.
-  //  *
-  //  * @return {Object}          {{ Pattern }} instance.
-  //  */
-  // {{ pattern }}(config) {
-  //   return new {{ Pattern }}(config);
-  // }
-
-  /** add pattern APIs here as they are written */
+  faq() {
+    return new Faq();
+  }
 }
 
 export default Default;

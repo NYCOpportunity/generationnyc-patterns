@@ -18,6 +18,6 @@
     "start": "cross-env NODE_ENV=development cross-env PORT=7000 concurrently \"pttrn -w\" \"pttrn serve -w\" -p \"none\""
   },
   "dependencies": {
-    "@nycopportunity/pttrn": "^1.0.0"
+    "@nycopportunity/pttrn": "^1.0.2"
   }
 }

@@ -9,7 +9,7 @@ const package = require(`${process.env.PWD}/package.json`);
  */
 
 module.exports = {
-  'output': '"./src/config/_tokens.scss"',
+  'output': `"${process.env.PWD}/src/config/_tokens.scss"`,
   'version': `"${package.version}"`,
   'border': {
     'width': '3px',
@@ -57,13 +57,27 @@ module.exports = {
       'Istok Web', 'sans-serif'
     ]
   },
+  'google-fonts': '"https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&family=Istok+Web:wght@400;700"',
   'font': {
-    'body': 'system',
-    'pre': 'monospace'
+    'body': 'text-sans',
+    'pre': 'monospace',
+    'h1': 'display-sans',
+    'h2': 'display-sans',
+    'h3': 'display-sans',
+    'h4': 'display-sans',
+    'h5': 'display-sans',
+    'h6': 'display-sans',
+    'p': 'text-sans',
   },
   'font-weight': {
     'body': 'normal',
-    'pre': 'normal'
+    'pre': 'normal',
+    'h1': 'bold',
+    'h2': 'bold',
+    'h3': 'bold',
+    'h4': 'bold',
+    'h5': 'bold',
+    'h6': 'bold',
   },
   'font-style': {
     'body': 'normal',
@@ -71,7 +85,15 @@ module.exports = {
   },
   'font-size': {
     'body': '1em',
-    'pre': '0.9em'
+    'pre': '0.9em',
+    'h1': '30px',
+    'h2': '26px',
+    'h3': '22px',
+    'h4': '20px',
+    'h5': '18px',
+    'h6': '14px',
+    'p': '16px',
+    'small': '10px'
   },
   'line-height': {
     'body': '1.2',

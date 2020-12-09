@@ -59,6 +59,7 @@ html lang='en'
       var MyPatterns = new Default();
 
       new Icons('svgs.svg');
+      MyPatterns.faq()
 
     = content('scripts')
 

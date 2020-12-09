@@ -1,0 +1,24 @@
+/**
+ * Faq-card
+ */
+
+// Dependencies
+@use 'config/tokens' as *;
+
+// Declarations
+.c-faq-card {
+  border-radius: 25px;
+  padding: 1em 1.5em;
+}
+
+.c-faq-card-marker {
+  font-size: 11px;
+}
+
+// .c-faq-card-title {
+//   margin-bottom: 0;
+// }
+
+.c-faq-card-answer {
+  font-size: 18px;
+}

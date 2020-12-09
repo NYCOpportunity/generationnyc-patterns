@@ -23,12 +23,16 @@
 // It will be important for libraries to use these variables for installations
 // of your library in React Scripts or other Webpack based apps.
 
+@forward 'utilities/fonts/fonts';
+
 /** Elements */
 @forward 'elements/base/base';
+@forward 'elements/buttons/buttons';
 /** Elements - end */
 
 /** Components */
 @forward 'components/details/details';
+@forward 'components/faq-card/faq-card';
 /** Components - end */
 
 /** Utilities */
@@ -42,4 +46,4 @@
  * Base elements that need to be included after other patterns to take effect
  */
 
-@forward 'elements/base/base-first-last';
+// @forward 'elements/base/base-first-last';

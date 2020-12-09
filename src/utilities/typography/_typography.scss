@@ -15,6 +15,30 @@ pre {
   @include type.set('pre');
 }
 
+h1, .h1 {
+  @include type.set('h1');
+}
+
+h2, .h2 {
+  @include type.set('h2');
+}
+
+h3, .h3{
+  @include type.set('h3');
+}
+
+h4, .h4{
+  @include type.set('h4');
+}
+
+h5, .h5{
+  @include type.set('h5');
+}
+
+h6, .h6 {
+  @include type.set('h6');
+}
+
 .ta-center {
   text-align: center
 }
