@@ -24,5 +24,19 @@ module.exports = [
     sourceMapEmbed: sass.sourceMapEmbed,
     includePaths: sass.includePaths,
     devModule: true // This needs to be set if we want the module to be compiled during development
+  },
+  {
+    file: './src/utilities/tailwindcss/_tailwindcss.scss',
+    outDir: './dist/styles/',
+    outFile: 'tailwindcss.css',
+    sourceMapEmbed: sass.sourceMapEmbed,
+    devModule: true
+  },
+  {
+    file: './src/utilities/tailwindcss/_tailwindcss.scss',
+    outDir: './dist/styles/',
+    outFile: '_tailwindcss.scss',
+    sourceMapEmbed: sass.sourceMapEmbed,
+    devModule: true
   }
 ];
