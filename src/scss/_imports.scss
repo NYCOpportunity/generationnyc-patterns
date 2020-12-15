@@ -28,12 +28,17 @@
 /** Elements */
 @forward 'elements/base/base';
 @forward 'elements/buttons/buttons';
+@forward 'elements/icons/icons';
 /** Elements - end */
 
 /** Components */
 @forward 'components/details/details';
 @forward 'components/faq-card/faq-card';
 /** Components - end */
+
+/** Objects */
+@forward 'objects/navigation/navigation';
+/** Objects - end */
 
 /** Utilities */
 @forward 'utilities/color/color';

@@ -6,3 +6,20 @@
 // Declarations
 // Using map-get to retrieve a variable from the global $tokens object.
 // $var: map-get(map-get($tokens, 'pattern'), 'token');
+
+@mixin button($background, $text) {
+  padding: 10px 15px;
+  font-size: 16px;
+  background: $background;
+  border-color: $background;
+  border-style: solid;
+  border-radius: 20px;
+  color: $text;
+  text-decoration: none;
+}
+
+@mixin hover($background, $border, $text) {
+  background: $background;
+  border-color: $border;
+  color: $text;
+}

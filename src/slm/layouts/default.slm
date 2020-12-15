@@ -35,7 +35,7 @@ html lang='en'
         br
         = `${this.package.name} v${this.package.version}`
 
-      p = `${this.package.description}. Here's a sample component.`
+      p = `${this.package.description}`
 
       br
 

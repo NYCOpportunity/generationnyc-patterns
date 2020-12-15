@@ -115,5 +115,10 @@ module.exports = {
     'icon-gen-chevron-down',
     'icon-gen-chevron-left',
     'icon-gen-chevron-right'
-  ]
+  ],
+  'screens': {
+    'desktop': '1024px',
+    'tablet': '768px',
+    'mobile': '375px',
+  },
 };

@@ -1,0 +1,20 @@
+/ Navigation
+
+nav class='o-navigation bg-black mobile:px-2'
+  a href='/' class=''
+    span class='sr-only' Generation NYC
+
+    svg class='o-navigation-logo' aria-hidden='true'
+      use xlink:href='#pttrn-logo-gen-white'
+  
+  span class='o-navigation__text text-white' 
+    = 'NYC’s Official Guide for'
+    br =  'Young New Yorkers'
+
+  a href='#' class='hidden tablet:inline o-navigation-link' = 'Topics'
+  a href='#' class='hidden tablet:inline o-navigation-link' = 'Inspirations'
+  a href='#' class='hidden tablet:inline o-navigation-link' = 'Trips'
+  
+  button class='btn--secondary tablet:hidden'
+    
+    span class='' Menu

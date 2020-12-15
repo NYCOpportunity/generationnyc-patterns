@@ -1,0 +1,11 @@
+@use 'config/tokens' as *;
+
+$screens: map-get($tokens, 'screens');
+
+@mixin mq($screen) {
+
+  @media screen and (min-width: map-get($screens, $screen)) {
+    @content;
+  }
+
+}

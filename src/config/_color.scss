@@ -1,0 +1,6 @@
+// Dependencies
+@use 'config/tokens' as *;
+
+$colors: map-get($tokens, 'color');
+
+$color-white: map-get($colors, 'white');

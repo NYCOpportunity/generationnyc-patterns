@@ -1,0 +1,20 @@
+= extend('/slm/layouts/default')
+
+- title = 'Navigation'
+
+= content('main')
+  section class='bc-white p-4'
+    h2 = title
+
+    == this.include('objects/navigation/navigation.md');
+
+    h3 Demonstration
+
+    == this.include('objects/navigation/navigation.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('objects/navigation/navigation.slm');
+
+= content('scripts')
