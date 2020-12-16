@@ -1,0 +1,8 @@
+/ Hero
+
+/ container
+div class='c-hero bg-black text-white'
+  h1 class='c-hero__title'
+    = 'Topics'
+  p class='c-hero__subtitle'
+    = 'Let\'s Talk'

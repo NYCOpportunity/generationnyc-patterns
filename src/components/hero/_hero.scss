@@ -1,0 +1,29 @@
+/**
+ * Hero
+ */
+
+// Dependencies
+@use 'config/tokens' as *;
+@use 'config/media';
+
+// Declarations
+.c-hero {
+  padding: 32px;
+}
+
+.c-hero__title {
+  font-size: 42px;
+
+  @include media.mq('desktop') {
+    font-size: 95px;
+    line-height: 0.25;
+  }
+}
+
+.c-hero__subtitle {
+  font-size: 22px;
+
+  @include media.mq('desktop') {
+    font-size: 35px;
+  }
+}
