@@ -1,0 +1,7 @@
+// Dependencies
+@use 'config/tokens' as *;
+
+@mixin card() {
+  border-radius: 25px;
+  padding: 1em 1.5em;
+}

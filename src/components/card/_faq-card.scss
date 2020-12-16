@@ -4,11 +4,11 @@
 
 // Dependencies
 @use 'config/color' as *;
+@use 'config/card';
 
 // Declarations
 .c-faq-card {
-  border-radius: 25px;
-  padding: 1em 1.5em;
+  @include card.card();
 }
 
 .c-faq-card-marker {

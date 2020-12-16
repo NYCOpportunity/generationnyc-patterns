@@ -1,0 +1,33 @@
+= extend('/slm/layouts/default')
+
+- title = 'Faq-card'
+
+= content('main')
+  section class='bc-white p-4'
+    h2 FAQ card
+
+    == this.include('components/card/faq-card.md');
+
+    h3 Demonstration
+
+    == this.include('components/card/faq-card.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('components/card/faq-card.slm');
+
+  section class='bc-white p-4'
+    h2 Info card
+
+    == this.include('components/card/info-card.md');
+
+    h3 Demonstration
+
+    == this.include('components/card/info-card.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('components/card/info-card.slm');
+= content('scripts')
