@@ -15,6 +15,9 @@ module.exports = {
     textColor: tokens.color,
     backgroundColor: tokens.color,
     borderColor: tokens.color,
-    screens: tokens.screens
+    screens: tokens.screens,
+    extend: {
+      maxWidth: ['responsive']
+    }
   }
 };
