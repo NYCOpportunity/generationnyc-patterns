@@ -1,0 +1,22 @@
+/**
+ * Gradient
+ */
+
+// Dependencies
+@use 'config/tokens' as *;
+
+// Declarations
+.bg-gradient-y-1 {
+  background: linear-gradient(180deg, #2AB7CA 0%, #E6ADEC 47.4%, #FFD972 81.25%);
+}
+
+.bg-gradient-y-2 {
+  background: linear-gradient(180deg, #2AB7CA 0%, #E6ADEC 47.4%, #FFD972 81.25%);
+  mix-blend-mode: multiply;
+  transform: rotate(-180deg);
+}
+
+.bg-gradient-x-1 {
+  background: linear-gradient(90deg, #2AB7CA 0%, #E6ADEC 33.42%, #FFD972 73.52%, #FF7C69 116.67%);
+  transform: rotate(-180deg);
+}

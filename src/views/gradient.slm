@@ -1,0 +1,48 @@
+= extend('/slm/layouts/default')
+
+- title = 'Gradient'
+
+= content('main')
+  section class='bc-white p-4'
+    h2 = 'Gradient Y1'
+
+    == this.include('utilities/gradient/gradient-y-1.md');
+
+    h3 Demonstration
+
+    == this.include('utilities/gradient/gradient-y-1.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('utilities/gradient/gradient-y-1.slm');
+
+  section class='bc-white p-4'
+    h2 = 'Gradient Y2'
+
+    == this.include('utilities/gradient/gradient-y-2.md');
+
+    h3 Demonstration
+
+    == this.include('utilities/gradient/gradient-y-2.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('utilities/gradient/gradient-y-2.slm');
+
+  section class='bc-white p-4'
+    h2 = 'Gradient X1'
+
+    == this.include('utilities/gradient/gradient-x-1.md');
+
+    h3 Demonstration
+
+    == this.include('utilities/gradient/gradient-x-1.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('utilities/gradient/gradient-x-1.slm');
+
+= content('scripts')

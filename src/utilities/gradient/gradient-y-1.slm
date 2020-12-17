@@ -1,0 +1,5 @@
+/ Gradient
+
+/ container
+div class='bg-gradient-y-1'
+  div class="p-8"
