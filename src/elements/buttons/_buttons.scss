@@ -32,6 +32,17 @@
 
 }
 
+.btn--inspiration,
+a.btn--inspiration {
+  @include buttons.button(#FFD972, black);
+  border: none;
+
+  &:hover {
+    @include buttons.hover(black, black, white);
+  }
+
+}
+
 .btn--pill {
   padding: 5px 10px;
   border-radius: 20px;

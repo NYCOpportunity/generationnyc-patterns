@@ -1,0 +1,26 @@
+/ Inspiration-card
+
+/ container
+section class='bg-yellow p-4'
+  article class='c-inspiration-card bg-white'
+    header class='c-inspiration-card__header'
+      div class='sticker'
+      div class='ml-2'
+        p class='c-inspiration-card__marker' 
+          = 'Inspiration'
+        h2 class='c-inspiration-card__title'
+          = 'Ian, 16'
+    div class='c-inspiration-card-body'
+      div class='c-inspiration-card-answer'
+        p = '“Ever since then, I’ve been trying to fight for Black and Latino rights because I believe that what those police officers did to me was a direct violation of my own.”'
+      div class='c-inspiration-card-tags'
+        a href='#' class='btn btn--pill'
+          = 'Becoming an Adult'
+        a href='#' class='btn btn--pill'
+          = 'Banking & Credit'
+        a href='#' class='btn btn--pill'
+          = 'Credit Report'
+
+    div class='text-right mt-2'
+      a class='btn btn--inspiration'
+        = 'Read More'

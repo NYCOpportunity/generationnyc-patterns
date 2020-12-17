@@ -1,0 +1,15 @@
+/**
+ * Sticker
+ */
+
+// Dependencies
+@use 'config/tokens' as *;
+
+// Declarations
+.sticker {
+  background:#F2F2F2;
+  border-radius: 3rem;
+  display: block;
+  height: 3rem;
+  width: 3rem;
+}

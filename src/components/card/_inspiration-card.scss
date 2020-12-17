@@ -1,0 +1,22 @@
+// Dependencies
+@use 'config/color' as *;
+@use 'config/card';
+
+.c-inspiration-card {
+  @include card.card();
+}
+
+.c-inspiration-card__header {
+  display: flex;
+  align-items: center;
+}
+
+.c-inspiration-card__marker {
+  margin: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.c-inspiration-card__title {
+  margin: 0;
+}

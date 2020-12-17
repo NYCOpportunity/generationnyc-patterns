@@ -29,12 +29,14 @@
 @forward 'elements/base/base';
 @forward 'elements/buttons/buttons';
 @forward 'elements/icons/icons';
+@forward 'elements/sticker/sticker';
 /** Elements - end */
 
 /** Components */
 @forward 'components/details/details';
 @forward 'components/card/faq-card';
 @forward 'components/card/info-card';
+@forward 'components/card/inspiration-card';
 @forward 'components/hero/hero';
 /** Components - end */
 

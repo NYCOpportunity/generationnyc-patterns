@@ -9,11 +9,12 @@
 
 @mixin button($background, $text) {
   padding: 10px 15px;
+  font-family: inherit;
   font-size: 16px;
   background: $background;
   border-color: $background;
   border-style: solid;
-  border-radius: 20px;
+  border-radius: 22px;
   color: $text;
   text-decoration: none;
 }

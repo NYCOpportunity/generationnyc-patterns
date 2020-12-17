@@ -1,6 +1,6 @@
 // Dependencies
 @use 'config/color' as *;
-@use 'config/card';
+@use 'config/media';
 
 // .c-info-card {}
 
@@ -9,6 +9,12 @@
   border-radius: 25px 25px 0px 0px;
   background-color: #F4D8CD;
   margin: 0;
+  font-size: 18px;
+
+  @include media.mq('desktop') {
+    font-size: 32px;
+  }
+
 }
 
 .c-info-card__body {
@@ -16,4 +22,10 @@
   border-radius: 0px 0px 25px 25px;
   border-style: solid;
   border-width: 2px;
+  font-size: 16px;
+
+  @include media.mq('desktop') {
+    font-size: 20px;
+  }
+  
 }
