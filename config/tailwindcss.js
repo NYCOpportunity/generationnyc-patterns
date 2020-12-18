@@ -17,7 +17,8 @@ module.exports = {
     borderColor: tokens.color,
     screens: tokens.screens,
     extend: {
-      maxWidth: ['responsive']
+      maxWidth: ['responsive'],
+      maxHeight: ['responsive']
     }
   }
 };

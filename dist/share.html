@@ -25,7 +25,7 @@
 
 <body class="bc-blue p-4">
   <header class="ta-center c-white p-4">
-    <h1>Welcome to
+    <h1 class="break-words">Welcome to
       <br />@nycopportunity/generationnyc-patterns v1.0.0-1
     </h1>
     <p>NYC teens and young adults can find help with navigating City resources, including a variety of topics, trips, and inspirational youth profiles.</p>
@@ -40,13 +40,35 @@
       </p>
       <p>Specs about the Share components.</p>
       <h3>Demonstration</h3>
-      <div class="c-share"></div>
+      <div class="c-share bg-gradient-y-1 text-center p-2">
+        <h2>Send this page to friends</h2>
+        <div class="c-share-form">
+          <svg aria-hidden="true" class="c-share-form__icon text-white">
+            <use xlink:href="#pttrn-icon-chat"></use>
+          </svg>
+          <div class="c-share-form__fields">
+            <input class="c-share-form__input" placeholder="Phone number" />
+            <button class="c-share-form__submit btn btn--secondary">Send</button>
+          </div>
+        </div>
+      </div>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;div class=&quot;c-share&quot;&gt;&lt;/div&gt;</pre>
+      <pre class="p-4">&lt;div class=&quot;c-share bg-gradient-y-1 text-center p-2&quot;&gt;
+  &lt;h2&gt;Send this page to friends&lt;/h2&gt;
+  &lt;div class=&quot;c-share-form&quot;&gt;
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;c-share-form__icon text-white&quot;&gt;
+      &lt;use xlink:href=&quot;#pttrn-icon-chat&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;c-share-form__fields&quot;&gt;
+      &lt;input class=&quot;c-share-form__input&quot; placeholder=&quot;Phone number&quot; /&gt;
+      &lt;button class=&quot;c-share-form__submit btn btn--secondary&quot;&gt;Send&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
     </section>
   </main>
   <footer class="ta-center p-4 c-white">
-    <p>Last updated December 17, 2020</p>
+    <p>Last updated December 18, 2020</p>
     <a href="https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg">
       <svg class="c-red" height="80" width="80">
         <title id="svg-a-perfect-heart">A perfect SVG heart</title>

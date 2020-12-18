@@ -1,5 +1,11 @@
 / Share
 
-/ container
-div class='c-share'
-  / pattern contents
+div class='c-share bg-gradient-y-1 text-center p-2'
+  h2 = 'Send this page to friends'
+  div class='c-share-form'
+    svg class='c-share-form__icon text-white' aria-hidden='true'
+      use xlink:href='#pttrn-icon-chat'
+    div class='c-share-form__fields'
+      input class='c-share-form__input' placeholder='Phone number'
+      button class='c-share-form__submit btn btn--secondary'
+        = 'Send'
