@@ -1,0 +1,63 @@
+/**
+ * Footer
+ */
+
+// Dependencies
+@use 'config/tokens' as *;
+@use 'config/media';
+
+.o-footer { 
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.o-footer__section {
+  display: block;
+  height: 100%;
+
+  @include media.mq('tablet') {
+    display: flex;
+    align-items: flex-end;
+    height: auto;
+  }
+}
+
+.o-footer-logo {
+  margin-right: 0;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  color:white;
+  
+  @include media.mq('tablet') {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  svg {
+    width: 73px;
+    height: 51.81px;
+    @include media.mq('tablet') {
+      width: 162.04px;
+      height: 115px;
+    }
+  }
+}
+
+.o-footer__link {
+  color: white;
+  display: block;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  
+  @include media.mq('tablet') {
+    display: inline-flex;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+}

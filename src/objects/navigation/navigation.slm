@@ -1,11 +1,11 @@
 / Navigation
 
 nav class='o-navigation bg-black mobile:px-2'
-  a href='/' class=''
+  a href='/' class='text-white'
     span class='sr-only' Generation NYC
 
     svg class='o-navigation-logo' aria-hidden='true'
-      use xlink:href='#pttrn-logo-gen-white'
+      use xlink:href='#pttrn-logo-gen'
   
   span class='o-navigation__text text-white' 
     = 'NYC’s Official Guide for'

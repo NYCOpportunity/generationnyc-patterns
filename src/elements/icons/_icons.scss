@@ -4,7 +4,6 @@
 
 // Dependencies
 @use 'config/tokens' as *;
-// @use 'config/icons';
 
 // Declarations
 .icon-logo-small {
@@ -15,4 +14,9 @@
 .icon-logo-large {
   width: 162.04px;
   height: 115px;
+}
+
+.icon-cc-large {
+  width: 168px;
+  height: 74px;
 }
