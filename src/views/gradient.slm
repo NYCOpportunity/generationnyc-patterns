@@ -45,4 +45,18 @@
     pre class='p-4'
       = this.include('utilities/gradient/gradient-x-1.slm');
 
+  section class='bc-white p-4'
+    h2 = 'Gradient X2'
+
+    == this.include('utilities/gradient/gradient-x-2.md');
+
+    h3 Demonstration
+
+    == this.include('utilities/gradient/gradient-x-2.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('utilities/gradient/gradient-x-2.slm');
+
 = content('scripts')
