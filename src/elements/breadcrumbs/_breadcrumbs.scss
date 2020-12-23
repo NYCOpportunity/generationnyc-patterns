@@ -1,0 +1,18 @@
+/**
+ * Breadcrumbs
+ */
+
+// Dependencies
+@use 'config/tokens' as *;
+@use 'config/media';
+@use 'config/color';
+
+// Declarations
+.breadcrumbs { 
+  font-size: 10px;
+  color: color.$dark-gray-light;
+
+  @include media.mq('tablet') {
+    font-size: 12px;
+  }
+}

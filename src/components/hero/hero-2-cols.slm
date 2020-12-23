@@ -1,0 +1,15 @@
+/ Hero
+
+/ container
+div class='c-hero block tablet:grid tablet:grid-cols-2'
+
+  div class='p-4'
+    p class='breadcrumbs'
+      = 'Topics > Banking and Credit'
+    h1 class='c-hero__title'
+      = 'Banking and Credit'
+    p class='c-hero__subtitle'
+      = 'Take control of your money'
+
+  div class='c-hero__image row-start-1 bg-blue' style="background:url('img/topic.jpg')"
+    img class='tablet:hidden' src='img/topic.jpg'

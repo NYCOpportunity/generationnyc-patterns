@@ -17,4 +17,18 @@
     pre class='p-4'
       = this.include('components/hero/hero.slm');
 
+  section class='bc-white p-4'
+    h2 = title
+
+    == this.include('components/hero/hero-2-cols.md');
+
+    h3 Demonstration
+
+    == this.include('components/hero/hero-2-cols.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('components/hero/hero-2-cols.slm');
+
 = content('scripts')
