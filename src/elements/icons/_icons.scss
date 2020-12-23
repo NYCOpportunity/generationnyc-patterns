@@ -4,8 +4,19 @@
 
 // Dependencies
 @use 'config/tokens' as *;
+@use 'config/media';
 
 // Declarations
+.icon-logo {
+  width: 73px;
+  height: 51.81px;
+  
+  @include media.mq('tablet') {
+    width: 162.04px;
+    height: 115px;
+  }
+}
+
 .icon-logo-small {
   width: 73px;
   height: 51.81px;

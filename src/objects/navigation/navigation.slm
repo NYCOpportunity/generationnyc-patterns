@@ -1,15 +1,18 @@
 / Navigation
 
-nav class='o-navigation bg-black mobile:px-2'
-  a href='/' class='text-white'
-    span class='sr-only' Generation NYC
+nav class='o-navigation bg-black text-white'
 
-    svg class='o-navigation-logo' aria-hidden='true'
-      use xlink:href='#pttrn-logo-gen'
-  
-  span class='o-navigation__text text-white' 
-    = 'NYC’s Official Guide for'
-    br =  'Young New Yorkers'
+  div class='flex items-end'
+    a href='/' class='o-navigation-logo text-white'
+      span class='sr-only' Generation NYC
+
+      svg class='icon-logo' aria-hidden='true'
+        use xlink:href='#pttrn-logo-gen'
+    
+    
+    span class='o-navigation__text text-white' 
+      = 'NYC’s Official Guide for'
+      br =  'Young New Yorkers'
 
   a href='#' class='hidden tablet:inline o-navigation-link' = 'Topics'
   a href='#' class='hidden tablet:inline o-navigation-link' = 'Inspirations'

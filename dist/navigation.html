@@ -40,16 +40,18 @@
       </p>
       <p>Specs about the Navigation objects.</p>
       <h3>Demonstration</h3>
-      <nav class="o-navigation bg-black mobile:px-2">
-        <a class="text-white" href="/">
-          <span class="sr-only">Generation NYC</span>
-          <svg aria-hidden="true" class="o-navigation-logo">
-            <use xlink:href="#pttrn-logo-gen"></use>
-          </svg>
-        </a>
-        <span class="o-navigation__text text-white">NYC’s Official Guide for
-          <br>Young New Yorkers</br>
-        </span>
+      <nav class="o-navigation bg-black text-white">
+        <div class="flex items-end">
+          <a class="o-navigation-logo text-white" href="/">
+            <span class="sr-only">Generation NYC</span>
+            <svg aria-hidden="true" class="icon-logo">
+              <use xlink:href="#pttrn-logo-gen"></use>
+            </svg>
+          </a>
+          <span class="o-navigation__text text-white">NYC’s Official Guide for
+            <br>Young New Yorkers</br>
+          </span>
+        </div>
         <a class="hidden tablet:inline o-navigation-link" href="#">Topics</a>
         <a class="hidden tablet:inline o-navigation-link" href="#">Inspirations</a>
         <a class="hidden tablet:inline o-navigation-link" href="#">Trips</a>
@@ -58,16 +60,18 @@
         </button>
       </nav>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;nav class=&quot;o-navigation bg-black mobile:px-2&quot;&gt;
-  &lt;a class=&quot;text-white&quot; href=&quot;/&quot;&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Generation NYC&lt;/span&gt;
-    &lt;svg aria-hidden=&quot;true&quot; class=&quot;o-navigation-logo&quot;&gt;
-      &lt;use xlink:href=&quot;#pttrn-logo-gen&quot;&gt;&lt;/use&gt;
-    &lt;/svg&gt;
-  &lt;/a&gt;
-  &lt;span class=&quot;o-navigation__text text-white&quot;&gt;NYC’s Official Guide for
-    &lt;br&gt;Young New Yorkers&lt;/br&gt;
-  &lt;/span&gt;
+      <pre class="p-4">&lt;nav class=&quot;o-navigation bg-black text-white&quot;&gt;
+  &lt;div class=&quot;flex items-end&quot;&gt;
+    &lt;a class=&quot;o-navigation-logo text-white&quot; href=&quot;/&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Generation NYC&lt;/span&gt;
+      &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-logo&quot;&gt;
+        &lt;use xlink:href=&quot;#pttrn-logo-gen&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/a&gt;
+    &lt;span class=&quot;o-navigation__text text-white&quot;&gt;NYC’s Official Guide for
+      &lt;br&gt;Young New Yorkers&lt;/br&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
   &lt;a class=&quot;hidden tablet:inline o-navigation-link&quot; href=&quot;#&quot;&gt;Topics&lt;/a&gt;
   &lt;a class=&quot;hidden tablet:inline o-navigation-link&quot; href=&quot;#&quot;&gt;Inspirations&lt;/a&gt;
   &lt;a class=&quot;hidden tablet:inline o-navigation-link&quot; href=&quot;#&quot;&gt;Trips&lt;/a&gt;
@@ -78,7 +82,7 @@
     </section>
   </main>
   <footer class="ta-center p-4 c-white">
-    <p>Last updated December 18, 2020</p>
+    <p>Last updated December 23, 2020</p>
     <a href="https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg">
       <svg class="c-red" height="80" width="80">
         <title id="svg-a-perfect-heart">A perfect SVG heart</title>
