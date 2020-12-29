@@ -1,0 +1,20 @@
+= extend('/slm/layouts/default')
+
+- title = 'Jumbotron'
+
+= content('main')
+  section class='bc-white p-4'
+    h2 = title
+
+    == this.include('components/jumbotron/jumbotron.md');
+
+    h3 Demonstration
+
+    == this.include('components/jumbotron/jumbotron.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('components/jumbotron/jumbotron.slm');
+
+= content('scripts')

@@ -33,30 +33,46 @@
   </header>
   <main>
     <section class="bc-white p-4">
-      <h2>Details Component</h2>
-      <p>The Details Component is a “native accordion component” for showing and hiding content. It uses the <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> HTML elements. It can be styled with CSS, is decently accessible, and it doesn’t require any JavaScript to work!</p>
+      <h2>Jumbotron</h2>
+      <p>
+        <strong>Source:</strong>
+        <code>src/components/jumbotron/jumbotron</code>
+      </p>
+      <p>Specs about the Jumbotron components.</p>
       <h3>Demonstration</h3>
-      <!--{ @id Must be unique }-->
-      <details class="c-details bc-gray" id="3e39ccf0fc39e">
-        <summary class="c-details__summary bc-blue c-white">Click this summary to see more.</summary>
-        <div class="c-details__body">
-          <p>This is the details body. Any amount of content and links can be placed here. Read more about the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">Details disclosure element in the MDN documentation</a>.</p>
+      <div class="c-jumbotron bg-gradient-y-2">
+        <img class="c-jumbotron--image" src="img/home.jpg" />
+        <div class="c-jumbotron--details text-white">
+          <div class="block px-4 tablet:grid grid-cols-2">
+            <div class="text-center">
+              <svg aria-hidden="true" class="icon-logo text-white">
+                <use xlink:href="#pttrn-logo-gen"></use>
+              </svg>
+            </div>
+            <div>
+              <h1 class="mt-0">NYC’s official guide for young New Yorkers</h1>
+              <p>Job resources, school information, opportunities, and more.</p>
+            </div>
+          </div>
         </div>
-      </details>
+      </div>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;!--{ @id Must be unique }--&gt;
-&lt;details class=&quot;c-details bc-gray&quot; id=&quot;5a5033d1f28f7&quot;&gt;
-  &lt;summary class=&quot;c-details__summary bc-blue c-white&quot;&gt;Click this summary to see more.&lt;/summary&gt;
-  &lt;div class=&quot;c-details__body&quot;&gt;
-    &lt;p&gt;This is the details body. Any amount of content and links can be placed here. Read more about the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details&quot;&gt;Details disclosure element in the MDN documentation&lt;/a&gt;.&lt;/p&gt;
+      <pre class="p-4">&lt;div class=&quot;c-jumbotron bg-gradient-y-2&quot;&gt;
+  &lt;img class=&quot;c-jumbotron--image&quot; src=&quot;img/home.jpg&quot; /&gt;
+  &lt;div class=&quot;c-jumbotron--details text-white&quot;&gt;
+    &lt;div class=&quot;block px-4 tablet:grid grid-cols-2&quot;&gt;
+      &lt;div class=&quot;text-center&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-logo text-white&quot;&gt;
+          &lt;use xlink:href=&quot;#pttrn-logo-gen&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;h1 class=&quot;mt-0&quot;&gt;NYC’s official guide for young New Yorkers&lt;/h1&gt;
+        &lt;p&gt;Job resources, school information, opportunities, and more.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-&lt;/details&gt;</pre>
-    </section>
-    <br />
-    <section class="bc-white p-4">
-      <h2>Now you can make your own!</h2>
-      <p>Run the CLI to create a new component.</p>
-      <pre class="p-4"><code>$ npx pttrn make component ...</code></pre>
+&lt;/div&gt;</pre>
     </section>
   </main>
   <footer class="ta-center p-4 c-white">
