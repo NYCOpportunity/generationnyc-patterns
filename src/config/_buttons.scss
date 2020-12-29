@@ -3,10 +3,6 @@
 // Dependencies
 @use 'config/tokens' as *;
 
-// Declarations
-// Using map-get to retrieve a variable from the global $tokens object.
-// $var: map-get(map-get($tokens, 'pattern'), 'token');
-
 @mixin button($background, $text) {
   padding: 10px 15px;
   font-family: inherit;
@@ -15,6 +11,7 @@
   border-color: $background;
   border-style: solid;
   border-radius: 22px;
+  border-width: 2px;
   color: $text;
   text-decoration: none;
 }
@@ -23,4 +20,15 @@
   background: $background;
   border-color: $border;
   color: $text;
+}
+
+@mixin pill($background, $text) {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: $background;
+  border-color: $background;
+  border-style: solid;
+  color: $text;
+  font-size: 10px;
+  text-decoration: none;
 }

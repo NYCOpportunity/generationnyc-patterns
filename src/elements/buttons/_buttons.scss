@@ -5,54 +5,57 @@
 // Dependencies
 @use 'config/tokens' as *;
 @use 'config/buttons';
+@use 'config/color';
 
 // Declarations
 .btn--primary {
-  @include buttons.button(black, white);
+  @include buttons.button(color.$black, color.$white);
 
   &:hover {
-    @include buttons.hover(transparent, black, black);
+    @include buttons.hover(transparent, color.$black, color.$black);
   }
 }
 
 .btn--secondary {
-  @include buttons.button(white, black);
+  @include buttons.button(color.$white, color.$black);
 
   &:hover {
-    @include buttons.hover(transparent, white, white);
+    @include buttons.hover(transparent, color.$white, color.$white);
+  }
+}
+
+.btn--tertiary {
+  @include buttons.button(color.$white, color.$black);
+
+  &:hover {
+    @include buttons.hover(color.$black, color.$white, color.$white);
   }
 }
 
 .btn--faq {
-  @include buttons.button(#A7E8BD, black);
+  @include buttons.button(color.$green-light, color.$black);
 
   &:hover {
-    @include buttons.hover(black, black, white);
+    @include buttons.hover(color.$black, color.$black, color.$white);
   }
 
 }
 
 .btn--inspiration,
 a.btn--inspiration {
-  @include buttons.button(#FFD972, black);
+  @include buttons.button(color.$yellow, color.$black);
   border: none;
 
   &:hover {
-    @include buttons.hover(black, black, white);
+    @include buttons.hover(color.$black, color.$black, color.$white);
   }
 
 }
 
 .btn--pill {
-  padding: 5px 10px;
-  border-radius: 20px;
-  background: #E5E5E5;
-  font-size: 10px;
-  color: black;
-  text-decoration: none;
+  @include buttons.pill(color.$light-gray, color.$black);
   
   &:hover {
-    background: black;
-    color: white;
+    @include buttons.hover(color.$black, color.$black, color.$white);
   }
 }

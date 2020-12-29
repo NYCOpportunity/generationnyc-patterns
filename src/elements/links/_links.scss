@@ -1,0 +1,35 @@
+/**
+ * Links
+ */
+
+// Dependencies
+@use 'config/tokens' as *;
+@use 'config/buttons';
+@use 'config/color';
+
+// Declarations
+.link--outline {
+  @include buttons.button(transparent, color.$black);
+  // border-color: color.$black;
+  padding: 8px 15px;
+  display: flex;
+  height: 45px;
+  align-items: center;
+  justify-content: space-between;
+
+
+  &:hover {
+    @include buttons.hover(color.$black, color.$black, color.$white);
+  }
+}
+
+.link--icon {
+  width: 30px;
+  height: 30px;
+  background-color: color.$black;
+  border-radius: 22px;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

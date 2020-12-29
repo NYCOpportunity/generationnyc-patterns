@@ -1,0 +1,6 @@
+/ Buttons
+
+/ container
+div class='bg-black p-4 text-center mx-4'
+  button class='btn btn--secondary'
+    span = 'Submit'

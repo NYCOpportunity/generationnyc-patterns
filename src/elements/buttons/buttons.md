@@ -1,3 +1,3 @@
 **Source:** `src/elements/buttons/buttons`
 
-Specs about the Buttons elements.
+The button pattern can be used to style `<button></button>` and `<a></a>` as a trigger to perform an action or navigate to another page.

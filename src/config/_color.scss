@@ -1,6 +1,26 @@
 // Dependencies
-@use 'config/tokens' as *;
+@use 'config/get' as *;
 
-$colors: map-get($tokens, 'color');
-
-$dark-gray-light: map-get($colors, 'dark-gray-light');
+$black: #{get('color', black)};
+$white: #{get('color', white)};
+$dark-gray-dark: #{get('color', dark-gray-dark)};
+$dark-gray: #{get('color', dark-gray)};
+$dark-gray-light: #{get('color', dark-gray-light)};
+$light-gray-dark: #{get('color', light-gray-dark)};
+$light-gray: #{get('color', light-gray)};
+$light-gray-light: #{get('color', light-gray-light)};
+$red-dark: #{get('color', red-dark)};
+$red: #{get('color', red)};
+$red-light: #{get('color', red-light)};
+$orange: #{get('color', orange)};
+$yellow: #{get('color', yellow)};
+$green-dark: #{get('color', green-dark)};
+$green: #{get('color', green)};
+$green-light: #{get('color', green-light)};
+$blue-green: #{get('color', blue-green)};
+$blue-dark: #{get('color', blue-dark)};
+$blue: #{get('color', blue)};
+$blue-light: #{get('color', blue-light)};
+$purple-dark: #{get('color', purple-dark)};
+$purple: #{get('color', purple)};
+$purple-light: #{get('color', purple-light)};

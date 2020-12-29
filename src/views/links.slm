@@ -1,0 +1,20 @@
+= extend('/slm/layouts/default')
+
+- title = 'Links'
+
+= content('main')
+  section class='bc-white p-4'
+    h2 = title
+
+    == this.include('elements/links/links.md');
+
+    h3 Demonstration
+
+    == this.include('elements/links/links.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('elements/links/links.slm');
+
+= content('scripts')

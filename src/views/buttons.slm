@@ -4,17 +4,54 @@
 
 = content('main')
   section class='bc-white p-4'
-    h2 = title
+    h2 = 'Primary Button'
 
     == this.include('elements/buttons/buttons.md');
 
     h3 Demonstration
 
-    == this.include('elements/buttons/buttons.slm');
+    == this.include('elements/buttons/button--primary.slm');
 
     h3 Markup
 
     pre class='p-4'
-      = this.include('elements/buttons/buttons.slm');
+      = this.include('elements/buttons/button--primary.slm');
 
+  section class='bc-white p-4'
+    h2 = 'Secondary Button'
+
+    h3 Demonstration
+
+    == this.include('elements/buttons/button--secondary.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('elements/buttons/button--secondary.slm');
+  
+  section class='bc-white p-4'
+    h2 = 'Tertiary Button'
+
+    h3 Demonstration
+
+    == this.include('elements/buttons/button--tertiary.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('elements/buttons/button--tertiary.slm');
+
+  section class='bc-white p-4'
+    h2 = 'Pill Button'
+
+    == this.include('elements/buttons/button--pill.md');
+
+    h3 Demonstration
+
+    == this.include('elements/buttons/button--pill.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('elements/buttons/button--pill.slm');
 = content('scripts')

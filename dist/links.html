@@ -33,30 +33,26 @@
   </header>
   <main>
     <section class="bc-white p-4">
-      <h2>Details Component</h2>
-      <p>The Details Component is a “native accordion component” for showing and hiding content. It uses the <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> HTML elements. It can be styled with CSS, is decently accessible, and it doesn’t require any JavaScript to work!</p>
+      <h2>Links</h2>
+      <p>
+        <strong>Source:</strong>
+        <code>src/elements/links/links</code>
+      </p>
+      <p>Specs about the Links elements.</p>
       <h3>Demonstration</h3>
-      <!--{ @id Must be unique }-->
-      <details class="c-details bc-gray" id="a6e639e5b0e11">
-        <summary class="c-details__summary bc-blue c-white">Click this summary to see more.</summary>
-        <div class="c-details__body">
-          <p>This is the details body. Any amount of content and links can be placed here. Read more about the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">Details disclosure element in the MDN documentation</a>.</p>
-        </div>
-      </details>
+      <a class="link--outline border-red" href="#">Section 1<span class="link--icon">
+          <svg aria-hidden="true" class="icon-xs text-white">
+            <use xlink:href="#pttrn-icon-chevron-right"></use>
+          </svg>
+        </span>
+      </a>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;!--{ @id Must be unique }--&gt;
-&lt;details class=&quot;c-details bc-gray&quot; id=&quot;25ec28fcae543&quot;&gt;
-  &lt;summary class=&quot;c-details__summary bc-blue c-white&quot;&gt;Click this summary to see more.&lt;/summary&gt;
-  &lt;div class=&quot;c-details__body&quot;&gt;
-    &lt;p&gt;This is the details body. Any amount of content and links can be placed here. Read more about the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details&quot;&gt;Details disclosure element in the MDN documentation&lt;/a&gt;.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/details&gt;</pre>
-    </section>
-    <br />
-    <section class="bc-white p-4">
-      <h2>Now you can make your own!</h2>
-      <p>Run the CLI to create a new component.</p>
-      <pre class="p-4"><code>$ npx pttrn make component ...</code></pre>
+      <pre class="p-4">&lt;a class=&quot;link--outline border-red&quot; href=&quot;#&quot;&gt;Section 1&lt;span class=&quot;link--icon&quot;&gt;
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-xs text-white&quot;&gt;
+      &lt;use xlink:href=&quot;#pttrn-icon-chevron-right&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+  &lt;/span&gt;
+&lt;/a&gt;</pre>
     </section>
   </main>
   <footer class="ta-center p-4 c-white">
