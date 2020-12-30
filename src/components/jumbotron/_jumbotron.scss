@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   @include media.mq('tablet') {
     min-height: auto;
     max-height: 500px;
@@ -39,5 +39,9 @@
 
 .c-jumbotron--details {
   position: absolute;
-  max-width: 80%;
+  max-width: 50%;
+
+  @include media.mq('tablet') {
+    max-width: 80%;
+  }
 }
