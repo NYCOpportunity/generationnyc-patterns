@@ -18,7 +18,8 @@
   justify-content: space-between;
 
 
-  &:hover {
+  &:hover,
+  &.active {
     @include buttons.hover(color.$black, color.$black, color.$white);
   }
 }

@@ -1,6 +1,6 @@
 'use strict';
-
-import Faq from '../components/faq-card/faq-card';
+import Faq from '../components/card/faq-card';
+import Pagination from '../utilities/pagination/pagination';
 
 /**
  * Methods for the main Patterns instance.
@@ -13,6 +13,10 @@ class Default {
 
   faq() {
     return new Faq();
+  }
+
+  pagination() {
+    return new Pagination();
   }
 }
 

@@ -28,8 +28,8 @@ html lang='en'
           });
       });
 
-  body class='bc-blue p-4'
-    header class='ta-center c-white p-4'
+  body class='bg-black p-4'
+    header class='text-center text-white p-4'
       h1 class='break-words'
         = 'Welcome to'
         br
@@ -42,15 +42,15 @@ html lang='en'
     main
       = content('main')
 
-    footer class='ta-center p-4 c-white'
+    footer class='text-center p-4 text-white'
       - let date = new Date();
       - let opts = {year: 'numeric', month: 'long', day: 'numeric'};
       p = `Last updated ${date.toLocaleDateString('en-US', opts)}`
 
       a href='https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg'
-        svg class='c-red' width='80' height='80'
+        svg class='text-red' width='80' height='80'
           title id='svg-a-perfect-heart' A perfect SVG heart
-          use xlink:href='#pttrn-a-perfect-heart'
+          use xlink:href='#pttrn-icon-heart'
 
     script src='js/default.js'
     script src='https://cdn.jsdelivr.net/gh/CityOfNewYork/nyco-patterns-framework@v1.0.0-15/dist/utilities/icons/icons.iffe.js'

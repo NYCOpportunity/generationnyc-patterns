@@ -2,4 +2,6 @@
 
 / container
 div class='breadcrumbs'
-  / pattern contents
+  a href='#' 
+    = 'Topics'
+  span = '> Topic Name'

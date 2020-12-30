@@ -1,26 +1,41 @@
 // Dependencies
 @use 'config/get' as *;
+@use 'config/tokens' as *;
+
+$colors: map-get($tokens, 'color');
+
+@function color-retrieval($key, $token) {
+  @return map-get(map-get($colors, $key), $token);
+}
 
 $black: #{get('color', black)};
 $white: #{get('color', white)};
-$dark-gray-dark: #{get('color', dark-gray-dark)};
-$dark-gray: #{get('color', dark-gray)};
-$dark-gray-light: #{get('color', dark-gray-light)};
-$light-gray-dark: #{get('color', light-gray-dark)};
-$light-gray: #{get('color', light-gray)};
-$light-gray-light: #{get('color', light-gray-light)};
-$red-dark: #{get('color', red-dark)};
-$red: #{get('color', red)};
-$red-light: #{get('color', red-light)};
+
+$dark-gray-dark: #{color-retrieval('dark-gray', dark)};
+$dark-gray: #{color-retrieval('dark-gray', DEFAULT)};
+$dark-gray-light: #{color-retrieval('dark-gray', light)};
+
+$light-gray-dark: #{color-retrieval('light-gray', dark)};
+$light-gray: #{color-retrieval('light-gray', DEFAULT)};
+$light-gray-light: #{color-retrieval('light-gray', light)};
+
+$red-dark: #{color-retrieval(red, dark)};
+$red: #{color-retrieval(red, DEFAULT)};
+$red-light: #{color-retrieval(red, light)};
+
 $orange: #{get('color', orange)};
 $yellow: #{get('color', yellow)};
-$green-dark: #{get('color', green-dark)};
-$green: #{get('color', green)};
-$green-light: #{get('color', green-light)};
+
+$green-dark: #{color-retrieval(green, dark)};
+$green: #{color-retrieval(green, DEFAULT)};
+$green-light: #{color-retrieval(green, light)};
+
 $blue-green: #{get('color', blue-green)};
-$blue-dark: #{get('color', blue-dark)};
-$blue: #{get('color', blue)};
-$blue-light: #{get('color', blue-light)};
-$purple-dark: #{get('color', purple-dark)};
-$purple: #{get('color', purple)};
-$purple-light: #{get('color', purple-light)};
+
+$blue-dark: #{color-retrieval(blue, dark)};
+$blue: #{color-retrieval(blue, DEFAULT)};
+$blue-light: #{color-retrieval(blue, light)};
+
+$purple-dark: #{color-retrieval(purple, dark)};
+$purple: #{color-retrieval(purple, DEFAULT)};
+$purple-light: #{color-retrieval(purple, light)};

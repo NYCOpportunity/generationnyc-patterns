@@ -1,0 +1,36 @@
+/**
+ * Pagination
+ */
+
+// Dependencies
+@use 'config/tokens' as *;
+@use 'config/color';
+
+// Declarations
+
+.pagination--link {
+  text-decoration: none;
+  display: block;
+  color: color.$dark-gray-dark;
+  padding: 10px;
+
+  &:hover {
+    background: color.$light-gray;
+  }
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.pagination--desc {
+  display: block;
+  margin-left: 30px;
+  margin-top: 2px;
+  font-size: 16px;
+  line-height: 12px;
+  border-bottom-style: solid;
+  width: fit-content;
+  border-bottom-width: 2px;
+}

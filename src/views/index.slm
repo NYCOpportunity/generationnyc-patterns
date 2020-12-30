@@ -5,7 +5,7 @@
 = content('main')
   / == this.include('../readme.md')
 
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 Details Component
 
     == this.include('components/details/details.md');
@@ -21,7 +21,7 @@
 
   br
 
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 Now you can make your own!
 
     p Run the CLI to create a new component.

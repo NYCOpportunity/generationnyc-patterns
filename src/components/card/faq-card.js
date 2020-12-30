@@ -3,7 +3,6 @@
 class Faq {
   
   constructor(settings) {
-
     this.settings = {
       selector: (settings) ? settings.selector : Faq.selector
     };

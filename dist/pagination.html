@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="svg/pttrn-a-perfect-heart-red.svg" rel="icon" type="image/svg+xml" />
+  <title>@nycopportunity/generationnyc-patterns</title>
+  <link href="styles/default.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(event) {
+      hljs.configure({
+        languages: ['html', 'javascript', 'css', 'sass']
+      });
+      document.querySelectorAll('pre').forEach(function(pre) {
+        pre.setAttribute('tabindex', '0');
+        hljs.highlightBlock(pre);
+      });
+    });
+  </script>
+</head>
+
+<body class="bg-black p-4">
+  <header class="text-center text-white p-4">
+    <h1 class="break-words">Welcome to
+      <br />@nycopportunity/generationnyc-patterns v1.0.0-1
+    </h1>
+    <p>NYC teens and young adults can find help with navigating City resources, including a variety of topics, trips, and inspirational youth profiles.</p>
+    <br />
+  </header>
+  <main>
+    <section class="bg-white p-4">
+      <h2>Pagination</h2>
+      <p>
+        <strong>Source:</strong>
+        <code>src/utilities/pagination/pagination</code>
+      </p>
+      <p>Specs about the Pagination utilities.</p>
+      <h3>Demonstration</h3>
+      <div class="grid grid-cols-3">
+        <div>
+          <a class="link--outline border-red" data-trigger="paginate" href="#section-1">Section 1<span class="link--icon">
+              <svg aria-hidden="true" class="icon-xs text-white">
+                <use xlink:href="#pttrn-icon-chevron-right"></use>
+              </svg>
+            </span>
+          </a>
+          <a class="link--outline border-red mt-2" data-trigger="paginate" href="#section-2">Section 2<span class="link--icon">
+              <svg aria-hidden="true" class="icon-xs text-white">
+                <use xlink:href="#pttrn-icon-chevron-right"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div class="col-span-2 px-4">
+          <section id="section-1">
+            <div>
+              <h2 class="mt-0">Section 1</h2>
+              <p class="mt-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie ac feugiat sed lectus. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Et leo duis ut diam quam nulla porttitor massa id. Non blandit massa enim nec. Amet mattis vulputate enim nulla aliquet porttitor lacus. Dui ut ornare lectus sit. Porta non pulvinar neque laoreet suspendisse interdum. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Urna porttitor rhoncus dolor purus non enim praesent. Sed felis eget velit aliquet sagittis id consectetur purus. In eu mi bibendum neque egestas congue quisque egestas diam. Morbi tristique senectus et netus et malesuada fames ac. Porttitor leo a diam sollicitudin tempor id eu.</p>
+            </div>
+          </section>
+          <section class="hidden" id="section-2">
+            <div>
+              <h2 class="mt-0">Section 2</h2>
+              <p class="mt-0">Faucibus a pellentesque sit amet porttitor eget dolor. Fames ac turpis egestas maecenas pharetra. Euismod elementum nisi quis eleifend quam adipiscing. Fringilla ut morbi tincidunt augue interdum velit euismod in. Iaculis urna id volutpat lacus laoreet non curabitur. Et egestas quis ipsum suspendisse ultrices gravida dictum. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Praesent elementum facilisis leo vel fringilla. Dictum varius duis at consectetur lorem. Sodales neque sodales ut etiam sit amet nisl purus. Quam nulla porttitor massa id neque aliquam vestibulum.</p>
+              <p class="mt-0">Molestie nunc non blandit massa. Dignissim suspendisse in est ante in nibh mauris cursus. Faucibus interdum posuere lorem ipsum. Ac auctor augue mauris augue neque gravida in. Pellentesque elit eget gravida cum sociis. Diam maecenas ultricies mi eget mauris pharetra. Egestas erat imperdiet sed euismod nisi porta. Enim tortor at auctor urna nunc id cursus metus aliquam. Sollicitudin tempor id eu nisl. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Placerat duis ultricies lacus sed. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Aliquet enim tortor at auctor urna nunc id cursus metus.</p>
+            </div>
+          </section>
+          <div class="pagination block">
+            <a class="pagination--link" data-trigger="paginate" href="#section-1">
+              <svg aria-hidden="true">
+                <use xlink:href="#pttrn-icon-arrow-left"></use>
+              </svg>
+              <span class="pagination--label">Previous</span>
+              <span class="pagination--desc">Section 1</span>
+            </a>
+            <a class="pagination--link" data-trigger="paginate" href="#section-2">
+              <svg aria-hidden="true">
+                <use xlink:href="#pttrn-icon-arrow-right"></use>
+              </svg>
+              <span class="pagination--label">Next</span>
+              <span class="pagination--desc">Section 2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <h3>Markup</h3>
+      <pre class="p-4">&lt;div class=&quot;grid grid-cols-3&quot;&gt;
+  &lt;div&gt;
+    &lt;a class=&quot;link--outline border-red&quot; data-trigger=&quot;paginate&quot; href=&quot;#section-1&quot;&gt;Section 1&lt;span class=&quot;link--icon&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-xs text-white&quot;&gt;
+          &lt;use xlink:href=&quot;#pttrn-icon-chevron-right&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;link--outline border-red mt-2&quot; data-trigger=&quot;paginate&quot; href=&quot;#section-2&quot;&gt;Section 2&lt;span class=&quot;link--icon&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-xs text-white&quot;&gt;
+          &lt;use xlink:href=&quot;#pttrn-icon-chevron-right&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-span-2 px-4&quot;&gt;
+    &lt;section id=&quot;section-1&quot;&gt;
+      &lt;div&gt;
+        &lt;h2 class=&quot;mt-0&quot;&gt;Section 1&lt;/h2&gt;
+        &lt;p class=&quot;mt-0&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie ac feugiat sed lectus. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Et leo duis ut diam quam nulla porttitor massa id. Non blandit massa enim nec. Amet mattis vulputate enim nulla aliquet porttitor lacus. Dui ut ornare lectus sit. Porta non pulvinar neque laoreet suspendisse interdum. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Urna porttitor rhoncus dolor purus non enim praesent. Sed felis eget velit aliquet sagittis id consectetur purus. In eu mi bibendum neque egestas congue quisque egestas diam. Morbi tristique senectus et netus et malesuada fames ac. Porttitor leo a diam sollicitudin tempor id eu.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;hidden&quot; id=&quot;section-2&quot;&gt;
+      &lt;div&gt;
+        &lt;h2 class=&quot;mt-0&quot;&gt;Section 2&lt;/h2&gt;
+        &lt;p class=&quot;mt-0&quot;&gt;Faucibus a pellentesque sit amet porttitor eget dolor. Fames ac turpis egestas maecenas pharetra. Euismod elementum nisi quis eleifend quam adipiscing. Fringilla ut morbi tincidunt augue interdum velit euismod in. Iaculis urna id volutpat lacus laoreet non curabitur. Et egestas quis ipsum suspendisse ultrices gravida dictum. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Praesent elementum facilisis leo vel fringilla. Dictum varius duis at consectetur lorem. Sodales neque sodales ut etiam sit amet nisl purus. Quam nulla porttitor massa id neque aliquam vestibulum.&lt;/p&gt;
+        &lt;p class=&quot;mt-0&quot;&gt;Molestie nunc non blandit massa. Dignissim suspendisse in est ante in nibh mauris cursus. Faucibus interdum posuere lorem ipsum. Ac auctor augue mauris augue neque gravida in. Pellentesque elit eget gravida cum sociis. Diam maecenas ultricies mi eget mauris pharetra. Egestas erat imperdiet sed euismod nisi porta. Enim tortor at auctor urna nunc id cursus metus aliquam. Sollicitudin tempor id eu nisl. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Placerat duis ultricies lacus sed. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Aliquet enim tortor at auctor urna nunc id cursus metus.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;div class=&quot;pagination block&quot;&gt;
+      &lt;a class=&quot;pagination--link&quot; data-trigger=&quot;paginate&quot; href=&quot;#section-1&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot;&gt;
+          &lt;use xlink:href=&quot;#pttrn-icon-arrow-left&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;pagination--label&quot;&gt;Previous&lt;/span&gt;
+        &lt;span class=&quot;pagination--desc&quot;&gt;Section 1&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;a class=&quot;pagination--link&quot; data-trigger=&quot;paginate&quot; href=&quot;#section-2&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot;&gt;
+          &lt;use xlink:href=&quot;#pttrn-icon-arrow-right&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;pagination--label&quot;&gt;Next&lt;/span&gt;
+        &lt;span class=&quot;pagination--desc&quot;&gt;Section 2&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+    </section>
+  </main>
+  <footer class="text-center p-4 text-white">
+    <p>Last updated December 30, 2020</p>
+    <a href="https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg">
+      <svg class="text-red" height="80" width="80">
+        <title id="svg-a-perfect-heart">A perfect SVG heart</title>
+        <use xlink:href="#pttrn-icon-heart"></use>
+      </svg>
+    </a>
+  </footer>
+  <script src="js/default.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/CityOfNewYork/nyco-patterns-framework@v1.0.0-15/dist/utilities/icons/icons.iffe.js"></script>
+  <script type="text/javascript">
+    var MyPatterns = new Default();
+    new Icons('svgs.svg');
+    MyPatterns.faq()
+  </script>
+  <script type="text/javascript">
+    MyPatterns.pagination()
+  </script>
+  <script src="/reload/reload.js"></script>
+</body>
+
+</html>

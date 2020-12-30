@@ -3,7 +3,7 @@
 - title = 'Buttons'
 
 = content('main')
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 = 'Primary Button'
 
     == this.include('elements/buttons/buttons.md');
@@ -17,7 +17,7 @@
     pre class='p-4'
       = this.include('elements/buttons/button--primary.slm');
 
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 = 'Secondary Button'
 
     h3 Demonstration
@@ -29,7 +29,7 @@
     pre class='p-4'
       = this.include('elements/buttons/button--secondary.slm');
   
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 = 'Tertiary Button'
 
     h3 Demonstration
@@ -41,7 +41,7 @@
     pre class='p-4'
       = this.include('elements/buttons/button--tertiary.slm');
 
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 = 'Pill Button'
 
     == this.include('elements/buttons/button--pill.md');

@@ -3,7 +3,7 @@
 - title = 'Share'
 
 = content('main')
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 = title
 
     == this.include('components/share/share.md');

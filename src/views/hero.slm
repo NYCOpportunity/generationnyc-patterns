@@ -3,7 +3,7 @@
 - title = 'Hero'
 
 = content('main')
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 = title
 
     == this.include('components/hero/hero.md');
@@ -17,7 +17,7 @@
     pre class='p-4'
       = this.include('components/hero/hero.slm');
 
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 = title
 
     == this.include('components/hero/hero-2-cols.md');

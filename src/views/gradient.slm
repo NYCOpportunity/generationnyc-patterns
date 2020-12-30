@@ -3,7 +3,7 @@
 - title = 'Gradient'
 
 = content('main')
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 = 'Gradient Y1'
 
     == this.include('utilities/gradient/gradient-y-1.md');
@@ -17,7 +17,7 @@
     pre class='p-4'
       = this.include('utilities/gradient/gradient-y-1.slm');
 
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 = 'Gradient Y2'
 
     == this.include('utilities/gradient/gradient-y-2.md');
@@ -31,7 +31,7 @@
     pre class='p-4'
       = this.include('utilities/gradient/gradient-y-2.slm');
 
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 = 'Gradient X1'
 
     == this.include('utilities/gradient/gradient-x-1.md');
@@ -45,7 +45,7 @@
     pre class='p-4'
       = this.include('utilities/gradient/gradient-x-1.slm');
 
-  section class='bc-white p-4'
+  section class='bg-white p-4'
     h2 = 'Gradient X2'
 
     == this.include('utilities/gradient/gradient-x-2.md');

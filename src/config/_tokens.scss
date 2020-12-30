@@ -9,27 +9,40 @@ $tokens:(
   color: (
     black: #000,
     white: #FFF,
-    dark-gray-dark: #333333,
-    dark-gray: #4F4F4F,
-    dark-gray-light: #828282,
-    light-gray-dark: #BDBDBD,
-    light-gray: #E0E0E0,
-    light-gray-light: #F2F2F2,
-    red-dark: #EB5757,
-    red: #FF7C69,
-    red-light: #F4D8CD,
+    dark-gray: (
+      light: #828282,
+      DEFAULT: #484848,
+      dark: #333333
+    ),
+    light-gray: (
+      light: #F2F2F2,
+      DEFAULT: #E0E0E0,
+      dark: #BDBDBD
+    ),
+    red: (
+      light: #F4D8CD,
+      DEFAULT: #FF7C69,
+      dark: #EB5757
+    ),
     orange: #F2994A,
     yellow: #FFD972,
-    green-dark: #219653,
-    green: #27AE60,
-    green-light: #A7E8BD,
+    green: (
+      lightest: #A7E8BD,
+      light: #6FCF97,
+      DEFAULT: #27AE60,
+      dark: #219653
+    ),
     blue-green: #2AB7CA,
-    blue-dark: #2F80ED,
-    blue: #2D9CDB,
-    blue-light: #56CCF2,
-    purple-dark: #9B51E0,
-    purple: #BB6BD9,
-    purple-light: #F7B7FE
+    blue: (
+      light: #56CCF2,
+      DEFAULT: #2D9CDB,
+      dark: #2F80ED
+    ),
+    purple: (
+      light: #F7B7FE,
+      DEFAULT: #BB6BD9,
+      dark: #9B51E0
+    )
   ),
   font-family: (
     system: (-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif),
