@@ -1,6 +1,7 @@
 // Dependencies
 @use 'config/color' as *;
 @use 'config/media';
+@use 'config/card';
 
 // .c-info-card {}
 
@@ -28,4 +29,14 @@
     font-size: 20px;
   }
   
+}
+
+.c-info-card--outline {
+  @include card.card();
+  border-width: 2px;
+}
+
+.c-info-card--outline__title {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
 }
