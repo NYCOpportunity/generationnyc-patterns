@@ -5,6 +5,7 @@
 // Dependencies
 @use 'config/tokens' as *;
 @use 'config/color';
+@use 'config/media';
 
 // Declarations
 
@@ -19,18 +20,47 @@
   }
 
   svg {
-    width: 22px;
-    height: 22px;
+    width: 15px;
+    height: 15px;
   }
 }
 
 .pagination--desc {
   display: block;
-  margin-left: 30px;
+  margin-left: 22px;
   margin-top: 2px;
   font-size: 16px;
-  line-height: 12px;
-  border-bottom-style: solid;
-  width: fit-content;
-  border-bottom-width: 2px;
+  text-decoration: underline;
+}
+
+.previous {
+  display: flex;
+  flex-flow: column;
+}
+
+.next {
+  display: flex;
+  flex-flow: column;
+  
+  @include media.mq('desktop') {
+    align-items: flex-end;
+    div {
+      display: flex;
+      flex-flow: row;
+      align-items: baseline;
+    }
+    .pagination--label{
+      order: 1;
+      margin-right: 8px;
+    }
+    svg {
+      order: 2;
+    }
+    .pagination--desc{
+      order: 3;
+      margin-left: 0px;
+      margin-right: 22px;
+      text-align: right;
+    }
+  }
 }

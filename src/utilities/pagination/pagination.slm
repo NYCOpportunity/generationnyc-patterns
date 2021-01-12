@@ -38,22 +38,22 @@ div class='grid grid-cols-3'
           = 'Section 3'
         p class='mt-0'
           = 'Molestie nunc non blandit massa. Dignissim suspendisse in est ante in nibh mauris cursus. Faucibus interdum posuere lorem ipsum. Ac auctor augue mauris augue neque gravida in. Pellentesque elit eget gravida cum sociis. Diam maecenas ultricies mi eget mauris pharetra. Egestas erat imperdiet sed euismod nisi porta. Enim tortor at auctor urna nunc id cursus metus aliquam. Sollicitudin tempor id eu nisl. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Placerat duis ultricies lacus sed. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Aliquet enim tortor at auctor urna nunc id cursus metus.'
-    
-    
-    
+
     div class='pagination block desktop:grid desktop:grid-cols-2'
       a href='#section-1' class='pagination--link' data-trigger='paginate'
-        div
-          svg aria-hidden='true'
-            use xlink:href='#pttrn-icon-arrow-left'
-          span class='pagination--label'
+        div class='previous'
+          div
+            svg aria-hidden='true'
+              use xlink:href='#pttrn-icon-chevron-left'
+            span class='pagination--label'
             = 'Previous'
           span class='pagination--desc' data-desc='prev' = ''
       a href='#section-2' class='pagination--link' data-trigger='paginate'
-        div class='desktop:float-right'
-          svg aria-hidden='true'
-            use xlink:href='#pttrn-icon-arrow-right'
-          span class='pagination--label'
-            = 'Next'
+        div class='next'
+          div
+            svg aria-hidden='true'
+              use xlink:href='#pttrn-icon-chevron-right'
+            span class='pagination--label'
+              = 'Next'
           span class='pagination--desc' data-desc='next' = ''
     

@@ -25,6 +25,14 @@ class Pagination {
         Pagination.toggle(triggers[0])
       }
 
+      Pagination.updateLabel();
+
+      window.addEventListener("hashchange", function(){
+        Pagination.toggle()
+        Pagination.updateLabel();
+      }, false);
+
+
     } else{
       return;
     }
@@ -35,14 +43,19 @@ class Pagination {
  * Toggles the active anchor and associated sections
  */
 Pagination.toggle = function(element){
+
+  if(!element) {
+    element = document.querySelector(`[href="${window.location.hash}"]`)
+  }
+
   // toggle active class on side navigation
   const children = Array.from(element.parentNode.children);
 
   children.forEach(function(child){
-    child.classList.remove('active')
+    child.classList.remove(Pagination.activeClass)
   })
 
-  element.classList.toggle('active')
+  element.classList.toggle(Pagination.activeClass)
 
   // toggle sections
   const active_section = document.querySelector(`${element.getAttribute('href')}`)
@@ -50,17 +63,14 @@ Pagination.toggle = function(element){
   
   children_sections.forEach(function (child) {
     if (child.tagName == 'SECTION'){
-      child.classList.add('hidden')
-      child.classList.remove('active')
+      child.classList.add(Pagination.hiddenClass)
+      child.classList.remove(Pagination.activeClass)
     }
   })
 
-  active_section.classList.remove('hidden');
-  active_section.classList.add('active');
+  active_section.classList.remove(Pagination.hiddenClass);
+  active_section.classList.add(Pagination.activeClass);
 
-  // update the text on buttons
-  // Pagination.updateLabel()
-  
 }
 
 /**
@@ -69,26 +79,39 @@ Pagination.toggle = function(element){
 Pagination.updateLabel = function(){
   // get the anchor link that is active
   let container = document.querySelector(Pagination.anchor).parentNode;
-  let el = container.querySelectorAll('.active');
+  let el = container.querySelectorAll(`.${Pagination.activeClass}`);
 
   let prev = document.querySelector(Pagination.prev)
   let next = document.querySelector(Pagination.next)
   
   if(el[0].previousElementSibling) {
     prev.textContent = el[0].previousElementSibling.innerText.trim()
-    prev.parentElement.parentElement.href = el[0].previousElementSibling.href
+    prev.parentElement.parentElement.href = el[0].previousElementSibling.hash
+    prev.parentNode.parentElement.classList.remove(Pagination.hiddenClass)
+    next.parentNode.parentElement.classList.remove('col-start-2')
+  } else {
+    prev.parentNode.parentElement.classList.add(Pagination.hiddenClass)
+    next.parentNode.parentElement.classList.add('col-start-2')
   }
   
   if(el[0].nextElementSibling) {
     next.textContent = el[0].nextElementSibling.innerText.trim()
-    next.parentElement.parentElement.href = el[0].nextElementSibling.href
+    next.parentElement.parentElement.href = el[0].nextElementSibling.hash
+    next.parentNode.parentElement.classList.remove(Pagination.hiddenClass)
+
+  } else {
+    next.parentNode.parentElement.classList.add(Pagination.hiddenClass)
   }
 }
 
-/** @param  {String}  selector  The main selector for the pattern */
+/**
+ * Defaults
+ */
 Pagination.trigger = '[data-trigger*="paginate"]';
 Pagination.anchor = '[data-trigger*="paginate-anchor"]';
 Pagination.prev = '[data-desc*="prev"]';
 Pagination.next = '[data-desc*="next"]';
+Pagination.activeClass = 'active';
+Pagination.hiddenClass = 'hidden';
 
 export default Pagination;
