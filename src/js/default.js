@@ -1,6 +1,7 @@
 'use strict';
 import Faq from '../components/card/faq-card';
 import Pagination from '../utilities/pagination/pagination';
+import Accordion from '../components/accordion/accordion';
 
 /**
  * Methods for the main Patterns instance.
@@ -18,6 +19,11 @@ class Default {
   pagination() {
     return new Pagination();
   }
+
+  accordion() {
+    return new Accordion();
+  }
+
 }
 
 export default Default;

@@ -35,6 +35,7 @@
 /** Elements - end */
 
 /** Components */
+@forward 'components/accordion/accordion';
 @forward 'components/details/details';
 @forward 'components/card/faq-card';
 @forward 'components/card/info-card';

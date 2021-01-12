@@ -1,0 +1,83 @@
+/**
+ * Accordion
+ */
+
+// Dependencies
+@use 'config/tokens' as *;
+@use 'config/media';
+
+// Declarations
+.c-accordion__toggle {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0;
+}
+
+.c-accordion__header { 
+  pointer-events: none;
+  width: 100%;
+  padding: 0 .5rem;
+  border-radius: 25px 25px;
+  margin: 0;
+  font-size: 18px;
+  
+  .c-accordion__toggle.active & {
+    border-radius: 25px 25px 0px 0px;
+  }
+}
+
+.c-accordion__header--primary{
+  text-align: left;
+  margin-left: 10px;
+}
+.c-accordion__header--secondary{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+.c-accordion__body { 
+  padding: .5rem .5rem .25rem 1rem;
+  border-radius: 0px 0px 25px 25px;
+  border-style: solid;
+  border-width: 2px;
+  font-size: 16px;
+
+  @include media.mq('desktop') {
+    font-size: 20px;
+  }
+}
+
+.c-accordion__toggle-active,
+.c-accordion__toggle-inactive {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin: 0 10px;
+  }
+}
+
+.c-accordion__toggle-active {
+  pointer-events: none;
+  display: none;
+  visibility: hidden;
+
+  .c-accordion__toggle.active & {
+    display: flex;
+    align-items: center;
+    visibility: visible;
+  }
+}
+
+.c-accordion__toggle-inactive {
+  pointer-events: none;
+  visibility: visible;
+
+  .c-accordion__toggle.active & {
+    display: none;
+    visibility: hidden;
+  }
+}
