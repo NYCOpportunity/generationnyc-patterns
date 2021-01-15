@@ -11,5 +11,7 @@ div class='c-hero block tablet:grid tablet:grid-cols-2'
     p class='c-hero__subtitle'
       = 'Take control of your money'
 
+    img class='c-hero__logo' src='img/unity-logo.png'
+
   div class='c-hero__image row-start-1 bg-blue' style="background:url('img/topic.jpg')"
     img class='tablet:hidden' src='img/topic.jpg'
