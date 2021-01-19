@@ -1,7 +1,16 @@
 'use strict';
-import Faq from '../components/card/faq-card';
-import Pagination from '../utilities/pagination/pagination';
+
+/**
+ * Components
+ */
 import Accordion from '../components/accordion/accordion';
+import Faq from '../components/card/faq-card';
+
+/**
+ * Utilities
+ */
+import Anchor from '../utilities/anchor/anchor';
+import Pagination from '../utilities/pagination/pagination';
 
 /**
  * Methods for the main Patterns instance.
@@ -22,6 +31,10 @@ class Default {
 
   accordion() {
     return new Accordion();
+  }
+
+  anchor() {
+    return new Anchor();
   }
 
 }
