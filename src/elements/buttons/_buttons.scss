@@ -6,6 +6,7 @@
 @use 'config/tokens' as *;
 @use 'config/buttons';
 @use 'config/color';
+@use 'config/media';
 
 // Declarations
 .btn--primary {
@@ -57,5 +58,24 @@ a.btn--inspiration {
   
   &:hover {
     @include buttons.hover(color.$black, color.$black, color.$white);
+  }
+}
+
+.btn--round,
+a.btn--round {
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  background-color: color.$black;
+  width: 80px;
+  height: 80px;
+  padding: 12px;
+  color: color.$white;
+  text-decoration: none;
+  font-size: 16px;
+
+  @include media.mq('desktop') {
+    width: 100px;
+    height: 100px;
   }
 }

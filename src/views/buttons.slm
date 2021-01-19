@@ -54,4 +54,19 @@
 
     pre class='p-4'
       = this.include('elements/buttons/button--pill.slm');
+
+  section class='bg-white p-4'
+    h2 = 'Round Button'
+
+    / == this.include('elements/buttons/button--round.md');
+
+    h3 Demonstration
+
+    == this.include('elements/buttons/button--round.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('elements/buttons/button--round.slm');
+
 = content('scripts')
