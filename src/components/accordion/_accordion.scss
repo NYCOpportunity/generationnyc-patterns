@@ -97,11 +97,15 @@
   li {
     background: color.$light-gray-light;
     line-height: 1.2;
-    padding: .9375rem 1.875rem .9375rem 2.625rem;
+    padding: .5rem 1rem;
     margin-bottom: .125rem;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @include media.mq('desktop') {
+      padding: 1rem;
     }
   }
 }
