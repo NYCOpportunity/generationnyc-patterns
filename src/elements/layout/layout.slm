@@ -1,0 +1,33 @@
+/ Layout
+
+/ container
+div class='layout'
+  / pattern contents
+
+  div class="masonry"
+
+    article class='c-info-card--outline border-red mb-2'
+      header class=''
+        h3 class='c-info-card--outline__title border-red'
+          = 'Credit Limit'
+      div class='c-info-card--outline__body'
+        p = 'This is the maximum amount of money you can spend in a month. Your credit limit depends on your financial history and is usually lower for new credit card holders. Even so, it’s a good idea to not spend all of your credit each month. Keeping your credit utilization ratio (the amount you spend on your credit card divided by your total credit limit) under 30% will help you achieve a higher credit score.'
+    article class='c-info-card--outline border-red mb-2'
+      header class=''
+        h3 class='c-info-card--outline__title border-red'
+          = 'Credit Limit'
+      div class='c-info-card--outline__body'
+        p = 'This is the maximum amount of money you can spend in a month. Your credit limit depends on your financial history and is usually lower for new credit card holders.'
+    article class='c-info-card--outline border-red mb-2'
+      header class=''
+        h3 class='c-info-card--outline__title border-red'
+          = 'Credit Limit'
+      div class='c-info-card--outline__body'
+        p = 'This is the maximum amount of money you can spend in a month. Your credit limit depends on your financial history and is usually lower for new credit card holders.'
+    article class='c-info-card--outline border-red mb-2'
+      header class=''
+        h3 class='c-info-card--outline__title border-red'
+          = 'Credit Limit'
+      div class='c-info-card--outline__body'
+        p = 'This is the maximum amount of money you can spend in a month. Your credit limit depends on your financial history and is usually lower for new credit card holders. Even so, it’s a good idea to not spend all of your credit each month. Keeping your credit utilization ratio (the amount you spend on your credit card divided by your total credit limit) under 30% will help you achieve a higher credit score.'
+    
