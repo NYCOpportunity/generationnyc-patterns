@@ -5,6 +5,7 @@
 // Dependencies
 @use 'config/tokens' as *;
 @use 'config/media';
+@use 'config/color';
 
 // Declarations
 .c-accordion__toggle {
@@ -21,6 +22,7 @@
   border-radius: 25px 25px;
   margin: 0;
   font-size: 18px;
+  font-weight: 600;
   
   .c-accordion__toggle.active & {
     border-radius: 25px 25px 0px 0px;
@@ -35,15 +37,18 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-weight: 400;
+
 
 }
 
 .c-accordion__body { 
-  padding: .5rem .5rem .25rem 1rem;
   border-radius: 0px 0px 25px 25px;
   border-style: solid;
+  border-top-style: hidden;
   border-width: 2px;
   font-size: 16px;
+  overflow: hidden;
 
   @include media.mq('desktop') {
     font-size: 20px;
@@ -79,5 +84,24 @@
   .c-accordion__toggle.active & {
     display: none;
     visibility: hidden;
+  }
+}
+
+.c-accordion__list {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    background: color.$light-gray-light;
+    line-height: 1.2;
+    padding: .9375rem 1.875rem .9375rem 2.625rem;
+    margin-bottom: .125rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
