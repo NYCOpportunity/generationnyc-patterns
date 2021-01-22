@@ -42,10 +42,8 @@
       <h3>Demonstration</h3>
       <article class="c-accordion w-1/2 m-auto">
         <button aria-controls="toggle-target" aria-expanded="true" class="c-accordion__toggle active" data-js="accordion">
-          <header class="c-accordion__header bg-red-light grid grid-cols-2">
-            <p class="c-accordion__header--primary">
-              <span>Lorem Ipsum</span>
-            </p>
+          <header class="c-accordion__header bg-red-light grid grid-cols-3">
+            <p class="c-accordion__header--primary col-span-2">Lorem Ipsum</p>
             <div class="c-accordion__header--secondary">
               <span class="c-accordion__toggle-active">hide<svg aria-hidden="true" class="icon-sm">
                   <use xlink:href="#pttrn-icon-chevron-up"></use>
@@ -61,9 +59,9 @@
         <div aria-hidden="false" class="c-accordion__body border-red-light active" id="toggle-target" role="region">
           <div class="c-accordion__list">
             <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-              <li>Donec massa sapien faucibus et molestie ac feugiat sed lectus. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et.</li>
-              <li>Et leo duis ut diam quam nulla porttitor massa id. Non blandit massa enim nec. Amet mattis vulputate enim nulla aliquet porttitor lacus. Dui ut ornare lectus sit. Porta non pulvinar neque laoreet suspendisse interdum. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Urna porttitor rhoncus dolor purus non enim praesent. Sed felis eget velit aliquet sagittis id consectetur purus. In eu mi bibendum neque egestas congue quisque egestas diam. Morbi tristique senectus et netus et malesuada fames ac. Porttitor leo a diam sollicitudin tempor id eu.</li>
+              <li class="border-red-light border-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li class="border-red-light border-b-2">Donec massa sapien faucibus et molestie ac feugiat sed lectus. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et.</li>
+              <li class="border-red-light border-b-2">Et leo duis ut diam quam nulla porttitor massa id. Non blandit massa enim nec. Amet mattis vulputate enim nulla aliquet porttitor lacus. Dui ut ornare lectus sit. Porta non pulvinar neque laoreet suspendisse interdum. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Urna porttitor rhoncus dolor purus non enim praesent. Sed felis eget velit aliquet sagittis id consectetur purus. In eu mi bibendum neque egestas congue quisque egestas diam. Morbi tristique senectus et netus et malesuada fames ac. Porttitor leo a diam sollicitudin tempor id eu.</li>
             </ul>
           </div>
         </div>
@@ -71,10 +69,8 @@
       <h3>Markup</h3>
       <pre class="p-4">&lt;article class=&quot;c-accordion w-1/2 m-auto&quot;&gt;
   &lt;button aria-controls=&quot;toggle-target&quot; aria-expanded=&quot;true&quot; class=&quot;c-accordion__toggle active&quot; data-js=&quot;accordion&quot;&gt;
-    &lt;header class=&quot;c-accordion__header bg-red-light grid grid-cols-2&quot;&gt;
-      &lt;p class=&quot;c-accordion__header--primary&quot;&gt;
-        &lt;span&gt;Lorem Ipsum&lt;/span&gt;
-      &lt;/p&gt;
+    &lt;header class=&quot;c-accordion__header bg-red-light grid grid-cols-3&quot;&gt;
+      &lt;p class=&quot;c-accordion__header--primary col-span-2&quot;&gt;Lorem Ipsum&lt;/p&gt;
       &lt;div class=&quot;c-accordion__header--secondary&quot;&gt;
         &lt;span class=&quot;c-accordion__toggle-active&quot;&gt;hide&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-sm&quot;&gt;
             &lt;use xlink:href=&quot;#pttrn-icon-chevron-up&quot;&gt;&lt;/use&gt;
@@ -90,9 +86,9 @@
   &lt;div aria-hidden=&quot;false&quot; class=&quot;c-accordion__body border-red-light active&quot; id=&quot;toggle-target&quot; role=&quot;region&quot;&gt;
     &lt;div class=&quot;c-accordion__list&quot;&gt;
       &lt;ul&gt;
-        &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/li&gt;
-        &lt;li&gt;Donec massa sapien faucibus et molestie ac feugiat sed lectus. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et.&lt;/li&gt;
-        &lt;li&gt;Et leo duis ut diam quam nulla porttitor massa id. Non blandit massa enim nec. Amet mattis vulputate enim nulla aliquet porttitor lacus. Dui ut ornare lectus sit. Porta non pulvinar neque laoreet suspendisse interdum. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Urna porttitor rhoncus dolor purus non enim praesent. Sed felis eget velit aliquet sagittis id consectetur purus. In eu mi bibendum neque egestas congue quisque egestas diam. Morbi tristique senectus et netus et malesuada fames ac. Porttitor leo a diam sollicitudin tempor id eu.&lt;/li&gt;
+        &lt;li class=&quot;border-red-light border-b-2&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/li&gt;
+        &lt;li class=&quot;border-red-light border-b-2&quot;&gt;Donec massa sapien faucibus et molestie ac feugiat sed lectus. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et.&lt;/li&gt;
+        &lt;li class=&quot;border-red-light border-b-2&quot;&gt;Et leo duis ut diam quam nulla porttitor massa id. Non blandit massa enim nec. Amet mattis vulputate enim nulla aliquet porttitor lacus. Dui ut ornare lectus sit. Porta non pulvinar neque laoreet suspendisse interdum. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Urna porttitor rhoncus dolor purus non enim praesent. Sed felis eget velit aliquet sagittis id consectetur purus. In eu mi bibendum neque egestas congue quisque egestas diam. Morbi tristique senectus et netus et malesuada fames ac. Porttitor leo a diam sollicitudin tempor id eu.&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -100,7 +96,7 @@
     </section>
   </main>
   <footer class="text-center p-4 text-white">
-    <p>Last updated January 21, 2021</p>
+    <p>Last updated January 22, 2021</p>
     <a href="https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg">
       <svg class="text-red" height="80" width="80">
         <title id="svg-a-perfect-heart">A perfect SVG heart</title>

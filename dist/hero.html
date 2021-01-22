@@ -55,7 +55,13 @@
       <h3>Demonstration</h3>
       <div class="c-hero block tablet:grid tablet:grid-cols-2">
         <div class="p-4">
-          <p class="breadcrumbs">Topics &gt; Banking and Credit</p>
+          <nav class="breadcrumbs">
+            <a href="#">Topics</a>
+            <svg aria-hidden="true" class="icon-xs text-dark-gray-dark">
+              <use xlink:href="#pttrn-icon-chevron-right"></use>
+            </svg>
+            <a href="#">Banking and Credit</a>
+          </nav>
           <h1 class="c-hero__title">Banking and Credit</h1>
           <p class="c-hero__subtitle">Take control of your money</p>
           <img class="c-hero__logo" src="img/unity-logo.png" />
@@ -67,7 +73,13 @@
       <h3>Markup</h3>
       <pre class="p-4">&lt;div class=&quot;c-hero block tablet:grid tablet:grid-cols-2&quot;&gt;
   &lt;div class=&quot;p-4&quot;&gt;
-    &lt;p class=&quot;breadcrumbs&quot;&gt;Topics &amp;gt; Banking and Credit&lt;/p&gt;
+    &lt;nav class=&quot;breadcrumbs&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;Topics&lt;/a&gt;
+      &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-xs text-dark-gray-dark&quot;&gt;
+        &lt;use xlink:href=&quot;#pttrn-icon-chevron-right&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+      &lt;a href=&quot;#&quot;&gt;Banking and Credit&lt;/a&gt;
+    &lt;/nav&gt;
     &lt;h1 class=&quot;c-hero__title&quot;&gt;Banking and Credit&lt;/h1&gt;
     &lt;p class=&quot;c-hero__subtitle&quot;&gt;Take control of your money&lt;/p&gt;
     &lt;img class=&quot;c-hero__logo&quot; src=&quot;img/unity-logo.png&quot; /&gt;
@@ -79,7 +91,7 @@
     </section>
   </main>
   <footer class="text-center p-4 text-white">
-    <p>Last updated January 19, 2021</p>
+    <p>Last updated January 22, 2021</p>
     <a href="https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg">
       <svg class="text-red" height="80" width="80">
         <title id="svg-a-perfect-heart">A perfect SVG heart</title>

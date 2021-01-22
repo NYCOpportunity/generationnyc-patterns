@@ -8,14 +8,15 @@
 @use 'config/color';
 
 .breadcrumbs { 
-  font-size: 10px;
+  font-size: 16px;
   color: color.$dark-gray-dark;
+  margin-bottom: .75rem;
 
   a {
     color: inherit;
   }
 
-  @include media.mq('tablet') {
-    font-size: 12px;
+  @include media.mq('desktop') {
+    font-size: 18px;
   }
 }

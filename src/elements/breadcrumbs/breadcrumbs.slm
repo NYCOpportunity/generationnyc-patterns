@@ -1,7 +1,9 @@
 / Breadcrumbs
 
-/ container
-div class='breadcrumbs'
+nav class='breadcrumbs text-center'
   a href='#' 
-    = 'Topics'
-  span = '> Topic Name'
+    ='Topics' 
+  svg class='icon-xs text-dark-gray-dark' aria-hidden='true'
+    use xlink:href='#pttrn-icon-chevron-right'
+  a href='#' 
+    = 'Banking and Credit'

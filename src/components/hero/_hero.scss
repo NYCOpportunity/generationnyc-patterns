@@ -9,14 +9,6 @@
 // Declarations
 .c-hero {
   padding: 32px;
-
-  p {
-    font-size: 16px;
-
-    @include media.mq('desktop') {
-      font-size: 22px;
-    }
-  }
 }
 
 .c-hero__image {
