@@ -1,0 +1,126 @@
+/**
+ * List
+ */
+
+@use 'config/color';
+@use 'config/list';
+
+.list-blue {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$blue);
+  }
+}
+
+.list-blue-light {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$blue-light);
+  }
+}
+
+.list-blue-dark {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$blue-dark);
+  }
+}
+
+.list-blue-green {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$blue-green);
+  }
+}
+
+.list-green {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$green);
+  }
+}
+
+.list-green-light {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$green-light);
+  }
+}
+
+.list-green-dark {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$green-dark);
+  }
+}
+
+.list-orange {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$orange);
+  }
+}
+
+.list-purple {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$purple);
+  }
+}
+
+.list-purple-light {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$purple-light);
+  }
+}
+
+.list-purple-dark {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$purple-dark);
+  }
+}
+
+.list-red {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$red);
+  }
+}
+
+.list-red-light {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$red-light);
+  }
+}
+
+.list-red-dark {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$red-dark);
+  }
+}
+
+.list-yellow {
+  @include list.ul();
+
+  li::before {
+    @include list.li(color.$yellow);
+  }
+}

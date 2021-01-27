@@ -1,0 +1,8 @@
+/ List
+
+/ container
+div class='list'
+  ul class='list-red'
+    li = 'item1'
+    li = 'item2'
+    li = 'item3'
