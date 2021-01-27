@@ -1,6 +1,7 @@
 // Dependencies
 @use 'config/color' as *;
 @use 'config/card';
+@use 'config/type';
 
 .c-inspiration-card {
   @include card.card();
@@ -13,10 +14,21 @@
 
 .c-inspiration-card__marker {
   margin: 0;
-  font-size: 13px;
+  @include type.set('small');
   text-transform: uppercase;
 }
 
 .c-inspiration-card__title {
   margin: 0;
+}
+
+.c-inspiration-card-tags a {
+  display: inline-block;
+  margin-top: .25rem;
+}
+
+.c-inspiration-card__cta {
+  text-align: right;
+  margin-top: 1rem;
+  padding-bottom: .5rem;
 }

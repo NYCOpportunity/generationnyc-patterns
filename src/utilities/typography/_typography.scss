@@ -1,10 +1,11 @@
 
 // Dependencies
 @use 'config/type';
+@use 'config/media';
 
 // Declarations
 html {
-  font-size: type.base('desktop');
+  @include type.set('body');
 }
 
 body {
@@ -37,6 +38,14 @@ h5, .h5{
 
 h6, .h6 {
   @include type.set('h6');
+}
+
+p, .p {
+  @include type.set('p');
+}
+
+.small {
+  @include type.set('small');
 }
 
 .ta-center {

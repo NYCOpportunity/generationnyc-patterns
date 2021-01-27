@@ -1,7 +1,7 @@
 / Faq-card
 
 / container
-article class='c-info-card'
+article class='c-info-card w-1/2 m-auto'
   header class=''
     h3 class='c-info-card__title bg-red-light'
       = 'Credit Limit'

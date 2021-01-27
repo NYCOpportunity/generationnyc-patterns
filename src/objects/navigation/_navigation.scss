@@ -2,9 +2,10 @@
  * Navigation
  */
 
-// Dependencies
 @use 'config/tokens' as *;
 @use 'config/media';
+@use 'config/color';
+@use 'config/type';
 
 .o-navigation {
   width: 100%;
@@ -12,45 +13,39 @@
   align-items: flex-end;
   padding: 1rem;
   justify-content: space-between;
-
-  @include media.mq('tablet') {
-  }
 }
 
 .o-navigation-logo {
-  
-  // width: 73px;
   height: 51.81px;
   @include media.mq('tablet') {
-    // width: 162.04px;
     height: 115px;
   }
-
 }
 
 .o-navigation-link {
   color: inherit;
   margin-left: 20px;
+  @include type.set('body');
 
-  @include media.mq('tablet') {
-    font-size: 16px;
-  }
+  // @include media.mq('tablet') {
+  //   font-size: 16px;
+  // }
 
-  @include media.mq('desktop') {
-    font-size: 24px;
-  }
+  // @include media.mq('desktop') {
+  //   font-size: 24px;
+  // }
 }
 
 .o-navigation__text {
-  font-size: 12px;
+  @include type.set('body');
   margin-left: .75rem;
   padding-right: 1rem;
 
-  @include media.mq('tablet') {
-    font-size: 16px;
-  }
+  // @include media.mq('tablet') {
+  //   font-size: 16px;
+  // }
 
-  @include media.mq('desktop') {
-    font-size: 24px;
-  }
+  // @include media.mq('desktop') {
+  //   font-size: 24px;
+  // }
 }

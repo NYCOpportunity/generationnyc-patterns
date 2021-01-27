@@ -6,8 +6,7 @@
 @use 'config/tokens' as *;
 @use 'config/color';
 @use 'config/media';
-
-// Declarations
+@use 'config/type';
 
 .pagination--link {
   text-decoration: none;
@@ -29,7 +28,7 @@
   display: block;
   margin-left: 22px;
   margin-top: 2px;
-  font-size: 16px;
+  @include type.set('body');
   text-decoration: underline;
 }
 

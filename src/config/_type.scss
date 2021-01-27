@@ -1,6 +1,7 @@
 
 // Dependencies
 @use 'config/tokens' as *;
+@use 'config/media';
 
 // Declaration
 @function get($key) {
@@ -11,12 +12,17 @@
   @return map-get(get('font'), $key);
 }
 
+$sizes: map-get($tokens, 'font-size');
 @mixin set($key) {
   font-family: map-get(get('font-family'), family($key));
-  font-size: map-get(get('font-size'), $key);
+  font-size: map-get(map-get($sizes, 'default'), $key);;
   font-weight: map-get(get('font-weight'), $key);
   font-style: map-get(get('font-style'), $key);
   line-height: map-get(get('line-height'), $key);
+
+  @include media.mq('tablet') {
+    font-size: map-get(map-get($sizes, 'desktop'), $key);;
+  }
 }
 
 @function base($key) {

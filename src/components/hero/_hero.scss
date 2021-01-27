@@ -5,24 +5,29 @@
 // Dependencies
 @use 'config/tokens' as *;
 @use 'config/media';
+@use 'config/type';
 
-// Declarations
 .c-hero {
   padding: 32px;
 }
 
+.c-hero__content {
+  margin: auto;
+}
+
 .c-hero__image {
-  background-position: center !important;
+  background-position: center top !important;
   background-size: cover !important;
+  
+  @include media.mq('tablet') {
+    min-height: 450px;
+  }
+
 }
 
 .c-hero__title {
-  font-size: 42px;
   margin: 0;
-
-  @include media.mq('desktop') {
-    font-size: 65px;
-  }
+  @include type.set('h1');
 }
 
 .c-hero__logo {
@@ -30,9 +35,5 @@
 }
 
 .c-hero__subtitle {
-  font-size: 22px;
-
-  @include media.mq('desktop') {
-    font-size: 35px;
-  }
+  @include type.set('h5');
 }

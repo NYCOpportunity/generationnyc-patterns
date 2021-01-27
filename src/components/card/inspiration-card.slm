@@ -2,7 +2,7 @@
 
 / container
 section class='bg-yellow p-4'
-  article class='c-inspiration-card bg-white'
+  article class='c-inspiration-card bg-white w-1/2 m-auto'
     header class='c-inspiration-card__header'
       div class='sticker'
       div class='ml-2'
@@ -21,6 +21,6 @@ section class='bg-yellow p-4'
         a href='#' class='btn btn--pill'
           = 'Credit Report'
 
-    div class='text-right mt-2'
+    div class='c-inspiration-card__cta'
       a class='btn btn--inspiration'
         = 'Read More'

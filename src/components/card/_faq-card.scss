@@ -2,19 +2,18 @@
  * Faq-card
  */
 
-// Dependencies
-@use 'config/color' as *;
 @use 'config/card';
+@use 'config/type';
 
-// Declarations
 .c-faq-card {
   @include card.card();
 }
 
 .c-faq-card-marker {
-  font-size: 11px;
+  @include type.set('small');
 }
 
-.c-faq-card-answer {
-  font-size: 18px;
+.c-faq-card-tags a {
+  display: inline-block;
+  margin-top: .25rem;
 }

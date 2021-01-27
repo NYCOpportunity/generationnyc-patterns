@@ -1,7 +1,7 @@
 / info-card
 
 / container
-article class='c-info-card--outline border-red-light'
+article class='c-info-card--outline border-red-light w-1/2 m-auto'
   header class=''
     h3 class='c-info-card--outline__title border-red-light'
       = 'Credit Limit'

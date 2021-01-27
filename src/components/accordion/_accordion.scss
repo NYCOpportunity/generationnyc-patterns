@@ -2,12 +2,10 @@
  * Accordion
  */
 
-// Dependencies
 @use 'config/tokens' as *;
 @use 'config/media';
 @use 'config/color';
 
-// Declarations
 .c-accordion__toggle {
   background-color: transparent;
   border: none;
@@ -31,20 +29,13 @@
 .c-accordion__header--primary{
   text-align: left;
   margin-left: 10px;
-  font-size: 16px;
   font-weight: 600;
-
-  @include media.mq('desktop') {
-    font-size: 20px;
-  }
 }
 .c-accordion__header--secondary{
   display: flex;
   align-items: center;
   justify-content: flex-end;
   font-weight: 400;
-
-
 }
 
 .c-accordion__body { 
@@ -52,12 +43,7 @@
   border-style: solid;
   border-top-style: hidden;
   border-width: 2px;
-  font-size: 16px;
   overflow: hidden;
-
-  @include media.mq('desktop') {
-    font-size: 20px;
-  }
 }
 
 .c-accordion__toggle-active,

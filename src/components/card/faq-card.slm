@@ -2,11 +2,11 @@
 
 / container
 section class='bg-green-light p-4'
-  article class='c-faq-card bg-white'
+  article class='c-faq-card bg-white w-1/2 m-auto'
     div class='c-faq-card-marker'
       span = 'FAQ'
     header class='c-faq-card-title'
-      h2 class='mb-0'
+      h2 class='mb-0 h4'
         = 'How Do I get a free credit report?'
     div class='c-faq-card-body hidden' aria-hidden='true' js-target='faq'
       div class='c-faq-card-tags'

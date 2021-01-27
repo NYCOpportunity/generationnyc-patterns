@@ -3,7 +3,7 @@
 / container
 div class='c-hero block tablet:grid tablet:grid-cols-2'
 
-  div class='p-4'
+  div class='c-hero__content p-4'
     nav class='breadcrumbs'
       a href='#' 
         ='Topics' 

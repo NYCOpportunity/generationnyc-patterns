@@ -2,12 +2,9 @@
  * Share
  */
 
-// Dependencies
 @use 'config/tokens' as *;
 @use 'config/media';
-
-// Declarations
-// .c-share {}
+@use 'config/type';
 
 .c-share-form {
   position: relative;
@@ -43,7 +40,7 @@
   height: 40px;
   border: none;
   padding: 10px;
-  font-size: 16px;
+  @include type.set('body');
 }
 
 .c-share-form__submit {

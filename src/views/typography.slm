@@ -1,0 +1,20 @@
+= extend('/slm/layouts/default')
+
+- title = 'Typography'
+
+= content('main')
+  section class='bc-white p-4'
+    h2 = title
+
+    == this.include('utilities/typography/typography.md');
+
+    h3 Demonstration
+
+    == this.include('utilities/typography/typography.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('utilities/typography/typography.slm');
+
+= content('scripts')

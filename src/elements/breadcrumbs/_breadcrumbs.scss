@@ -6,17 +6,17 @@
 @use 'config/tokens' as *;
 @use 'config/media';
 @use 'config/color';
+@use 'config/type';
 
 .breadcrumbs { 
-  font-size: 16px;
+  @include type.set('small');
   color: color.$dark-gray-dark;
-  margin-bottom: .75rem;
 
   a {
     color: inherit;
   }
 
-  @include media.mq('desktop') {
-    font-size: 18px;
+  @include media.mq('tablet') {
+    @include type.set('p');
   }
 }

@@ -2,11 +2,11 @@
 
 // Dependencies
 @use 'config/tokens' as *;
+@use 'config/type';
 
 @mixin button($background, $text) {
   padding: 10px 15px;
   font-family: inherit;
-  font-size: 16px;
   background: $background;
   border-color: $background;
   border-style: solid;
@@ -14,6 +14,7 @@
   border-width: 2px;
   color: $text;
   text-decoration: none;
+  @include type.set('body');
 }
 
 @mixin hover($background, $border, $text) {
@@ -29,6 +30,6 @@
   border-color: $background;
   border-style: solid;
   color: $text;
-  font-size: 10px;
   text-decoration: none;
+  @include type.set('small');
 }
