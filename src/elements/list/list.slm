@@ -1,8 +1,14 @@
 / List
 
 / container
+div class='list-red'
+  ul
+    li = 'item1'
+    li = 'item2'
+    li = 'item3'
+
 div class='list'
-  ul class='list-red'
+  ul class='list-blue-green'
     li = 'item1'
     li = 'item2'
     li = 'item3'
