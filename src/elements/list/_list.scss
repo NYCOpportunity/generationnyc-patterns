@@ -8,9 +8,13 @@
 .list-blue,
 .list-blue ul {
   @include list.ul();
+  
+  li {
+    @include list.li();
+  }
 
   li::before {
-    @include list.li(color.$blue);
+    @include list.li-before(color.$blue);
   }
 }
 
@@ -18,8 +22,12 @@
 .list-blue-light ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$blue-light);
+    @include list.li-before(color.$blue-light);
   }
 }
 
@@ -27,8 +35,12 @@
 .list-blue-dark ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$blue-dark);
+    @include list.li-before(color.$blue-dark);
   }
 }
 
@@ -36,8 +48,12 @@
 .list-blue-green ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$blue-green);
+    @include list.li-before(color.$blue-green);
   }
 }
 
@@ -45,8 +61,12 @@
 .list-green ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$green);
+    @include list.li-before(color.$green);
   }
 }
 
@@ -54,8 +74,12 @@
 .list-green-light ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$green-light);
+    @include list.li-before(color.$green-light);
   }
 }
 
@@ -63,8 +87,12 @@
 .list-green-dark ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$green-dark);
+    @include list.li-before(color.$green-dark);
   }
 }
 
@@ -72,8 +100,12 @@
 .list-orange ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$orange);
+    @include list.li-before(color.$orange);
   }
 }
 
@@ -81,8 +113,12 @@
 .list-purple ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$purple);
+    @include list.li-before(color.$purple);
   }
 }
 
@@ -90,8 +126,12 @@
 .list-purple-light ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$purple-light);
+    @include list.li-before(color.$purple-light);
   }
 }
 
@@ -99,8 +139,12 @@
 .list-purple-dark ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$purple-dark);
+    @include list.li-before(color.$purple-dark);
   }
 }
 
@@ -108,8 +152,12 @@
 .list-red ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$red);
+    @include list.li-before(color.$red);
   }
 }
 
@@ -117,8 +165,12 @@
 .list-red-light ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$red-light);
+    @include list.li-before(color.$red-light);
   }
 }
 
@@ -126,8 +178,12 @@
 .list-red-dark ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$red-dark);
+    @include list.li-before(color.$red-dark);
   }
 }
 
@@ -135,7 +191,11 @@
 .list-yellow ul {
   @include list.ul();
 
+  li {
+    @include list.li();
+  }
+
   li::before {
-    @include list.li(color.$yellow);
+    @include list.li-before(color.$yellow);
   }
 }

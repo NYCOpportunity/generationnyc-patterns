@@ -1,13 +1,18 @@
 @use 'config/tokens' as *;
+@use 'config/type';
 
 @mixin ul() {
   list-style: none;
 }
 
-@mixin li($color) {
+@mixin li() {
+  text-indent: -8px;
+}
+
+@mixin li-before($color) {
   content: "\2022";
   color: $color;
   font-weight: bold;
   display: inline-block; 
-  width: 1em;
+  width: .5em;
 }

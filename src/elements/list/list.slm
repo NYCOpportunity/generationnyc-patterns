@@ -3,12 +3,12 @@
 / container
 div class='list-red'
   ul
-    li = 'item1'
+    li = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie ac feugiat sed lectus.'
     li = 'item2'
     li = 'item3'
 
 div class='list'
   ul class='list-blue-green'
-    li = 'item1'
+    li = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie ac feugiat sed lectus.'
     li = 'item2'
     li = 'item3'
