@@ -1,20 +1,20 @@
 = extend('/slm/layouts/default')
 
-- title = 'Icons'
+- title = 'Sticker'
 
 = content('main')
   section class='bg-white p-4'
     h2 = title
 
-    == this.include('elements/icons/icons.md');
+    == this.include('elements/sticker/sticker.md');
 
     h3 Demonstration
 
-    == this.include('elements/icons/icons.slm');
+    == this.include('elements/sticker/sticker.slm');
 
     h3 Markup
 
     pre class='p-4'
-      = this.include('elements/icons/icons.slm');
+      = this.include('elements/sticker/sticker.slm');
 
 = content('scripts')

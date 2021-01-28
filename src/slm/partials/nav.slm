@@ -1,0 +1,6 @@
+- for (var key in this.patterns)
+  h2 class='h6' = key
+  - let pk = Object.keys(this.patterns[key])
+  - let pl = Object.values(this.patterns[key])
+  - for (var i=0; i < pk.length; i++)  
+    a class='o-navigation-link' href=pk[i] = pl[i]

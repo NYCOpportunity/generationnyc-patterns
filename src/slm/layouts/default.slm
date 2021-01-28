@@ -30,7 +30,7 @@ html lang='en'
 
   body class='bg-black p-4'
     header class='text-center text-white p-4'
-      h1 class='break-words'
+      h1 class='break-words h3'
         = 'Welcome to'
         br
         = `${this.package.name} v${this.package.version}`
@@ -42,15 +42,7 @@ html lang='en'
     main
       = content('main')
 
-    footer class='text-center p-4 text-white'
-      - let date = new Date();
-      - let opts = {year: 'numeric', month: 'long', day: 'numeric'};
-      p = `Last updated ${date.toLocaleDateString('en-US', opts)}`
-
-      a href='https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg'
-        svg class='text-red' width='80' height='80'
-          title id='svg-a-perfect-heart' A perfect SVG heart
-          use xlink:href='#pttrn-icon-heart'
+    = partial('/slm/partials/footer.slm');
 
     script src='js/default.js'
     script src='https://cdn.jsdelivr.net/gh/CityOfNewYork/nyco-patterns-framework@v1.0.0-15/dist/utilities/icons/icons.iffe.js'

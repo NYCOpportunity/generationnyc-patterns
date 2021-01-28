@@ -1,9 +1,6 @@
 / Layout
 
-/ container
 div class='layout'
-  / pattern contents
-
   div class="masonry"
 
     article class='c-info-card--outline border-red mb-2'

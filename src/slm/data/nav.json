@@ -1,0 +1,27 @@
+{
+  "elements": {
+    "breadcrumbs": "Breadcrumbs",
+    "buttons": "Buttons",
+    "layout": "Layout",
+    "links": "Links",
+    "list": "List",
+    "sticker": "Sticker"
+  },
+  "components": {
+    "accordion": "Accordion",
+    "card": "Cards",
+    "hero": "Hero",
+    "jumbotron": "Jumbotron",
+    "share": "Share"
+  },
+  "objects": {
+    "footer": "Footer",
+    "navigation": "Navigation"
+  },
+  "utilities": {
+    "anchor": "Anchor",
+    "gradient": "Gradient",
+    "pagination": "Pagination",
+    "typography": "Typography"
+  }
+}

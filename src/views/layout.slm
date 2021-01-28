@@ -5,16 +5,18 @@
 = content('main')
   section class='bc-white p-4'
     h2 = title
+  section class='bc-white p-4'
+    h2 = 'Masonry'
 
-    == this.include('elements/layout/layout.md');
+    == this.include('elements/layout/masonry.md');
 
     h3 Demonstration
 
-    == this.include('elements/layout/layout.slm');
+    == this.include('elements/layout/masonry.slm');
 
     h3 Markup
 
     pre class='p-4'
-      = this.include('elements/layout/layout.slm');
+      = this.include('elements/layout/masonry.slm');
 
 = content('scripts')
