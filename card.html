@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="svg/pttrn-a-perfect-heart-red.svg" rel="icon"
+    type="image/svg+xml" />
+  <title>@nycopportunity/generationnyc-patterns</title>
+  <link href="styles/default.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css"
+    rel="stylesheet" />
+  <script
+    src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js">
+  </script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(event) {
+      hljs.configure({
+        languages: ['html', 'javascript', 'css', 'sass']
+      });
+      document.querySelectorAll('pre').forEach(function(pre) {
+        pre.setAttribute('tabindex', '0');
+        hljs.highlightBlock(pre);
+      });
+    });
+  </script>
+</head>
+
+<body class="bg-black p-4">
+  <header class="text-center text-white p-4">
+    <h1 class="break-words h3">Welcome
+      to<br />@nycopportunity/generationnyc-patterns v1.0.0-1</h1>
+    <p>NYC teens and young adults can find help with navigating City resources,
+      including a variety of topics, trips, and inspirational youth profiles.
+    </p><br />
+  </header>
+  <main>
+    <section class="bg-white p-4">
+      <h2>FAQ card</h2>
+      <p><strong>Source:</strong> <code>src/components/card/faq-card</code></p>
+      <p>The FAQ Card Component will toggle a region of content open and close
+        using a button as a trigger.</p>
+      <h3>Demonstration</h3>
+      <section class="bg-green-light p-4">
+        <article class="c-faq-card bg-white w-1/2 m-auto">
+          <div class="c-faq-card-marker"><span>FAQ</span></div>
+          <header class="c-faq-card-title">
+            <h2 class="mb-0 h4">How Do I get a free credit report?</h2>
+          </header>
+          <div aria-hidden="true" class="c-faq-card-body hidden"
+            js-target="faq">
+            <div class="c-faq-card-tags"><a class="btn btn--pill"
+                href="#">Becoming an Adult</a><a class="btn btn--pill"
+                href="#">Banking &amp; Credit</a><a class="btn btn--pill"
+                href="#">Credit Report</a></div>
+            <div class="c-faq-card-answer">
+              <p>A credit report shows your credit score but also shows the
+                accounts that make up your score. By law, you can get a free
+                credit report every 12 months. Many different websites advertise
+                free credit reports but Annual Credit Report is the only
+                official one. Check your credit report every year to make sure
+                no errors are dragging down your score. </p>
+            </div>
+          </div>
+          <div class="text-center mt-4"><button class="btn btn--faq" data="open"
+              js-trigger="faq-open"><span>Open</span><span
+                class="hidden">Close</span></button></div>
+        </article>
+      </section>
+      <h3>Markup</h3>
+      <pre class="p-4">&lt;section class=&quot;bg-green-light p-4&quot;&gt;
+  &lt;article class=&quot;c-faq-card bg-white w-1/2 m-auto&quot;&gt;
+    &lt;div class=&quot;c-faq-card-marker&quot;&gt;&lt;span&gt;FAQ&lt;/span&gt;&lt;/div&gt;
+    &lt;header class=&quot;c-faq-card-title&quot;&gt;
+      &lt;h2 class=&quot;mb-0 h4&quot;&gt;How Do I get a free credit report?&lt;/h2&gt;
+    &lt;/header&gt;
+    &lt;div aria-hidden=&quot;true&quot; class=&quot;c-faq-card-body hidden&quot; js-target=&quot;faq&quot;&gt;
+      &lt;div class=&quot;c-faq-card-tags&quot;&gt;&lt;a class=&quot;btn btn--pill&quot; href=&quot;#&quot;&gt;Becoming an
+          Adult&lt;/a&gt;&lt;a class=&quot;btn btn--pill&quot; href=&quot;#&quot;&gt;Banking &amp;amp; Credit&lt;/a&gt;&lt;a
+          class=&quot;btn btn--pill&quot; href=&quot;#&quot;&gt;Credit Report&lt;/a&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-faq-card-answer&quot;&gt;
+        &lt;p&gt;A credit report shows your credit score but also shows the accounts
+          that make up your score. By law, you can get a free credit report
+          every 12 months. Many different websites advertise free credit reports
+          but Annual Credit Report is the only official one. Check your credit
+          report every year to make sure no errors are dragging down your score.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;text-center mt-4&quot;&gt;&lt;button class=&quot;btn btn--faq&quot; data=&quot;open&quot;
+        js-trigger=&quot;faq-open&quot;&gt;&lt;span&gt;Open&lt;/span&gt;&lt;span
+          class=&quot;hidden&quot;&gt;Close&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+  &lt;/article&gt;
+&lt;/section&gt;</pre>
+    </section>
+    <section class="bg-white p-4">
+      <h2>Info card</h2>
+      <h3>Demonstration</h3>
+      <article class="c-info-card w-1/2 m-auto">
+        <header>
+          <h3 class="c-info-card__title bg-red-light">Credit Limit</h3>
+        </header>
+        <div class="c-info-card__body border-red-light">
+          <p>This is the maximum amount of money you can spend in a month. Your
+            credit limit depends on your financial history and is usually lower
+            for new credit card holders. Even so, it’s a good idea to not spend
+            all of your credit each month. Keeping your credit utilization ratio
+            (the amount you spend on your credit card divided by your total
+            credit limit) under 30% will help you achieve a higher credit score.
+          </p>
+        </div>
+      </article>
+      <h3>Markup</h3>
+      <pre class="p-4">&lt;article class=&quot;c-info-card w-1/2 m-auto&quot;&gt;
+  &lt;header&gt;
+    &lt;h3 class=&quot;c-info-card__title bg-red-light&quot;&gt;Credit Limit&lt;/h3&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;c-info-card__body border-red-light&quot;&gt;
+    &lt;p&gt;This is the maximum amount of money you can spend in a month. Your credit
+      limit depends on your financial history and is usually lower for new
+      credit card holders. Even so, it’s a good idea to not spend all of your
+      credit each month. Keeping your credit utilization ratio (the amount you
+      spend on your credit card divided by your total credit limit) under 30%
+      will help you achieve a higher credit score.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</pre>
+    </section>
+    <section class="bg-white p-4">
+      <h2>Info card outline</h2>
+      <h3>Demonstration</h3>
+      <article class="c-info-card--outline border-red-light w-1/2 m-auto">
+        <header>
+          <h3 class="c-info-card--outline__title border-red-light">Credit Limit
+          </h3>
+        </header>
+        <div class="c-info-card--outline__body">
+          <p>This is the maximum amount of money you can spend in a month. Your
+            credit limit depends on your financial history and is usually lower
+            for new credit card holders. Even so, it’s a good idea to not spend
+            all of your credit each month. Keeping your credit utilization ratio
+            (the amount you spend on your credit card divided by your total
+            credit limit) under 30% will help you achieve a higher credit score.
+          </p>
+        </div>
+      </article>
+      <h3>Markup</h3>
+      <pre class="p-4">&lt;article class=&quot;c-info-card--outline border-red-light w-1/2 m-auto&quot;&gt;
+  &lt;header&gt;
+    &lt;h3 class=&quot;c-info-card--outline__title border-red-light&quot;&gt;Credit Limit&lt;/h3&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;c-info-card--outline__body&quot;&gt;
+    &lt;p&gt;This is the maximum amount of money you can spend in a month. Your credit
+      limit depends on your financial history and is usually lower for new
+      credit card holders. Even so, it’s a good idea to not spend all of your
+      credit each month. Keeping your credit utilization ratio (the amount you
+      spend on your credit card divided by your total credit limit) under 30%
+      will help you achieve a higher credit score.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</pre>
+    </section>
+    <section class="bg-white p-4">
+      <h2>Info card</h2>
+      <h3>Demonstration</h3>
+      <section class="bg-yellow p-4">
+        <article class="c-inspiration-card bg-white w-1/2 m-auto">
+          <header class="c-inspiration-card__header">
+            <div class="sticker"></div>
+            <div class="ml-2">
+              <p class="c-inspiration-card__marker">Inspiration</p>
+              <h2 class="c-inspiration-card__title">Ian, 16</h2>
+            </div>
+          </header>
+          <div class="c-inspiration-card-body">
+            <div class="c-inspiration-card-answer">
+              <p>“Ever since then, I’ve been trying to fight for Black and
+                Latino rights because I believe that what those police officers
+                did to me was a direct violation of my own.”</p>
+            </div>
+            <div class="c-inspiration-card-tags"><a class="btn btn--pill"
+                href="#">Becoming an Adult</a><a class="btn btn--pill"
+                href="#">Banking &amp; Credit</a><a class="btn btn--pill"
+                href="#">Credit Report</a></div>
+          </div>
+          <div class="c-inspiration-card__cta"><a
+              class="btn btn--inspiration">Read More</a></div>
+        </article>
+      </section>
+      <h3>Markup</h3>
+      <pre class="p-4">&lt;section class=&quot;bg-yellow p-4&quot;&gt;
+  &lt;article class=&quot;c-inspiration-card bg-white w-1/2 m-auto&quot;&gt;
+    &lt;header class=&quot;c-inspiration-card__header&quot;&gt;
+      &lt;div class=&quot;sticker&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;ml-2&quot;&gt;
+        &lt;p class=&quot;c-inspiration-card__marker&quot;&gt;Inspiration&lt;/p&gt;
+        &lt;h2 class=&quot;c-inspiration-card__title&quot;&gt;Ian, 16&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;c-inspiration-card-body&quot;&gt;
+      &lt;div class=&quot;c-inspiration-card-answer&quot;&gt;
+        &lt;p&gt;“Ever since then, I’ve been trying to fight for Black and Latino
+          rights because I believe that what those police officers did to me was
+          a direct violation of my own.”&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;c-inspiration-card-tags&quot;&gt;&lt;a class=&quot;btn btn--pill&quot;
+          href=&quot;#&quot;&gt;Becoming an Adult&lt;/a&gt;&lt;a class=&quot;btn btn--pill&quot;
+          href=&quot;#&quot;&gt;Banking &amp;amp; Credit&lt;/a&gt;&lt;a class=&quot;btn btn--pill&quot;
+          href=&quot;#&quot;&gt;Credit Report&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;c-inspiration-card__cta&quot;&gt;&lt;a class=&quot;btn btn--inspiration&quot;&gt;Read
+        More&lt;/a&gt;&lt;/div&gt;
+  &lt;/article&gt;
+&lt;/section&gt;</pre>
+    </section>
+  </main>
+  <footer class="text-center p-4 text-white">
+    <h2 class="h6">elements</h2><a class="o-navigation-link"
+      href="breadcrumbs">Breadcrumbs</a><a class="o-navigation-link"
+      href="buttons">Buttons</a><a class="o-navigation-link"
+      href="layout">Layout</a><a class="o-navigation-link"
+      href="links">Links</a><a class="o-navigation-link" href="list">List</a><a
+      class="o-navigation-link" href="sticker">Sticker</a>
+    <h2 class="h6">components</h2><a class="o-navigation-link"
+      href="accordion">Accordion</a><a class="o-navigation-link"
+      href="card">Cards</a><a class="o-navigation-link" href="hero">Hero</a><a
+      class="o-navigation-link" href="jumbotron">Jumbotron</a><a
+      class="o-navigation-link" href="share">Share</a>
+    <h2 class="h6">objects</h2><a class="o-navigation-link"
+      href="footer">Footer</a><a class="o-navigation-link"
+      href="navigation">Navigation</a>
+    <h2 class="h6">utilities</h2><a class="o-navigation-link"
+      href="anchor">Anchor</a><a class="o-navigation-link"
+      href="gradient">Gradient</a><a class="o-navigation-link"
+      href="pagination">Pagination</a><a class="o-navigation-link"
+      href="typography">Typography</a>
+    <p>Last updated January 28, 2021</p>
+  </footer>
+  <script src="js/default.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/CityOfNewYork/nyco-patterns-framework@v1.0.0-15/dist/utilities/icons/icons.iffe.js">
+  </script>
+  <script type="text/javascript">
+    var MyPatterns = new Default();
+    new Icons('svgs.svg');
+    MyPatterns.faq()
+  </script>
+  <script src="/reload/reload.js"></script>
+</body>
+
+</html>

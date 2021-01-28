@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="svg/pttrn-a-perfect-heart-red.svg" rel="icon"
+    type="image/svg+xml" />
+  <title>@nycopportunity/generationnyc-patterns</title>
+  <link href="styles/default.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css"
+    rel="stylesheet" />
+  <script
+    src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js">
+  </script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(event) {
+      hljs.configure({
+        languages: ['html', 'javascript', 'css', 'sass']
+      });
+      document.querySelectorAll('pre').forEach(function(pre) {
+        pre.setAttribute('tabindex', '0');
+        hljs.highlightBlock(pre);
+      });
+    });
+  </script>
+</head>
+
+<body class="bg-black p-4">
+  <header class="text-center text-white p-4">
+    <h1 class="break-words h3">Welcome
+      to<br />@nycopportunity/generationnyc-patterns v1.0.0-1</h1>
+    <p>NYC teens and young adults can find help with navigating City resources,
+      including a variety of topics, trips, and inspirational youth profiles.
+    </p><br />
+  </header>
+  <main>
+    <section class="bg-white p-4">
+      <h2>Breadcrumbs</h2>
+      <p><strong>Source:</strong>
+        <code>src/elements/breadcrumbs/breadcrumbs</code>
+      </p>
+      <p>Specs about the Breadcrumbs elements.</p>
+      <h3>Demonstration</h3>
+      <nav class="breadcrumbs text-center"><a href="#">Topics</a><svg
+          aria-hidden="true" class="icon-xs text-dark-gray-dark">
+          <use xlink:href="#pttrn-icon-chevron-right"></use>
+        </svg><a href="#">Banking and Credit</a></nav>
+      <h3>Markup</h3>
+      <pre
+        class="p-4">&lt;nav class=&quot;breadcrumbs text-center&quot;&gt;&lt;a href=&quot;#&quot;&gt;Topics&lt;/a&gt;&lt;svg
+    aria-hidden=&quot;true&quot; class=&quot;icon-xs text-dark-gray-dark&quot;&gt;
+    &lt;use xlink:href=&quot;#pttrn-icon-chevron-right&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt;&lt;a href=&quot;#&quot;&gt;Banking and Credit&lt;/a&gt;&lt;/nav&gt;</pre>
+    </section>
+  </main>
+  <footer class="text-center p-4 text-white">
+    <h2 class="h6">elements</h2><a class="o-navigation-link"
+      href="breadcrumbs">Breadcrumbs</a><a class="o-navigation-link"
+      href="buttons">Buttons</a><a class="o-navigation-link"
+      href="layout">Layout</a><a class="o-navigation-link"
+      href="links">Links</a><a class="o-navigation-link" href="list">List</a><a
+      class="o-navigation-link" href="sticker">Sticker</a>
+    <h2 class="h6">components</h2><a class="o-navigation-link"
+      href="accordion">Accordion</a><a class="o-navigation-link"
+      href="card">Cards</a><a class="o-navigation-link" href="hero">Hero</a><a
+      class="o-navigation-link" href="jumbotron">Jumbotron</a><a
+      class="o-navigation-link" href="share">Share</a>
+    <h2 class="h6">objects</h2><a class="o-navigation-link"
+      href="footer">Footer</a><a class="o-navigation-link"
+      href="navigation">Navigation</a>
+    <h2 class="h6">utilities</h2><a class="o-navigation-link"
+      href="anchor">Anchor</a><a class="o-navigation-link"
+      href="gradient">Gradient</a><a class="o-navigation-link"
+      href="pagination">Pagination</a><a class="o-navigation-link"
+      href="typography">Typography</a>
+    <p>Last updated January 28, 2021</p>
+  </footer>
+  <script src="js/default.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/CityOfNewYork/nyco-patterns-framework@v1.0.0-15/dist/utilities/icons/icons.iffe.js">
+  </script>
+  <script type="text/javascript">
+    var MyPatterns = new Default();
+    new Icons('svgs.svg');
+    MyPatterns.faq()
+  </script>
+  <script src="/reload/reload.js"></script>
+</body>
+
+</html>
