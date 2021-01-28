@@ -10,6 +10,7 @@
   background-color: #F4D8CD;
   margin: 0;
   @include type.set('body');
+  font-weight: bold;
 }
 
 .c-info-card__body {
@@ -31,5 +32,5 @@
   border-bottom-style: solid;
   margin: 0;
   @include type.set('body');
-
+  font-weight: bold;
 }
