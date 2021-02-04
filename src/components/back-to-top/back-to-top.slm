@@ -1,0 +1,6 @@
+/ Back-to-top
+
+
+div class='c-back-to-top pb-2 pr-6 hidden' data-js="back-to-top"
+  a href='#main' class='btn btn--round text-center'
+    span = 'Back to top'

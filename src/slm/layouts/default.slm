@@ -28,7 +28,7 @@ html lang='en'
           });
       });
 
-  body class='bg-black p-4'
+  body class='bg-black'
     header class='text-center text-white p-4'
       h1 class='break-words h3'
         = 'Welcome to'
@@ -39,7 +39,7 @@ html lang='en'
 
       br
 
-    main
+    main class='px-4'
       = content('main')
 
     = partial('/slm/partials/footer.slm');

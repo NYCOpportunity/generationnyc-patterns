@@ -38,23 +38,20 @@
   </header>
   <main class="px-4">
     <section class="bc-white p-4">
-      <h2>Typography</h2>
+      <h2>Back-to-top</h2>
+      <p><strong>Source:</strong>
+        <code>src/components/back-to-top/back-to-top</code>
+      </p>
+      <p>Specs about the Back-to-top components.</p>
       <h3>Demonstration</h3>
-      <h1>Header 1</h1>
-      <h2>Header 2</h2>
-      <h3>Header 3</h3>
-      <h4>Header 4</h4>
-      <h5>Header 5</h5>
-      <h6>Header 6</h6>
-      <p>Paragraph</p>
+      <div class="c-back-to-top pb-2 pr-6 hidden" data-js="back-to-top"><a
+          class="btn btn--round text-center" href="#main"><span>Back to
+            top</span></a>
+      </div>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;h3&gt;Header 3&lt;/h3&gt;
-&lt;h4&gt;Header 4&lt;/h4&gt;
-&lt;h5&gt;Header 5&lt;/h5&gt;
-&lt;h6&gt;Header 6&lt;/h6&gt;
-&lt;p&gt;Paragraph&lt;/p&gt;</pre>
+      <pre class="p-4">&lt;div class=&quot;c-back-to-top pb-2 pr-6 hidden&quot; data-js=&quot;back-to-top&quot;&gt;&lt;a
+    class=&quot;btn btn--round text-center&quot; href=&quot;#main&quot;&gt;&lt;span&gt;Back to top&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
     </section>
   </main>
   <footer class="text-center p-4 text-white">
@@ -87,6 +84,9 @@
     var MyPatterns = new Default();
     new Icons('svgs.svg');
     MyPatterns.faq()
+  </script>
+  <script type="text/javascript">
+    MyPatterns.back2Top()
   </script>
   <script src="/reload/reload.js"></script>
 </body>

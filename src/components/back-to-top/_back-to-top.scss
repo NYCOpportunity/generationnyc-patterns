@@ -1,0 +1,13 @@
+/**
+ * Back-to-top
+ */
+
+// Dependencies
+@use 'config/tokens' as *;
+
+// Declarations
+.c-back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

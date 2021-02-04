@@ -4,6 +4,7 @@
  * Components
  */
 import Accordion from '../components/accordion/accordion';
+import BackToTop from '../components/back-to-top/back-to-top';
 import Faq from '../components/card/faq-card';
 
 /**
@@ -35,6 +36,10 @@ class Default {
 
   anchor() {
     return new Anchor();
+  }
+
+  back2Top() {
+    return new BackToTop();
   }
 
 }
