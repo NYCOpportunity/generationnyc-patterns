@@ -1,0 +1,13 @@
+
+// Dependencies
+@use 'config/tokens' as *;
+@use 'config/type';
+
+// Declaration
+@mixin field(){
+  height: 45px;
+  padding: 0 12px;
+  @include type.set('body');
+  border-style: solid;
+  border-width: 2px;
+}

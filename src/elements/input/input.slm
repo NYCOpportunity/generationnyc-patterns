@@ -1,0 +1,9 @@
+/ Input
+
+div
+  label for="email" class="block"
+    span class=""
+      = 'Email'
+    
+  input class="input" type="email" name="email" value=""
+  

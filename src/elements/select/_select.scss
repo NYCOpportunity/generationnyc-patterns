@@ -1,0 +1,23 @@
+/**
+ * Select
+ */
+
+@use 'config/fields';
+
+.select {
+  @include fields.field();
+  padding-right: 28px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select__icon {
+  margin-left: -20px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.select__label {
+  margin-right: 12px;
+}

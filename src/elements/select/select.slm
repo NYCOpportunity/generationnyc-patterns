@@ -1,0 +1,19 @@
+/ Select
+
+/ container
+div class='select__container'
+  label class='select__label' for='language' = 'Translate'
+  select class='select' name='language' id='language'
+    option value='en' = 'English'
+    option value='ar' = 'Arabic'
+    option value='bn' = 'Bengali'
+    option value='fr' = 'French'
+    option value='ht' = 'Haitian Creole'
+    option value='ko' = 'Korean'
+    option value='pl' = 'Polish'
+    option value='ru' = 'Russian'
+    option value='es' = 'Spanish'
+    option value='zh-hant' = 'Traditional Chinese'
+    option value='ur' = 'Urdu'
+  svg class='select__icon icon-xs text-black' aria-hidden='true'
+    use xlink:href='#pttrn-icon-chevron-down'

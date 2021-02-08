@@ -1,0 +1,12 @@
+/**
+ * Input
+ */
+
+// Dependencies
+// @use 'config/tokens' as *;
+@use 'config/fields';
+
+// Declarations
+.input {
+  @include fields.field();
+}
