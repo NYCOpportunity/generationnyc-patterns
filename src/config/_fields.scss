@@ -1,12 +1,16 @@
 
 // Dependencies
 @use 'config/type';
+@use 'config/media';
 
 // Declaration
 @mixin field(){
-  height: 45px;
-  padding: 0 12px;
-  @include type.set('body');
+  @include type.set('small');
   border-style: solid;
   border-width: 2px;
+  padding: 10px;
+
+  @include media.mq('tablet') {
+    @include type.set('body');
+  }
 }

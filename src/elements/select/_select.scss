@@ -3,23 +3,34 @@
  */
 
 @use 'config/fields';
+@use 'config/media';
+@use 'config/type';
 
 .select {
   @include fields.field();
+  width: 100%;
   background-color: transparent;
-  padding-right: 28px;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  
+  @include media.mq('tablet') {
+    padding-right: 28px;
+    width: auto;
+  }
 }
 
 .select__icon {
-  margin-left: -20px;
+  margin-left: -25px;
   z-index: -1;
   pointer-events: none;
   color: inherit;
 }
 
 .select__label {
+  @include type.set('small');
   margin-right: 12px;
+  @include media.mq('tablet') {
+    @include type.set('body');
+  }
 }

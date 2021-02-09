@@ -15,6 +15,10 @@
   color: $text;
   text-decoration: none;
   @include type.set('body');
+
+  span {
+    pointer-events: none;
+  }
 }
 
 @mixin hover($background, $border, $text) {

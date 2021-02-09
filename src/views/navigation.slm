@@ -18,3 +18,5 @@
       = this.include('objects/navigation/navigation.slm');
 
 = content('scripts')
+  javascript:
+    MyPatterns.navigation()

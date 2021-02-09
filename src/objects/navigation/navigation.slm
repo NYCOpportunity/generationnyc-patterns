@@ -13,7 +13,7 @@ nav class='o-navigation bg-black text-white'
       = 'NYC’s Official Guide for'
       br =  'Young New Yorkers'
 
-  div class='o-navigation-items grid grid-rows-2 text-right items-end hidden tablet:inline'
+  div class='o-navigation-items hidden tablet:grid grid-rows-2 text-right items-end'
     div class='select__container text-right text-white pb-2 pr-4'
       label class='select__label' for='language' = 'Translate'
       select class='select text-white border-white' name='language' id='language'
@@ -31,7 +31,7 @@ nav class='o-navigation bg-black text-white'
       svg class='select__icon icon-xs' aria-hidden='true'
         use xlink:href='#pttrn-icon-chevron-down'
 
-    div class='o-navigation-links pt-6'
+    div class='o-navigation-links tablet:pt-6'
       a href='#' class='hidden tablet:inline o-navigation-link' = 'Topics'
       a href='#' class='hidden tablet:inline o-navigation-link' = 'Inspirations'
       a href='#' class='hidden tablet:inline o-navigation-link' = 'Trips'
@@ -40,6 +40,56 @@ nav class='o-navigation bg-black text-white'
         svg class='select__icon icon-sm text-white' aria-hidden='true'
           use xlink:href='#pttrn-icon-search'
   
-  button class='btn--secondary tablet:hidden'
-    
+  button class='btn--secondary tablet:hidden' data-js='navigation' aria-controls='toggle-mobile-menu'
     span class='' Menu
+
+/ Mobile Menu
+aside aria-hidden="true" class='o-navigation-mobile bg-gradient-y-1 hidden' id="toggle-mobile-menu"
+  div class='grid grid-cols-2 pb-4'
+    div class='flex items-center'
+      a href='/' class='o-navigation-logo text-black'
+        span class='sr-only' Generation NYC
+
+        svg class='icon-logo' aria-hidden='true'
+          use xlink:href='#pttrn-logo-gen'
+      
+      span class='o-navigation__text text-black' 
+        = 'NYC’s Official Guide for'
+        br =  'Young New Yorkers'
+
+    div class='flex items-center justify-end'
+      button class='btn--primary tablet:hidden' data-js='navigation' aria-controls='toggle-mobile-menu'
+        span class='' Close
+
+  div class='o-navigation-items'
+    div class='select__container text-black px-2'
+      select class='select text-black border-black' name='language' id='language'
+        option value='en' = 'English'
+        option value='ar' = 'Arabic'
+        option value='bn' = 'Bengali'
+        option value='fr' = 'French'
+        option value='ht' = 'Haitian Creole'
+        option value='ko' = 'Korean'
+        option value='pl' = 'Polish'
+        option value='ru' = 'Russian'
+        option value='es' = 'Spanish'
+        option value='zh-hant' = 'Traditional Chinese'
+        option value='ur' = 'Urdu'
+      svg class='select__icon icon-xs' aria-hidden='true'
+        use xlink:href='#pttrn-icon-chevron-down'
+
+  a href='#' class='link--outline border-black'
+    = 'Topics'
+    span class='link--icon'
+      svg class='icon-xs text-white' aria-hidden='true'
+        use xlink:href='#pttrn-icon-chevron-right'
+  a href='#' class='link--outline border-black'
+    = 'Inspirations'
+    span class='link--icon'
+      svg class='icon-xs text-white' aria-hidden='true'
+        use xlink:href='#pttrn-icon-chevron-right'
+  a href='#' class='link--outline border-black'
+    = 'Trips'
+    span class='link--icon'
+      svg class='icon-xs text-white' aria-hidden='true'
+        use xlink:href='#pttrn-icon-chevron-right'

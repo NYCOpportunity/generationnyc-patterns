@@ -15,8 +15,27 @@
   justify-content: space-between;
 }
 
+.o-navigation-mobile {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+
+  a {
+    margin-bottom: .5rem;
+  }
+}
+
 .o-navigation-items {
   min-width: 50%;
+  padding-bottom: 1rem;
+
+  @include media.mq('tablet') {
+    padding-bottom: 0;
+  }
+
 }
 
 .o-navigation-logo {
@@ -27,9 +46,11 @@
 }
 
 .o-navigation-links {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  @include media.mq('tablet') {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 }
 
 .o-navigation-link {

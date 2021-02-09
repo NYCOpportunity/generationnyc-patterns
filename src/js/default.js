@@ -7,6 +7,8 @@ import Accordion from '../components/accordion/accordion';
 import BackToTop from '../components/back-to-top/back-to-top';
 import Faq from '../components/card/faq-card';
 
+import Navigation from '../objects/navigation/navigation';
+
 /**
  * Utilities
  */
@@ -32,6 +34,10 @@ class Default {
 
   accordion() {
     return new Accordion();
+  }
+
+  navigation() {
+    return new Navigation();
   }
 
   anchor() {
