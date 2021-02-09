@@ -69,4 +69,18 @@
     pre class='p-4'
       = this.include('elements/buttons/button--round.slm');
 
+  section class='bg-white p-4'
+    h2 = 'Icon Button'
+
+    / == this.include('elements/buttons/button--round.md');
+
+    h3 Demonstration
+
+    == this.include('elements/buttons/button--icon.slm');
+
+    h3 Markup
+
+    pre class='p-4'
+      = this.include('elements/buttons/button--icon.slm');
+
 = content('scripts')

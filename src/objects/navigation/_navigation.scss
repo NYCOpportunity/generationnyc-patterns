@@ -15,11 +15,21 @@
   justify-content: space-between;
 }
 
+.o-navigation-items {
+  min-width: 50%;
+}
+
 .o-navigation-logo {
   height: 51.81px;
   @include media.mq('tablet') {
     height: 115px;
   }
+}
+
+.o-navigation-links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .o-navigation-link {

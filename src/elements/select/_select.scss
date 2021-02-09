@@ -6,6 +6,7 @@
 
 .select {
   @include fields.field();
+  background-color: transparent;
   padding-right: 28px;
   appearance: none;
   -webkit-appearance: none;
@@ -16,6 +17,7 @@
   margin-left: -20px;
   z-index: -1;
   pointer-events: none;
+  color: inherit;
 }
 
 .select__label {
