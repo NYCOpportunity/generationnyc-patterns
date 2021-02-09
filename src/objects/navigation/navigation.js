@@ -5,7 +5,6 @@ import Toggle from '@nycopportunity/pttrn-scripts/src/toggle/toggle';
 class Navigation {
  
   constructor(settings, data) {
-    console.log('here')
     this.settings = new Toggle({
       selector: Navigation.selector
     });
