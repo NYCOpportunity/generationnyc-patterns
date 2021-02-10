@@ -42,32 +42,61 @@
       <p><strong>Source:</strong> <code>src/objects/footer/footer</code></p>
       <p>Specs about the Footer objects.</p>
       <h3>Demonstration</h3>
-      <div class="o-footer bg-black grid grid-cols-2 tablet:grid-cols-1">
-        <div class="o-footer__section p-4"><a class="o-footer-logo"
-            href="/"><span class="sr-only">Generation NYC</span><svg
-              aria-hidden="true">
-              <use xlink:href="#pttrn-logo-gen"></use>
-            </svg></a><a class="o-footer__link" href="#">Topics</a><a
-            class="o-footer__link" href="#">Inspirations</a><a
-            class="o-footer__link" href="#">Trips</a></div>
-        <div class="o-footer__section p-4"><a class="o-footer-logo"
-            href="/"><span class="sr-only">NYC Children's Cabinet</span><svg
-              aria-hidden="true">
-              <use xlink:href="#pttrn-logo-nyc-childrens-cabinet"></use>
-            </svg></a><a class="o-footer__link" href="#">Fun at Home</a></div>
+      <div class="o-footer block tablet:grid tablet:grid-cols-3">
+        <div class="grid grid-cols-2 tablet:block tablet:col-span-2">
+          <div class="o-footer__section p-4"><a class="o-footer-logo"
+              href="/"><span class="sr-only">Generation NYC</span><svg
+                aria-hidden="true">
+                <use xlink:href="#pttrn-logo-gen"></use>
+              </svg></a><a class="o-footer__link" href="#">Topics</a><a
+              class="o-footer__link" href="#">Inspirations</a><a
+              class="o-footer__link" href="#">Trips</a></div>
+          <div class="o-footer__section p-4"><a class="o-footer-logo"
+              href="/"><span class="sr-only">NYC Children's Cabinet</span><svg
+                aria-hidden="true">
+                <use xlink:href="#pttrn-logo-nyc-cc-nyco"></use>
+              </svg></a><a class="o-footer__link" href="#">Fun at Home</a></div>
+        </div>
+        <div class="col-span-1">
+          <div class="p-4">
+            <div class="text-center"><a class="o-footer__link py-1"
+                href="#">Terms of Use</a><a class="o-footer__link py-1"
+                href="#">Privacy Policy</a>
+            </div>
+            <div>
+              <p class="o-footer__copyright">© 2020 City of New York. All Rights
+                Reserved. NYC is a trademark and service mark of the City of New
+                York. </p>
+            </div>
+          </div>
+        </div>
       </div>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;div class=&quot;o-footer bg-black grid grid-cols-2 tablet:grid-cols-1&quot;&gt;
-  &lt;div class=&quot;o-footer__section p-4&quot;&gt;&lt;a class=&quot;o-footer-logo&quot; href=&quot;/&quot;&gt;&lt;span
-        class=&quot;sr-only&quot;&gt;Generation NYC&lt;/span&gt;&lt;svg aria-hidden=&quot;true&quot;&gt;
-        &lt;use xlink:href=&quot;#pttrn-logo-gen&quot;&gt;&lt;/use&gt;
-      &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Topics&lt;/a&gt;&lt;a
-      class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Inspirations&lt;/a&gt;&lt;a class=&quot;o-footer__link&quot;
-      href=&quot;#&quot;&gt;Trips&lt;/a&gt;&lt;/div&gt;
-  &lt;div class=&quot;o-footer__section p-4&quot;&gt;&lt;a class=&quot;o-footer-logo&quot; href=&quot;/&quot;&gt;&lt;span
-        class=&quot;sr-only&quot;&gt;NYC Children's Cabinet&lt;/span&gt;&lt;svg aria-hidden=&quot;true&quot;&gt;
-        &lt;use xlink:href=&quot;#pttrn-logo-nyc-childrens-cabinet&quot;&gt;&lt;/use&gt;
-      &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Fun at Home&lt;/a&gt;&lt;/div&gt;
+      <pre class="p-4">&lt;div class=&quot;o-footer block tablet:grid tablet:grid-cols-3&quot;&gt;
+  &lt;div class=&quot;grid grid-cols-2 tablet:block tablet:col-span-2&quot;&gt;
+    &lt;div class=&quot;o-footer__section p-4&quot;&gt;&lt;a class=&quot;o-footer-logo&quot; href=&quot;/&quot;&gt;&lt;span
+          class=&quot;sr-only&quot;&gt;Generation NYC&lt;/span&gt;&lt;svg aria-hidden=&quot;true&quot;&gt;
+          &lt;use xlink:href=&quot;#pttrn-logo-gen&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Topics&lt;/a&gt;&lt;a
+        class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Inspirations&lt;/a&gt;&lt;a
+        class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Trips&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;o-footer__section p-4&quot;&gt;&lt;a class=&quot;o-footer-logo&quot; href=&quot;/&quot;&gt;&lt;span
+          class=&quot;sr-only&quot;&gt;NYC Children's Cabinet&lt;/span&gt;&lt;svg aria-hidden=&quot;true&quot;&gt;
+          &lt;use xlink:href=&quot;#pttrn-logo-nyc-cc-nyco&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Fun at Home&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-span-1&quot;&gt;
+    &lt;div class=&quot;p-4&quot;&gt;
+      &lt;div class=&quot;text-center&quot;&gt;&lt;a class=&quot;o-footer__link py-1&quot; href=&quot;#&quot;&gt;Terms of
+          Use&lt;/a&gt;&lt;a class=&quot;o-footer__link py-1&quot; href=&quot;#&quot;&gt;Privacy Policy&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;p class=&quot;o-footer__copyright&quot;&gt;© 2020 City of New York. All Rights
+          Reserved. NYC is a trademark and service mark of the City of New York.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</pre>
     </section>
   </main>
@@ -91,7 +120,7 @@
       href="gradient">Gradient</a><a class="o-navigation-link"
       href="pagination">Pagination</a><a class="o-navigation-link"
       href="typography">Typography</a>
-    <p>Last updated February 4, 2021</p>
+    <p>Last updated February 10, 2021</p>
   </footer>
   <script src="js/default.js"></script>
   <script

@@ -62,3 +62,7 @@
     margin-bottom: 0;
   }
 }
+
+.o-footer__copyright {
+  @include type.set('small');
+}

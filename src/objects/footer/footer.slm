@@ -1,24 +1,33 @@
 / Footer
 
 / container
-div class='o-footer bg-black grid grid-cols-2 tablet:grid-cols-1'
-  div class='o-footer__section p-4'
-    a href='/' class='o-footer-logo'
-      span class='sr-only' Generation NYC
+div class='o-footer block tablet:grid tablet:grid-cols-3'
+  div class='grid grid-cols-2 tablet:block tablet:col-span-2'
+    div class='o-footer__section p-4'
+      a href='/' class='o-footer-logo'
+        span class='sr-only' Generation NYC
 
-      svg class='' aria-hidden='true'
-        use xlink:href='#pttrn-logo-gen'
-  
-    a href='#' class='o-footer__link' = 'Topics'
-    a href='#' class='o-footer__link' = 'Inspirations'
-    a href='#' class='o-footer__link' = 'Trips'
-  
-  div class='o-footer__section p-4'
-    a href='/' class='o-footer-logo'
-      span class='sr-only' = 'NYC Children\'s Cabinet'
-
-      svg class='' aria-hidden='true'
-        use xlink:href='#pttrn-logo-nyc-childrens-cabinet'
+        svg class='' aria-hidden='true'
+          use xlink:href='#pttrn-logo-gen'
     
-    a href='#' class='o-footer__link' = 'Fun at Home'
+      a href='#' class='o-footer__link' = 'Topics'
+      a href='#' class='o-footer__link' = 'Inspirations'
+      a href='#' class='o-footer__link' = 'Trips'
+    
+    div class='o-footer__section p-4'
+      a href='/' class='o-footer-logo'
+        span class='sr-only' = 'NYC Children\'s Cabinet'
+
+        svg class='' aria-hidden='true'
+          use xlink:href='#pttrn-logo-nyc-cc-nyco'
+      
+      a href='#' class='o-footer__link' = 'Fun at Home'
+
+  div class='col-span-1'
+    div class='p-4'
+      div class='text-center'
+        a class='o-footer__link py-1' href='#' = 'Terms of Use'
+        a class='o-footer__link py-1' href='#' = 'Privacy Policy'
+      div class=''
+        p class='o-footer__copyright' = '© 2020 City of New York. All Rights Reserved. NYC is a trademark and service mark of the City of New York.'
   
