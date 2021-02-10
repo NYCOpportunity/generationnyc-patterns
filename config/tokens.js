@@ -144,8 +144,10 @@ module.exports = {
     'icon-gen-chevron-right'
   ],
   'screens': {
-    'desktop': '1024px',
-    'tablet': '768px',
     'mobile': '375px',
+    'tablet': '768px',
+    'desktop': '1024px',
+    'xl': '1280px',
+    '2xl': '1536px',
   },
 };

@@ -24,10 +24,10 @@ div class='o-footer block tablet:grid tablet:grid-cols-3'
       a href='#' class='o-footer__link' = 'Fun at Home'
 
   div class='col-span-1'
-    div class='p-4'
-      div class='text-center'
-        a class='o-footer__link py-1' href='#' = 'Terms of Use'
-        a class='o-footer__link py-1' href='#' = 'Privacy Policy'
+    div class="p-4"
+      div class="text-center"
+        a class="o-footer__link py-1" href="#" = 'Terms of Use'
+        a class="o-footer__link py-1" href="#" = 'Privacy Policy'
       div class=''
-        p class='o-footer__copyright' = '© 2020 City of New York. All Rights Reserved. NYC is a trademark and service mark of the City of New York.'
+        p class="o-footer__copyright" = '© 2020 City of New York. All Rights Reserved. NYC is a trademark and service mark of the City of New York.'
   
