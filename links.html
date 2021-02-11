@@ -28,7 +28,54 @@
   </script>
 </head>
 
-<body class="bg-black p-4">
+<body class="bg-black">
+  <nav class="o-navigation bg-black text-white">
+    <div class="flex items-end"><a class="o-navigation-logo h-auto text-white"
+        href="/"><span class="sr-only">Generation NYC</span><svg
+          aria-hidden="true" class="icon-logo-small">
+          <use xlink:href="#pttrn-logo-gen"></use>
+        </svg></a><span class="o-navigation__text text-white">Patterns</span>
+    </div><button aria-controls="toggle-navigation" class="btn--secondary"
+      data-js="navigation"><span>Menu</span></button>
+  </nav>
+  <aside aria-hidden="true" class="o-navigation-mobile bg-gradient-y-1 hidden"
+    id="toggle-navigation">
+    <div class="grid grid-cols-2 pb-4">
+      <div class="flex items-end"><span
+          class="o-navigation-logo mb-0 h-auto text-black" href="/"><span
+            class="sr-only">Generation NYC</span><svg aria-hidden="true"
+            class="icon-logo-small">
+            <use xlink:href="#pttrn-logo-gen"></use>
+          </svg></span><span
+          class="o-navigation__text text-black">Patterns</span></div>
+      <div class="flex items-center justify-end"><button
+          aria-controls="toggle-navigation" class="btn--primary"
+          data-js="navigation"><span>Close</span></button></div>
+    </div>
+    <div class="text-center">
+      <h2 class="h6">elements</h2><a class="o-navigation-link block ml-0"
+        href="breadcrumbs">Breadcrumbs</a><a
+        class="o-navigation-link block ml-0" href="buttons">Buttons</a><a
+        class="o-navigation-link block ml-0" href="layout">Layout</a><a
+        class="o-navigation-link block ml-0" href="links">Links</a><a
+        class="o-navigation-link block ml-0" href="list">List</a><a
+        class="o-navigation-link block ml-0" href="sticker">Sticker</a>
+      <h2 class="h6">components</h2><a class="o-navigation-link block ml-0"
+        href="accordion">Accordion</a><a class="o-navigation-link block ml-0"
+        href="card">Cards</a><a class="o-navigation-link block ml-0"
+        href="hero">Hero</a><a class="o-navigation-link block ml-0"
+        href="jumbotron">Jumbotron</a><a class="o-navigation-link block ml-0"
+        href="share">Share</a>
+      <h2 class="h6">objects</h2><a class="o-navigation-link block ml-0"
+        href="footer">Footer</a><a class="o-navigation-link block ml-0"
+        href="navigation">Navigation</a>
+      <h2 class="h6">utilities</h2><a class="o-navigation-link block ml-0"
+        href="anchor">Anchor</a><a class="o-navigation-link block ml-0"
+        href="gradient">Gradient</a><a class="o-navigation-link block ml-0"
+        href="pagination">Pagination</a><a class="o-navigation-link block ml-0"
+        href="typography">Typography</a>
+    </div>
+  </aside>
   <header class="text-center text-white p-4">
     <h1 class="break-words h3">Welcome
       to<br />@nycopportunity/generationnyc-patterns v1.0.0-1</h1>
@@ -36,7 +83,7 @@
       including a variety of topics, trips, and inspirational youth profiles.
     </p><br />
   </header>
-  <main>
+  <main class="px-4">
     <section class="bg-white p-4">
       <h2>Links</h2>
       <p><strong>Source:</strong> <code>src/elements/links/links</code></p>
@@ -54,26 +101,7 @@
     </section>
   </main>
   <footer class="text-center p-4 text-white">
-    <h2 class="h6">elements</h2><a class="o-navigation-link"
-      href="breadcrumbs">Breadcrumbs</a><a class="o-navigation-link"
-      href="buttons">Buttons</a><a class="o-navigation-link"
-      href="layout">Layout</a><a class="o-navigation-link"
-      href="links">Links</a><a class="o-navigation-link" href="list">List</a><a
-      class="o-navigation-link" href="sticker">Sticker</a>
-    <h2 class="h6">components</h2><a class="o-navigation-link"
-      href="accordion">Accordion</a><a class="o-navigation-link"
-      href="card">Cards</a><a class="o-navigation-link" href="hero">Hero</a><a
-      class="o-navigation-link" href="jumbotron">Jumbotron</a><a
-      class="o-navigation-link" href="share">Share</a>
-    <h2 class="h6">objects</h2><a class="o-navigation-link"
-      href="footer">Footer</a><a class="o-navigation-link"
-      href="navigation">Navigation</a>
-    <h2 class="h6">utilities</h2><a class="o-navigation-link"
-      href="anchor">Anchor</a><a class="o-navigation-link"
-      href="gradient">Gradient</a><a class="o-navigation-link"
-      href="pagination">Pagination</a><a class="o-navigation-link"
-      href="typography">Typography</a>
-    <p>Last updated January 28, 2021</p>
+    <p>Last updated February 11, 2021</p>
   </footer>
   <script src="js/default.js"></script>
   <script
@@ -83,6 +111,7 @@
     var MyPatterns = new Default();
     new Icons('svgs.svg');
     MyPatterns.faq()
+    MyPatterns.navigation()
   </script>
   <script src="/reload/reload.js"></script>
 </body>

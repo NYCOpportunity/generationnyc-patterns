@@ -28,7 +28,54 @@
   </script>
 </head>
 
-<body class="bg-black p-4">
+<body class="bg-black">
+  <nav class="o-navigation bg-black text-white">
+    <div class="flex items-end"><a class="o-navigation-logo h-auto text-white"
+        href="/"><span class="sr-only">Generation NYC</span><svg
+          aria-hidden="true" class="icon-logo-small">
+          <use xlink:href="#pttrn-logo-gen"></use>
+        </svg></a><span class="o-navigation__text text-white">Patterns</span>
+    </div><button aria-controls="toggle-navigation" class="btn--secondary"
+      data-js="navigation"><span>Menu</span></button>
+  </nav>
+  <aside aria-hidden="true" class="o-navigation-mobile bg-gradient-y-1 hidden"
+    id="toggle-navigation">
+    <div class="grid grid-cols-2 pb-4">
+      <div class="flex items-end"><span
+          class="o-navigation-logo mb-0 h-auto text-black" href="/"><span
+            class="sr-only">Generation NYC</span><svg aria-hidden="true"
+            class="icon-logo-small">
+            <use xlink:href="#pttrn-logo-gen"></use>
+          </svg></span><span
+          class="o-navigation__text text-black">Patterns</span></div>
+      <div class="flex items-center justify-end"><button
+          aria-controls="toggle-navigation" class="btn--primary"
+          data-js="navigation"><span>Close</span></button></div>
+    </div>
+    <div class="text-center">
+      <h2 class="h6">elements</h2><a class="o-navigation-link block ml-0"
+        href="breadcrumbs">Breadcrumbs</a><a
+        class="o-navigation-link block ml-0" href="buttons">Buttons</a><a
+        class="o-navigation-link block ml-0" href="layout">Layout</a><a
+        class="o-navigation-link block ml-0" href="links">Links</a><a
+        class="o-navigation-link block ml-0" href="list">List</a><a
+        class="o-navigation-link block ml-0" href="sticker">Sticker</a>
+      <h2 class="h6">components</h2><a class="o-navigation-link block ml-0"
+        href="accordion">Accordion</a><a class="o-navigation-link block ml-0"
+        href="card">Cards</a><a class="o-navigation-link block ml-0"
+        href="hero">Hero</a><a class="o-navigation-link block ml-0"
+        href="jumbotron">Jumbotron</a><a class="o-navigation-link block ml-0"
+        href="share">Share</a>
+      <h2 class="h6">objects</h2><a class="o-navigation-link block ml-0"
+        href="footer">Footer</a><a class="o-navigation-link block ml-0"
+        href="navigation">Navigation</a>
+      <h2 class="h6">utilities</h2><a class="o-navigation-link block ml-0"
+        href="anchor">Anchor</a><a class="o-navigation-link block ml-0"
+        href="gradient">Gradient</a><a class="o-navigation-link block ml-0"
+        href="pagination">Pagination</a><a class="o-navigation-link block ml-0"
+        href="typography">Typography</a>
+    </div>
+  </aside>
   <header class="text-center text-white p-4">
     <h1 class="break-words h3">Welcome
       to<br />@nycopportunity/generationnyc-patterns v1.0.0-1</h1>
@@ -36,62 +83,72 @@
       including a variety of topics, trips, and inspirational youth profiles.
     </p><br />
   </header>
-  <main>
+  <main class="px-4">
     <section class="bg-white p-4">
       <h2>Footer</h2>
       <p><strong>Source:</strong> <code>src/objects/footer/footer</code></p>
       <p>Specs about the Footer objects.</p>
       <h3>Demonstration</h3>
-      <div class="o-footer bg-black grid grid-cols-2 tablet:grid-cols-1">
-        <div class="o-footer__section p-4"><a class="o-footer-logo"
-            href="/"><span class="sr-only">Generation NYC</span><svg
-              aria-hidden="true">
-              <use xlink:href="#pttrn-logo-gen"></use>
-            </svg></a><a class="o-footer__link" href="#">Topics</a><a
-            class="o-footer__link" href="#">Inspirations</a><a
-            class="o-footer__link" href="#">Trips</a></div>
-        <div class="o-footer__section p-4"><a class="o-footer-logo"
-            href="/"><span class="sr-only">NYC Children's Cabinet</span><svg
-              aria-hidden="true">
-              <use xlink:href="#pttrn-logo-nyc-childrens-cabinet"></use>
-            </svg></a><a class="o-footer__link" href="#">Fun at Home</a></div>
+      <div class="o-footer block tablet:grid tablet:grid-cols-3">
+        <div class="grid grid-cols-2 tablet:block tablet:col-span-2">
+          <div class="o-footer__section p-4"><a class="o-footer-logo"
+              href="/"><span class="sr-only">Generation NYC</span><svg
+                aria-hidden="true">
+                <use xlink:href="#pttrn-logo-gen"></use>
+              </svg></a><a class="o-footer__link" href="#">Topics</a><a
+              class="o-footer__link" href="#">Inspirations</a><a
+              class="o-footer__link" href="#">Trips</a></div>
+          <div class="o-footer__section p-4"><a class="o-footer-logo"
+              href="/"><span class="sr-only">NYC Children's Cabinet</span><svg
+                aria-hidden="true">
+                <use xlink:href="#pttrn-logo-nyc-cc-nyco"></use>
+              </svg></a><a class="o-footer__link" href="#">Fun at Home</a></div>
+        </div>
+        <div class="col-span-1">
+          <div class="p-4">
+            <div class="text-center"><a class="o-footer__link py-1"
+                href="#">Terms of Use</a><a class="o-footer__link py-1"
+                href="#">Privacy Policy</a>
+            </div>
+            <div>
+              <p class="o-footer__copyright">© 2020 City of New York. All Rights
+                Reserved. NYC is a trademark and service mark of the City of New
+                York. </p>
+            </div>
+          </div>
+        </div>
       </div>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;div class=&quot;o-footer bg-black grid grid-cols-2 tablet:grid-cols-1&quot;&gt;
-  &lt;div class=&quot;o-footer__section p-4&quot;&gt;&lt;a class=&quot;o-footer-logo&quot; href=&quot;/&quot;&gt;&lt;span
-        class=&quot;sr-only&quot;&gt;Generation NYC&lt;/span&gt;&lt;svg aria-hidden=&quot;true&quot;&gt;
-        &lt;use xlink:href=&quot;#pttrn-logo-gen&quot;&gt;&lt;/use&gt;
-      &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Topics&lt;/a&gt;&lt;a
-      class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Inspirations&lt;/a&gt;&lt;a class=&quot;o-footer__link&quot;
-      href=&quot;#&quot;&gt;Trips&lt;/a&gt;&lt;/div&gt;
-  &lt;div class=&quot;o-footer__section p-4&quot;&gt;&lt;a class=&quot;o-footer-logo&quot; href=&quot;/&quot;&gt;&lt;span
-        class=&quot;sr-only&quot;&gt;NYC Children's Cabinet&lt;/span&gt;&lt;svg aria-hidden=&quot;true&quot;&gt;
-        &lt;use xlink:href=&quot;#pttrn-logo-nyc-childrens-cabinet&quot;&gt;&lt;/use&gt;
-      &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Fun at Home&lt;/a&gt;&lt;/div&gt;
+      <pre class="p-4">&lt;div class=&quot;o-footer block tablet:grid tablet:grid-cols-3&quot;&gt;
+  &lt;div class=&quot;grid grid-cols-2 tablet:block tablet:col-span-2&quot;&gt;
+    &lt;div class=&quot;o-footer__section p-4&quot;&gt;&lt;a class=&quot;o-footer-logo&quot; href=&quot;/&quot;&gt;&lt;span
+          class=&quot;sr-only&quot;&gt;Generation NYC&lt;/span&gt;&lt;svg aria-hidden=&quot;true&quot;&gt;
+          &lt;use xlink:href=&quot;#pttrn-logo-gen&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Topics&lt;/a&gt;&lt;a
+        class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Inspirations&lt;/a&gt;&lt;a
+        class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Trips&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;o-footer__section p-4&quot;&gt;&lt;a class=&quot;o-footer-logo&quot; href=&quot;/&quot;&gt;&lt;span
+          class=&quot;sr-only&quot;&gt;NYC Children's Cabinet&lt;/span&gt;&lt;svg aria-hidden=&quot;true&quot;&gt;
+          &lt;use xlink:href=&quot;#pttrn-logo-nyc-cc-nyco&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;o-footer__link&quot; href=&quot;#&quot;&gt;Fun at Home&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-span-1&quot;&gt;
+    &lt;div class=&quot;p-4&quot;&gt;
+      &lt;div class=&quot;text-center&quot;&gt;&lt;a class=&quot;o-footer__link py-1&quot; href=&quot;#&quot;&gt;Terms of
+          Use&lt;/a&gt;&lt;a class=&quot;o-footer__link py-1&quot; href=&quot;#&quot;&gt;Privacy Policy&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;p class=&quot;o-footer__copyright&quot;&gt;© 2020 City of New York. All Rights
+          Reserved. NYC is a trademark and service mark of the City of New York.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</pre>
     </section>
   </main>
   <footer class="text-center p-4 text-white">
-    <h2 class="h6">elements</h2><a class="o-navigation-link"
-      href="breadcrumbs">Breadcrumbs</a><a class="o-navigation-link"
-      href="buttons">Buttons</a><a class="o-navigation-link"
-      href="layout">Layout</a><a class="o-navigation-link"
-      href="links">Links</a><a class="o-navigation-link" href="list">List</a><a
-      class="o-navigation-link" href="sticker">Sticker</a>
-    <h2 class="h6">components</h2><a class="o-navigation-link"
-      href="accordion">Accordion</a><a class="o-navigation-link"
-      href="card">Cards</a><a class="o-navigation-link" href="hero">Hero</a><a
-      class="o-navigation-link" href="jumbotron">Jumbotron</a><a
-      class="o-navigation-link" href="share">Share</a>
-    <h2 class="h6">objects</h2><a class="o-navigation-link"
-      href="footer">Footer</a><a class="o-navigation-link"
-      href="navigation">Navigation</a>
-    <h2 class="h6">utilities</h2><a class="o-navigation-link"
-      href="anchor">Anchor</a><a class="o-navigation-link"
-      href="gradient">Gradient</a><a class="o-navigation-link"
-      href="pagination">Pagination</a><a class="o-navigation-link"
-      href="typography">Typography</a>
-    <p>Last updated January 28, 2021</p>
+    <p>Last updated February 11, 2021</p>
   </footer>
   <script src="js/default.js"></script>
   <script
@@ -101,6 +158,7 @@
     var MyPatterns = new Default();
     new Icons('svgs.svg');
     MyPatterns.faq()
+    MyPatterns.navigation()
   </script>
   <script src="/reload/reload.js"></script>
 </body>

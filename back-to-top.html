@@ -84,52 +84,20 @@
     </p><br />
   </header>
   <main class="px-4">
-    <section class="bg-white p-4">
-      <h2>Hero</h2>
-      <p><strong>Source:</strong> <code>src/components/hero/hero</code></p>
-      <p>Specs about the Hero components.</p>
+    <section class="bc-white p-4">
+      <h2>Back-to-top</h2>
+      <p><strong>Source:</strong>
+        <code>src/components/back-to-top/back-to-top</code>
+      </p>
+      <p>Specs about the Back-to-top components.</p>
       <h3>Demonstration</h3>
-      <div class="c-hero bg-black text-white">
-        <h1 class="c-hero__title">Topics</h1>
-        <p class="c-hero__subtitle">Let's Talk</p>
+      <div class="c-back-to-top pb-2 pr-6 hidden" data-js="back-to-top"><a
+          class="btn btn--round text-center" href="#main"><span>Back to
+            top</span></a>
       </div>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;div class=&quot;c-hero bg-black text-white&quot;&gt;
-  &lt;h1 class=&quot;c-hero__title&quot;&gt;Topics&lt;/h1&gt;
-  &lt;p class=&quot;c-hero__subtitle&quot;&gt;Let's Talk&lt;/p&gt;
-&lt;/div&gt;</pre>
-    </section>
-    <section class="bg-white p-4">
-      <h2>Hero</h2>
-      <h3>Demonstration</h3>
-      <div class="c-hero block tablet:grid tablet:grid-cols-2">
-        <div class="c-hero__content p-4">
-          <nav class="breadcrumbs"><a href="#">Topics</a><svg aria-hidden="true"
-              class="icon-xs text-dark-gray-dark">
-              <use xlink:href="#pttrn-icon-chevron-right"></use>
-            </svg><a href="#">Banking and Credit</a></nav>
-          <h1 class="c-hero__title">Banking and Credit</h1>
-          <p class="c-hero__subtitle">Take control of your money</p><img
-            class="c-hero__logo" src="img/unity-logo.png" />
-        </div>
-        <div class="c-hero__image row-start-1 bg-blue"
-          style="background:url('img/topic.jpg')"><img class="tablet:hidden"
-            src="img/topic.jpg" /></div>
-      </div>
-      <h3>Markup</h3>
-      <pre class="p-4">&lt;div class=&quot;c-hero block tablet:grid tablet:grid-cols-2&quot;&gt;
-  &lt;div class=&quot;c-hero__content p-4&quot;&gt;
-    &lt;nav class=&quot;breadcrumbs&quot;&gt;&lt;a href=&quot;#&quot;&gt;Topics&lt;/a&gt;&lt;svg aria-hidden=&quot;true&quot;
-        class=&quot;icon-xs text-dark-gray-dark&quot;&gt;
-        &lt;use xlink:href=&quot;#pttrn-icon-chevron-right&quot;&gt;&lt;/use&gt;
-      &lt;/svg&gt;&lt;a href=&quot;#&quot;&gt;Banking and Credit&lt;/a&gt;&lt;/nav&gt;
-    &lt;h1 class=&quot;c-hero__title&quot;&gt;Banking and Credit&lt;/h1&gt;
-    &lt;p class=&quot;c-hero__subtitle&quot;&gt;Take control of your money&lt;/p&gt;&lt;img
-      class=&quot;c-hero__logo&quot; src=&quot;img/unity-logo.png&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;c-hero__image row-start-1 bg-blue&quot;
-    style=&quot;background:url('img/topic.jpg')&quot;&gt;&lt;img class=&quot;tablet:hidden&quot;
-      src=&quot;img/topic.jpg&quot; /&gt;&lt;/div&gt;
+      <pre class="p-4">&lt;div class=&quot;c-back-to-top pb-2 pr-6 hidden&quot; data-js=&quot;back-to-top&quot;&gt;&lt;a
+    class=&quot;btn btn--round text-center&quot; href=&quot;#main&quot;&gt;&lt;span&gt;Back to top&lt;/span&gt;&lt;/a&gt;
 &lt;/div&gt;</pre>
     </section>
   </main>
@@ -145,6 +113,9 @@
     new Icons('svgs.svg');
     MyPatterns.faq()
     MyPatterns.navigation()
+  </script>
+  <script type="text/javascript">
+    MyPatterns.back2Top()
   </script>
   <script src="/reload/reload.js"></script>
 </body>
