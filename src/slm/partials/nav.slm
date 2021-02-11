@@ -1,6 +1,40 @@
-- for (var key in this.patterns)
-  h2 class='h6' = key
-  - let pk = Object.keys(this.patterns[key])
-  - let pl = Object.values(this.patterns[key])
-  - for (var i=0; i < pk.length; i++)  
-    a class='o-navigation-link' href=pk[i] = pl[i]
+
+
+nav class='o-navigation bg-black text-white'
+
+  div class='flex items-end'
+    a href='/' class='o-navigation-logo h-auto text-white'
+      span class='sr-only' Generation NYC
+
+      svg class='icon-logo-small' aria-hidden='true'
+        use xlink:href='#pttrn-logo-gen'
+    
+    span class='o-navigation__text text-white' 
+      = 'Patterns'
+
+  button class='btn--secondary' data-js='navigation' aria-controls='toggle-navigation'
+    span class='' Menu
+
+aside aria-hidden="true" class='o-navigation-mobile bg-gradient-y-1 hidden' id="toggle-navigation"
+  div class='grid grid-cols-2 pb-4'
+    div class='flex items-end'
+      span href='/' class='o-navigation-logo mb-0 h-auto text-black'
+        span class='sr-only' Generation NYC
+
+        svg class='icon-logo-small' aria-hidden='true'
+          use xlink:href='#pttrn-logo-gen'
+      
+      span class='o-navigation__text text-black' 
+        = 'Patterns'
+
+    div class='flex items-center justify-end'
+      button class='btn--primary' data-js='navigation' aria-controls='toggle-navigation'
+        span class='' Close
+
+  div class='text-center'
+    - for (var key in this.patterns)
+      h2 class='h6' = key
+      - let pk = Object.keys(this.patterns[key])
+      - let pl = Object.values(this.patterns[key])
+      - for (var i=0; i < pk.length; i++)  
+        a class='o-navigation-link block ml-0' href=pk[i] = pl[i]

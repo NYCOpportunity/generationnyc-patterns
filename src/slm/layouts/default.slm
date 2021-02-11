@@ -29,6 +29,8 @@ html lang='en'
       });
 
   body class='bg-black'
+    = partial('/slm/partials/nav.slm');
+
     header class='text-center text-white p-4'
       h1 class='break-words h3'
         = 'Welcome to'
@@ -52,6 +54,7 @@ html lang='en'
 
       new Icons('svgs.svg');
       MyPatterns.faq()
+      MyPatterns.navigation()
 
     = content('scripts')
 

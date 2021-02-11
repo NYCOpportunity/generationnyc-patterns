@@ -1,6 +1,6 @@
 footer class='text-center p-4 text-white'
 
-  = partial('/slm/partials/nav.slm');
+  / = partial('/slm/partials/nav.slm');
   
   - let date = new Date();
   - let opts = {year: 'numeric', month: 'long', day: 'numeric'};
