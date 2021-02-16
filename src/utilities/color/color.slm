@@ -1,0 +1,15 @@
+/ Icons
+
+- if (typeof value !== 'undefined')
+  div class='border-2 border-black p-2 m-2'
+    div class='bg-${value} p-4'
+    p class='font-bold' = value
+    div class='p-2'
+      span = 'Background: '
+      code class='text-red-dark' = `bg-${value}`
+    div class='p-2'
+      span = 'Text: '
+      code class='text-red-dark' = `text-${value}`
+    div class='p-2'
+      span = 'Border: '
+      code class='text-red-dark' = `border-${value}`

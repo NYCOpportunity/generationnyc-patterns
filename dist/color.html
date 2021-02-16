@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="svg/pttrn-a-perfect-heart-red.svg" rel="icon"
+    type="image/svg+xml" />
+  <title>@nycopportunity/generationnyc-patterns</title>
+  <link href="styles/default.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css"
+    rel="stylesheet" />
+  <script
+    src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js">
+  </script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(event) {
+      hljs.configure({
+        languages: ['html', 'javascript', 'css', 'sass']
+      });
+      document.querySelectorAll('pre').forEach(function(pre) {
+        pre.setAttribute('tabindex', '0');
+        hljs.highlightBlock(pre);
+      });
+    });
+  </script>
+</head>
+
+<body class="bg-black">
+  <nav class="o-navigation bg-black text-white">
+    <div class="flex items-end"><a class="o-navigation-logo h-auto text-white"
+        href="/"><span class="sr-only">Generation NYC</span><svg
+          aria-hidden="true" class="icon-logo-small">
+          <use xlink:href="#pttrn-logo-gen"></use>
+        </svg></a><span class="o-navigation__text text-white">Patterns
+        v1.0.0-1</span></div><button aria-controls="toggle-navigation"
+      class="btn--secondary" data-js="navigation"><span>Menu</span></button>
+  </nav>
+  <aside aria-hidden="true" class="o-navigation-mobile bg-gradient-y-1 hidden"
+    id="toggle-navigation">
+    <div class="grid grid-cols-2 pb-4">
+      <div class="flex items-end"><span
+          class="o-navigation-logo mb-0 h-auto text-black" href="/"><span
+            class="sr-only">Generation NYC</span><svg aria-hidden="true"
+            class="icon-logo-small">
+            <use xlink:href="#pttrn-logo-gen"></use>
+          </svg></span><span class="o-navigation__text text-black">Patterns
+          v1.0.0-1</span></div>
+      <div class="flex items-end justify-end"><button
+          aria-controls="toggle-navigation" class="btn--primary"
+          data-js="navigation"><span>Close</span></button></div>
+    </div>
+    <div class="text-center">
+      <h2 class="h6">elements</h2><a class="o-navigation-link block ml-0"
+        href="breadcrumbs">Breadcrumbs</a><a
+        class="o-navigation-link block ml-0" href="buttons">Buttons</a><a
+        class="o-navigation-link block ml-0" href="icons">Icons</a><a
+        class="o-navigation-link block ml-0" href="layout">Layout</a><a
+        class="o-navigation-link block ml-0" href="links">Links</a><a
+        class="o-navigation-link block ml-0" href="list">List</a><a
+        class="o-navigation-link block ml-0" href="sticker">Sticker</a>
+      <h2 class="h6">components</h2><a class="o-navigation-link block ml-0"
+        href="accordion">Accordion</a><a class="o-navigation-link block ml-0"
+        href="card">Cards</a><a class="o-navigation-link block ml-0"
+        href="hero">Hero</a><a class="o-navigation-link block ml-0"
+        href="jumbotron">Jumbotron</a><a class="o-navigation-link block ml-0"
+        href="share">Share</a>
+      <h2 class="h6">objects</h2><a class="o-navigation-link block ml-0"
+        href="footer">Footer</a><a class="o-navigation-link block ml-0"
+        href="navigation">Navigation</a>
+      <h2 class="h6">utilities</h2><a class="o-navigation-link block ml-0"
+        href="anchor">Anchor</a><a class="o-navigation-link block ml-0"
+        href="color">Color</a><a class="o-navigation-link block ml-0"
+        href="gradient">Gradient</a><a class="o-navigation-link block ml-0"
+        href="pagination">Pagination</a><a class="o-navigation-link block ml-0"
+        href="typography">Typography</a>
+    </div>
+  </aside>
+  <main class="px-4">
+    <section class="bg-white p-4">
+      <h2 class="h4">Color</h2>
+      <div class="grid tablet:grid-cols-4 text-center">
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-black p-4"></div>
+          <p class="font-bold">black</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-black</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-black</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-black</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-white p-4"></div>
+          <p class="font-bold">white</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-white</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-white</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-white</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-dark-gray-light p-4"></div>
+          <p class="font-bold">dark-gray-light</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-dark-gray-light</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-dark-gray-light</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-dark-gray-light</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-dark-gray p-4"></div>
+          <p class="font-bold">dark-gray</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-dark-gray</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-dark-gray</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-dark-gray</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-dark-gray-dark p-4"></div>
+          <p class="font-bold">dark-gray-dark</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-dark-gray-dark</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-dark-gray-dark</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-dark-gray-dark</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-light-gray-light p-4"></div>
+          <p class="font-bold">light-gray-light</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-light-gray-light</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-light-gray-light</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-light-gray-light</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-light-gray p-4"></div>
+          <p class="font-bold">light-gray</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-light-gray</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-light-gray</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-light-gray</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-light-gray-dark p-4"></div>
+          <p class="font-bold">light-gray-dark</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-light-gray-dark</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-light-gray-dark</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-light-gray-dark</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-red-light p-4"></div>
+          <p class="font-bold">red-light</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-red-light</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-red-light</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-red-light</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-red p-4"></div>
+          <p class="font-bold">red</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-red</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-red</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-red</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-red-dark p-4"></div>
+          <p class="font-bold">red-dark</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-red-dark</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-red-dark</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-red-dark</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-orange p-4"></div>
+          <p class="font-bold">orange</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-orange</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-orange</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-orange</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-yellow p-4"></div>
+          <p class="font-bold">yellow</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-yellow</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-yellow</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-yellow</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-green-lightest p-4"></div>
+          <p class="font-bold">green-lightest</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-green-lightest</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-green-lightest</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-green-lightest</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-green-light p-4"></div>
+          <p class="font-bold">green-light</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-green-light</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-green-light</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-green-light</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-green p-4"></div>
+          <p class="font-bold">green</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-green</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-green</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-green</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-green-dark p-4"></div>
+          <p class="font-bold">green-dark</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-green-dark</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-green-dark</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-green-dark</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-blue-green p-4"></div>
+          <p class="font-bold">blue-green</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-blue-green</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-blue-green</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-blue-green</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-blue-light p-4"></div>
+          <p class="font-bold">blue-light</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-blue-light</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-blue-light</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-blue-light</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-blue p-4"></div>
+          <p class="font-bold">blue</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-blue</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-blue</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-blue</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-blue-dark p-4"></div>
+          <p class="font-bold">blue-dark</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-blue-dark</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-blue-dark</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-blue-dark</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-purple-light p-4"></div>
+          <p class="font-bold">purple-light</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-purple-light</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-purple-light</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-purple-light</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-purple p-4"></div>
+          <p class="font-bold">purple</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-purple</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-purple</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-purple</code></div>
+        </div>
+        <div class="border-2 border-black p-2 m-2">
+          <div class="bg-purple-dark p-4"></div>
+          <p class="font-bold">purple-dark</p>
+          <div class="p-2"><span>Background: </span><code
+              class="text-red-dark">bg-purple-dark</code></div>
+          <div class="p-2"><span>Text: </span><code
+              class="text-red-dark">text-purple-dark</code></div>
+          <div class="p-2"><span>Border: </span><code
+              class="text-red-dark">border-purple-dark</code></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="text-center p-4 text-white">
+    <p>Last updated February 16, 2021</p>
+  </footer>
+  <script src="js/default.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/CityOfNewYork/nyco-patterns-framework@v1.0.0-15/dist/utilities/icons/icons.iffe.js">
+  </script>
+  <script type="text/javascript">
+    var MyPatterns = new Default();
+    new Icons('svgs.svg');
+    MyPatterns.faq()
+    MyPatterns.navigation()
+  </script>
+  <script src="/reload/reload.js"></script>
+</body>
+
+</html>

@@ -21,6 +21,7 @@
   },
   "utilities": {
     "anchor": "Anchor",
+    "color": "Color",
     "gradient": "Gradient",
     "pagination": "Pagination",
     "typography": "Typography"

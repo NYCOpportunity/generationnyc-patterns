@@ -1,0 +1,23 @@
+= extend('/slm/layouts/default')
+
+- title = 'Color'
+
+= content('main')
+  section class='bg-white p-4'
+    h2 class='h4' 
+      = title
+
+    == this.include('utilities/color/color.md');
+
+    div class='grid tablet:grid-cols-4 text-center'
+      - for (key in this.tokens['color'])
+        - if (typeof this.tokens['color'][key] === 'object')
+          - for (key2 in this.tokens['color'][key])
+            -if (key2 == 'DEFAULT')
+              - value = key
+            - else
+              - value = key + '-' + key2
+            == this.include('utilities/color/color.slm');
+        - else
+          - value = key
+          == this.include('utilities/color/color.slm');
