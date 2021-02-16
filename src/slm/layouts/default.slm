@@ -31,16 +31,6 @@ html lang='en'
   body class='bg-black'
     = partial('/slm/partials/nav.slm');
 
-    header class='text-center text-white p-4'
-      h1 class='break-words h3'
-        = 'Welcome to'
-        br
-        = `${this.package.name} v${this.package.version}`
-
-      p = `${this.package.description}`
-
-      br
-
     main class='px-4'
       = content('main')
 

@@ -1,4 +1,4 @@
-div
+div class='text-center'
   button class='button--icon'
     svg class='icon-sm text-black' aria-hidden='true'
       use xlink:href='#pttrn-icon-search'

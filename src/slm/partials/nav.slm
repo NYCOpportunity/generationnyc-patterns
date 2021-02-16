@@ -10,7 +10,7 @@ nav class='o-navigation bg-black text-white'
         use xlink:href='#pttrn-logo-gen'
     
     span class='o-navigation__text text-white' 
-      = 'Patterns'
+      = `Patterns v${this.package.version}`
 
   button class='btn--secondary' data-js='navigation' aria-controls='toggle-navigation'
     span class='' Menu
@@ -25,9 +25,9 @@ aside aria-hidden="true" class='o-navigation-mobile bg-gradient-y-1 hidden' id="
           use xlink:href='#pttrn-logo-gen'
       
       span class='o-navigation__text text-black' 
-        = 'Patterns'
+        = `Patterns v${this.package.version}`
 
-    div class='flex items-center justify-end'
+    div class='flex items-end justify-end'
       button class='btn--primary' data-js='navigation' aria-controls='toggle-navigation'
         span class='' Close
 

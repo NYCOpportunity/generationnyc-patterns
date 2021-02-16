@@ -4,81 +4,77 @@
 
 = content('main')
   section class='bg-white p-4'
-    h2 = 'Primary Button'
+    h2 class='h4' = 'Primary Button'
 
     == this.include('elements/buttons/buttons.md');
 
-    h3 Demonstration
+    h3 class='h5' = 'Demonstration'
 
     == this.include('elements/buttons/button--primary.slm');
 
-    h3 Markup
+    h3 class='h5' = 'Markup'
 
     pre class='p-4'
       = this.include('elements/buttons/button--primary.slm');
 
-  section class='bg-white p-4'
-    h2 = 'Secondary Button'
+  section class='bg-white p-4 mt-2'
+    h2 class='h4' = 'Secondary Button'
 
-    h3 Demonstration
+    h3 class='h5' = 'Demonstration'
 
     == this.include('elements/buttons/button--secondary.slm');
 
-    h3 Markup
+    h3 class='h5' = 'Markup'
 
     pre class='p-4'
       = this.include('elements/buttons/button--secondary.slm');
   
-  section class='bg-white p-4'
-    h2 = 'Tertiary Button'
+  section class='bg-white p-4 mt-2'
+    h2 class='h4' = 'Tertiary Button'
 
-    h3 Demonstration
+    h3 class='h5' = 'Demonstration'
 
     == this.include('elements/buttons/button--tertiary.slm');
 
-    h3 Markup
+    h3 class='h5' = 'Markup'
 
     pre class='p-4'
       = this.include('elements/buttons/button--tertiary.slm');
 
-  section class='bg-white p-4'
-    h2 = 'Pill Button'
+  section class='bg-white p-4 mt-2'
+    h2 class='h4' = 'Pill Button'
 
     == this.include('elements/buttons/button--pill.md');
 
-    h3 Demonstration
+    h3 class='h5' = 'Demonstration'
 
     == this.include('elements/buttons/button--pill.slm');
 
-    h3 Markup
+    h3 class='h5' = 'Markup'
 
     pre class='p-4'
       = this.include('elements/buttons/button--pill.slm');
 
-  section class='bg-white p-4'
-    h2 = 'Round Button'
+  section class='bg-white p-4 mt-2'
+    h2 class='h4' = 'Round Button'
 
-    / == this.include('elements/buttons/button--round.md');
-
-    h3 Demonstration
+    h3 class='h5' = 'Demonstration'
 
     == this.include('elements/buttons/button--round.slm');
 
-    h3 Markup
+    h3 class='h5' = 'Markup'
 
     pre class='p-4'
       = this.include('elements/buttons/button--round.slm');
 
-  section class='bg-white p-4'
-    h2 = 'Icon Button'
+  section class='bg-white p-4 mt-2'
+    h2 class='h4' = 'Icon Button'
 
-    / == this.include('elements/buttons/button--round.md');
-
-    h3 Demonstration
+    h3 class='h5' = 'Demonstration'
 
     == this.include('elements/buttons/button--icon.slm');
 
-    h3 Markup
+    h3 class='h5' = 'Markup'
 
     pre class='p-4'
       = this.include('elements/buttons/button--icon.slm');
