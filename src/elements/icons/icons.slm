@@ -1,5 +1,12 @@
 / Icons
 
-/ container
-div class='icons'
-  / pattern contents
+- if (typeof value !== 'undefined')
+  div class='border-2 border-black p-2 m-2'
+    svg class="icon-md" role="img"
+      use xlink:href="#pttrn-${value}"
+    p class='font-bold' = value.replace('icon-', '')
+    - dlink = `svg/pttrn-${value}.svg`
+    a class='link' href=dlink = 'Download SVG'
+
+    pre class='overflow-hidden overflow-x-auto'
+      = this.include('elements/icons/svg.slm');

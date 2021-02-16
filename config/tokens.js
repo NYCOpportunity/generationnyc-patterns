@@ -138,10 +138,28 @@ module.exports = {
     'desktop': '22px'
   },
   'icons': [
-    'icon-gen-chevron-up',
-    'icon-gen-chevron-down',
-    'icon-gen-chevron-left',
-    'icon-gen-chevron-right'
+    'icon-chevron-up',
+    'icon-chevron-down',
+    'icon-chevron-left',
+    'icon-chevron-right',
+    'icon-arrow-left',
+    'icon-arrow-right',
+    'icon-external-link',
+    'icon-chat',
+    'icon-heart',
+    'icon-check',
+    'icon-map',
+    'icon-search',
+    'icon-share-branch',
+    'icon-share'
+  ],
+  'logos': [
+    'logo-gen-favicon',
+    'logo-gen-text',
+    'logo-gen',
+    'logo-nyc-cc-nyco',
+    'logo-nyc-cc-opportunity',
+    'logo-nyc-childrens-cabinet'
   ],
   'screens': {
     'mobile': '375px',

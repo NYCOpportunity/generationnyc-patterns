@@ -5,7 +5,7 @@
     h1 class='break-words h3'
       = 'Welcome to'
       br
-      = 'Generation Patterns'
+      = 'Generation NYC Patterns'
 
     p class='h6'
       = `${this.package.description}`
