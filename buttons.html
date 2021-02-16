@@ -34,9 +34,9 @@
         href="/"><span class="sr-only">Generation NYC</span><svg
           aria-hidden="true" class="icon-logo-small">
           <use xlink:href="#pttrn-logo-gen"></use>
-        </svg></a><span class="o-navigation__text text-white">Patterns</span>
-    </div><button aria-controls="toggle-navigation" class="btn--secondary"
-      data-js="navigation"><span>Menu</span></button>
+        </svg></a><span class="o-navigation__text text-white">Patterns
+        v1.0.0-1</span></div><button aria-controls="toggle-navigation"
+      class="btn--secondary" data-js="navigation"><span>Menu</span></button>
   </nav>
   <aside aria-hidden="true" class="o-navigation-mobile bg-gradient-y-1 hidden"
     id="toggle-navigation">
@@ -46,9 +46,9 @@
             class="sr-only">Generation NYC</span><svg aria-hidden="true"
             class="icon-logo-small">
             <use xlink:href="#pttrn-logo-gen"></use>
-          </svg></span><span
-          class="o-navigation__text text-black">Patterns</span></div>
-      <div class="flex items-center justify-end"><button
+          </svg></span><span class="o-navigation__text text-black">Patterns
+          v1.0.0-1</span></div>
+      <div class="flex items-end justify-end"><button
           aria-controls="toggle-navigation" class="btn--primary"
           data-js="navigation"><span>Close</span></button></div>
     </div>
@@ -56,6 +56,7 @@
       <h2 class="h6">elements</h2><a class="o-navigation-link block ml-0"
         href="breadcrumbs">Breadcrumbs</a><a
         class="o-navigation-link block ml-0" href="buttons">Buttons</a><a
+        class="o-navigation-link block ml-0" href="icons">Icons</a><a
         class="o-navigation-link block ml-0" href="layout">Layout</a><a
         class="o-navigation-link block ml-0" href="links">Links</a><a
         class="o-navigation-link block ml-0" href="list">List</a><a
@@ -71,94 +72,88 @@
         href="navigation">Navigation</a>
       <h2 class="h6">utilities</h2><a class="o-navigation-link block ml-0"
         href="anchor">Anchor</a><a class="o-navigation-link block ml-0"
+        href="color">Color</a><a class="o-navigation-link block ml-0"
         href="gradient">Gradient</a><a class="o-navigation-link block ml-0"
         href="pagination">Pagination</a><a class="o-navigation-link block ml-0"
         href="typography">Typography</a>
     </div>
   </aside>
-  <header class="text-center text-white p-4">
-    <h1 class="break-words h3">Welcome
-      to<br />@nycopportunity/generationnyc-patterns v1.0.0-1</h1>
-    <p>NYC teens and young adults can find help with navigating City resources,
-      including a variety of topics, trips, and inspirational youth profiles.
-    </p><br />
-  </header>
   <main class="px-4">
     <section class="bg-white p-4">
-      <h2>Primary Button</h2>
+      <h2 class="h4">Primary Button</h2>
       <p><strong>Source:</strong> <code>src/elements/buttons/buttons</code></p>
       <p>The button pattern can be used to style
         <code>&lt;button&gt;&lt;/button&gt;</code> and
         <code>&lt;a&gt;&lt;/a&gt;</code> as a trigger to perform an action or
         navigate to another page.</p>
-      <h3>Demonstration</h3>
+      <h3 class="h5">Demonstration</h3>
       <div class="text-center mx-4"><button
           class="btn btn--primary"><span>Submit</span></button></div>
-      <h3>Markup</h3>
+      <h3 class="h5">Markup</h3>
       <pre
         class="p-4">&lt;div class=&quot;text-center mx-4&quot;&gt;&lt;button
     class=&quot;btn btn--primary&quot;&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</pre>
     </section>
-    <section class="bg-white p-4">
-      <h2>Secondary Button</h2>
-      <h3>Demonstration</h3>
+    <section class="bg-white p-4 mt-2">
+      <h2 class="h4">Secondary Button</h2>
+      <h3 class="h5">Demonstration</h3>
       <div class="bg-black p-4 text-center mx-4"><button
           class="btn btn--secondary"><span>Submit</span></button></div>
-      <h3>Markup</h3>
+      <h3 class="h5">Markup</h3>
       <pre
         class="p-4">&lt;div class=&quot;bg-black p-4 text-center mx-4&quot;&gt;&lt;button
     class=&quot;btn btn--secondary&quot;&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</pre>
     </section>
-    <section class="bg-white p-4">
-      <h2>Tertiary Button</h2>
-      <h3>Demonstration</h3>
+    <section class="bg-white p-4 mt-2">
+      <h2 class="h4">Tertiary Button</h2>
+      <h3 class="h5">Demonstration</h3>
       <div class="text-center mx-4"><button
           class="btn btn--tertiary bg-green-light"><span>Submit</span></button>
       </div>
-      <h3>Markup</h3>
+      <h3 class="h5">Markup</h3>
       <pre
         class="p-4">&lt;div class=&quot;text-center mx-4&quot;&gt;&lt;button
     class=&quot;btn btn--tertiary bg-green-light&quot;&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</pre>
     </section>
-    <section class="bg-white p-4">
-      <h2>Pill Button</h2>
+    <section class="bg-white p-4 mt-2">
+      <h2 class="h4">Pill Button</h2>
       <p><strong>Source:</strong> <code>src/elements/buttons/button--pill</code>
       </p>
       <p>The pill button is primarily used for taxonomies.</p>
-      <h3>Demonstration</h3>
+      <h3 class="h5">Demonstration</h3>
       <div class="text-center mx-4"><button
           class="btn btn--pill"><span>Tag</span></button></div>
-      <h3>Markup</h3>
+      <h3 class="h5">Markup</h3>
       <pre
         class="p-4">&lt;div class=&quot;text-center mx-4&quot;&gt;&lt;button
     class=&quot;btn btn--pill&quot;&gt;&lt;span&gt;Tag&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</pre>
     </section>
-    <section class="bg-white p-4">
-      <h2>Round Button</h2>
-      <h3>Demonstration</h3>
+    <section class="bg-white p-4 mt-2">
+      <h2 class="h4">Round Button</h2>
+      <h3 class="h5">Demonstration</h3>
       <div class="text-center mx-4 flex items-center justify-center"><a
           class="btn btn--round" href="#main"><span>Back to top</span></a></div>
-      <h3>Markup</h3>
+      <h3 class="h5">Markup</h3>
       <pre
         class="p-4">&lt;div class=&quot;text-center mx-4 flex items-center justify-center&quot;&gt;&lt;a
     class=&quot;btn btn--round&quot; href=&quot;#main&quot;&gt;&lt;span&gt;Back to top&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;</pre>
     </section>
-    <section class="bg-white p-4">
-      <h2>Icon Button</h2>
-      <h3>Demonstration</h3>
-      <div><button class="button--icon"><svg aria-hidden="true"
-            class="icon-sm text-black">
+    <section class="bg-white p-4 mt-2">
+      <h2 class="h4">Icon Button</h2>
+      <h3 class="h5">Demonstration</h3>
+      <div class="text-center"><button class="button--icon"><svg
+            aria-hidden="true" class="icon-sm text-black">
             <use xlink:href="#pttrn-icon-search"></use>
           </svg></button></div>
-      <h3>Markup</h3>
-      <pre class="p-4">&lt;div&gt;&lt;button class=&quot;button--icon&quot;&gt;&lt;svg aria-hidden=&quot;true&quot;
+      <h3 class="h5">Markup</h3>
+      <pre class="p-4">&lt;div class=&quot;text-center&quot;&gt;&lt;button class=&quot;button--icon&quot;&gt;&lt;svg aria-hidden=&quot;true&quot;
       class=&quot;icon-sm text-black&quot;&gt;
       &lt;use xlink:href=&quot;#pttrn-icon-search&quot;&gt;&lt;/use&gt;
     &lt;/svg&gt;&lt;/button&gt;&lt;/div&gt;</pre>
     </section>
   </main>
   <footer class="text-center p-4 text-white">
-    <p>Last updated February 11, 2021</p>
+    <p>Last updated February 16, 2021</p>
   </footer>
   <script src="js/default.js"></script>
   <script
