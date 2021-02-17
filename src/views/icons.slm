@@ -16,6 +16,8 @@
 
     h2 class='h4'
       = 'Logos'
+    == this.include('elements/icons/logos.md');
+    
     div class='grid tablet:grid-cols-4 text-center'
       - for (key in this.tokens['logos'])
         - value = this.tokens['logos'][key];

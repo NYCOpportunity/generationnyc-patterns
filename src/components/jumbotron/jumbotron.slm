@@ -9,9 +9,9 @@ div class="c-jumbotron bg-gradient-y-2"
         svg aria-hidden="true" class="icon-logo tablet:icon-full text-white"
           use xlink:href="#pttrn-logo-gen-text"
       div class=''
-        h1 class='mt-2 mb-0'
+        h1 class='h4 mt-2 mb-0'
           = 'NYC’s official guide for young New Yorkers'
-        p class='mt-1 mb-0'
+        p class='h6 mt-2 mb-0'
           = 'Job resources, school information, opportunities, and more.'
 
           
