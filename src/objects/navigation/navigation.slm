@@ -34,9 +34,10 @@ nav class='o-navigation bg-black text-white'
     div class='o-navigation-links tablet:pt-6'
       a href='#' class='hidden tablet:inline o-navigation-link' = 'Topics'
       a href='#' class='hidden tablet:inline o-navigation-link' = 'Inspirations'
+      a href='#' class='hidden tablet:inline o-navigation-link' = 'Opportunities'
       a href='#' class='hidden tablet:inline o-navigation-link' = 'Trips'
       
-      button class='button--icon hidden tablet:inline'
+      a href='#' class='hidden tablet:inline o-navigation-link'
         svg class='select__icon icon-sm text-white' aria-hidden='true'
           use xlink:href='#pttrn-icon-search'
   
