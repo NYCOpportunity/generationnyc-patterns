@@ -1,18 +1,23 @@
 / Footer
 
 / container
-div class='o-footer block tablet:grid tablet:grid-cols-3'
-  div class='grid grid-cols-2 tablet:block tablet:col-span-2'
+div class='o-footer block'
+  div class='grid grid-cols-2 tablet:block'
     div class='o-footer__section p-4'
       a href='/' class='o-footer-logo'
         span class='sr-only' Generation NYC
 
         svg class='' aria-hidden='true'
           use xlink:href='#pttrn-logo-gen'
-    
-      a href='#' class='o-footer__link' = 'Topics'
-      a href='#' class='o-footer__link' = 'Inspirations'
-      a href='#' class='o-footer__link' = 'Trips'
+      div class='flex items-end justify-between w-full'
+        div
+          a href='#' class='o-footer__link' = 'Topics'
+          a href='#' class='o-footer__link' = 'Inspirations'
+          a href='#' class='o-footer__link' = 'Trips'
+
+        div class="hidden tablet:flex"
+          a class="o-footer-gov__link" href="#" = 'Terms of Use'
+          a class="o-footer-gov__link ml-4" href="#" = 'Privacy Policy'
     
     div class='o-footer__section p-4'
       a href='/' class='o-footer-logo'
@@ -20,14 +25,23 @@ div class='o-footer block tablet:grid tablet:grid-cols-3'
 
         svg class='' aria-hidden='true'
           use xlink:href='#pttrn-logo-nyc-cc-nyco'
-      
-      a href='#' class='o-footer__link' = 'Fun at Home'
 
-  div class='col-span-1'
+      div class='flex items-end justify-between w-full'
+        div
+          a href='#' class='o-footer__link' = 'Fun at Home'
+
+        div class='hidden tablet:block text-right'
+          p class="o-footer__copyright" = '© 2020 City of New York. All Rights Reserved.'
+          p class="o-footer__copyright" = 'NYC is a trademark and service mark of the City of New York.'
+    
+      
+
+  div class='tablet:hidden'
     div class="p-4"
-      div class="text-center"
-        a class="o-footer__link py-1" href="#" = 'Terms of Use'
-        a class="o-footer__link py-1" href="#" = 'Privacy Policy'
-      div class=''
-        p class="o-footer__copyright" = '© 2020 City of New York. All Rights Reserved. NYC is a trademark and service mark of the City of New York.'
+      div class="flex justify-evenly py-4"
+        a class="o-footer-gov__link" href="#" = 'Terms of Use'
+        a class="o-footer-gov__link" href="#" = 'Privacy Policy'
+      div class='pt-4'
+        p class="o-footer__copyright" = '© 2020 City of New York. All Rights Reserved.'
+        p class="o-footer__copyright" = 'NYC is a trademark and service mark of the City of New York.'
   

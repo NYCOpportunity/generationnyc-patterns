@@ -56,6 +56,10 @@
   margin-bottom: 1rem;
   @include type.set('body');
 
+  &:hover {
+    color: color.$light-gray;
+  }
+
   @include media.mq('tablet') {
     display: inline-flex;
     margin-right: 1rem;
@@ -63,6 +67,16 @@
   }
 }
 
+.o-footer-gov__link {
+  @include type.set('small');
+
+  color: color.$white;
+  &:hover {
+    color: color.$light-gray;
+  }
+}
+
 .o-footer__copyright {
   @include type.set('small');
+  margin: 0;
 }
