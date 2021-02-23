@@ -1,0 +1,27 @@
+
+@use 'config/media';
+
+.logo {
+  width: 73px;
+  height: 51.81px;
+  
+  @include media.mq('tablet') {
+    width: 162.04px;
+    height: 115px;
+  }
+}
+
+.logo-small {
+  width: 73px;
+  height: 51.81px;
+}
+
+.logo-large {
+  width: 162.04px;
+  height: 115px;
+}
+
+.logo-cc-large {
+  width: 168px;
+  height: 74px;
+}

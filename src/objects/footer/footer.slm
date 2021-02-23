@@ -14,8 +14,12 @@ div class='o-footer block'
           a href='#' class='o-footer__link' = 'Topics'
           a href='#' class='o-footer__link' = 'Inspirations'
           a href='#' class='o-footer__link' = 'Trips'
+          a href='#' class='o-footer__link' = 'Fall 2021'
+          a href='#' class='o-footer__link' = 'FAQ'
+          a href='#' class='o-footer__link' = 'About'
+          a href='#' class='o-footer__link' = 'COVID Updates'
 
-        div class="hidden tablet:flex"
+        div class="hidden tablet:flex items-end min-w-max"
           a class="o-footer-gov__link" href="#" = 'Terms of Use'
           a class="o-footer-gov__link ml-4" href="#" = 'Privacy Policy'
     

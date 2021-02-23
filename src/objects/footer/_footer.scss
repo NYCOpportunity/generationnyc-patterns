@@ -55,13 +55,14 @@
   margin-right: 0;
   margin-bottom: 1rem;
   @include type.set('body');
-
+  
   &:hover {
     color: color.$light-gray;
   }
-
+  
   @include media.mq('tablet') {
     display: inline-flex;
+    margin-top: .5rem;
     margin-right: 1rem;
     margin-bottom: 0;
   }

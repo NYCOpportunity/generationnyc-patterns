@@ -6,7 +6,7 @@ nav class='o-navigation bg-black text-white'
     a href='/' class='o-navigation-logo h-auto text-white'
       span class='sr-only' Generation NYC
 
-      svg class='icon-logo-small' aria-hidden='true'
+      svg class='logo-small' aria-hidden='true'
         use xlink:href='#pttrn-logo-gen'
     
     span class='o-navigation__text text-white' 
@@ -21,7 +21,7 @@ aside aria-hidden="true" class='o-navigation-mobile bg-gradient-y-1 hidden' id="
       span href='/' class='o-navigation-logo mb-0 h-auto text-black'
         span class='sr-only' Generation NYC
 
-        svg class='icon-logo-small' aria-hidden='true'
+        svg class='logo-small' aria-hidden='true'
           use xlink:href='#pttrn-logo-gen'
       
       span class='o-navigation__text text-black' 

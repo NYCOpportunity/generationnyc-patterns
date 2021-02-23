@@ -7,30 +7,6 @@
 @use 'config/media';
 
 // Declarations
-.icon-logo {
-  width: 73px;
-  height: 51.81px;
-  
-  @include media.mq('tablet') {
-    width: 162.04px;
-    height: 115px;
-  }
-}
-
-.icon-logo-small {
-  width: 73px;
-  height: 51.81px;
-}
-
-.icon-logo-large {
-  width: 162.04px;
-  height: 115px;
-}
-
-.icon-cc-large {
-  width: 168px;
-  height: 74px;
-}
 
 .icon-sm {
   width: 20px;

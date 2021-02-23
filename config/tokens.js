@@ -105,10 +105,10 @@ module.exports = {
       'body': '16px',
       'pre': '0.9em',
       'h1': '46px',
-      'h2': '40px',
-      'h3': '34px',
-      'h4': '28px',
-      'h5': '22px',
+      'h2': '28px',
+      'h3': '22px',
+      'h4': '20px',
+      'h5': '18px',
       'h6': '16px',
       'p': '16px',
       'small': '12px'
@@ -117,17 +117,17 @@ module.exports = {
       'body': '16px',
       'pre': '0.9em',
       'h1': '64px',
-      'h2': '56px',
-      'h3': '48px',
-      'h4': '40px',
-      'h5': '32px',
+      'h2': '40px',
+      'h3': '32px',
+      'h4': '28px',
+      'h5': '26px',
       'h6': '24px',
       'p': '16px',
       'small': '12px'
     }
   },
   'line-height': {
-    'body': '1.2',
+    'body': '1.5',
     'pre': '1.5'
   },
   'grid': '8px', // 8px grid system
