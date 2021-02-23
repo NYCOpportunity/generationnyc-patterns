@@ -13,7 +13,7 @@
   // border-color: color.$black;
   padding: 8px 15px;
   display: flex;
-  height: 45px;
+  // height: 45px;
   align-items: center;
   justify-content: space-between;
 
@@ -37,4 +37,8 @@
 
 .link {
   color: color.$black;
+}
+
+.link--text {
+  max-width: 80%;
 }
