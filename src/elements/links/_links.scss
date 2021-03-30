@@ -20,7 +20,7 @@
 
   &:hover,
   &.active {
-    @include buttons.hover(color.$black, color.$black, color.$white);
+    @include buttons.hover(color.$black, color.$white, color.$white);
   }
 }
 

@@ -5,6 +5,7 @@
 @use 'config/type';
 
 @mixin button($background, $text) {
+  display: inline-block;
   padding: 10px 15px;
   font-family: inherit;
   background: $background;

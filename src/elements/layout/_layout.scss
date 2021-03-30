@@ -6,7 +6,7 @@
 @use 'config/media';
 
 .masonry {
-  @include media.mq('tablet') {
+  @include media.mq('desktop') {
     column-gap: 1.5em;
     column-count: 2;
 
