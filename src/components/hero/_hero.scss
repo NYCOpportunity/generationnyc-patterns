@@ -16,7 +16,7 @@
 }
 
 .c-hero__image {
-  background-position: center top !important;
+  background-position: center !important;
   background-size: cover !important;
   
   @include media.mq('tablet') {
