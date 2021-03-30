@@ -28,13 +28,13 @@
   </script>
 </head>
 
-<body class="bg-black">
-  <nav class="o-navigation bg-black text-white">
-    <div class="flex items-end"><a class="o-navigation-logo h-auto text-white"
+<body class="bg-gradient-x-1">
+  <nav class="o-navigation bg-gradient-x-1">
+    <div class="flex items-end"><a class="o-navigation-logo h-auto text-black"
         href="/"><span class="sr-only">Generation NYC</span><svg
-          aria-hidden="true" class="icon-logo-small">
-          <use xlink:href="#pttrn-logo-gen"></use>
-        </svg></a><span class="o-navigation__text text-white">Patterns
+          aria-hidden="true" class="logo-small">
+          <use xlink:href="#logo-gen"></use>
+        </svg></a><span class="o-navigation__text text-black">Patterns
         v1.0.0-1</span></div><button aria-controls="toggle-navigation"
       class="btn--secondary" data-js="navigation"><span>Menu</span></button>
   </nav>
@@ -44,8 +44,8 @@
       <div class="flex items-end"><span
           class="o-navigation-logo mb-0 h-auto text-black" href="/"><span
             class="sr-only">Generation NYC</span><svg aria-hidden="true"
-            class="icon-logo-small">
-            <use xlink:href="#pttrn-logo-gen"></use>
+            class="logo-small">
+            <use xlink:href="#logo-gen"></use>
           </svg></span><span class="o-navigation__text text-black">Patterns
           v1.0.0-1</span></div>
       <div class="flex items-end justify-end"><button
@@ -53,32 +53,46 @@
           data-js="navigation"><span>Close</span></button></div>
     </div>
     <div class="text-center">
-      <h2 class="h6">elements</h2><a class="o-navigation-link block ml-0"
-        href="breadcrumbs">Breadcrumbs</a><a
-        class="o-navigation-link block ml-0" href="buttons">Buttons</a><a
-        class="o-navigation-link block ml-0" href="icons">Icons</a><a
-        class="o-navigation-link block ml-0" href="layout">Layout</a><a
-        class="o-navigation-link block ml-0" href="links">Links</a><a
-        class="o-navigation-link block ml-0" href="list">List</a><a
-        class="o-navigation-link block ml-0" href="sticker">Sticker</a>
-      <h2 class="h6">components</h2><a class="o-navigation-link block ml-0"
-        href="accordion">Accordion</a><a class="o-navigation-link block ml-0"
-        href="card">Cards</a><a class="o-navigation-link block ml-0"
-        href="hero">Hero</a><a class="o-navigation-link block ml-0"
-        href="jumbotron">Jumbotron</a><a class="o-navigation-link block ml-0"
-        href="share">Share</a>
-      <h2 class="h6">objects</h2><a class="o-navigation-link block ml-0"
-        href="footer">Footer</a><a class="o-navigation-link block ml-0"
-        href="navigation">Navigation</a>
-      <h2 class="h6">utilities</h2><a class="o-navigation-link block ml-0"
-        href="anchor">Anchor</a><a class="o-navigation-link block ml-0"
-        href="color">Color</a><a class="o-navigation-link block ml-0"
-        href="gradient">Gradient</a><a class="o-navigation-link block ml-0"
-        href="pagination">Pagination</a><a class="o-navigation-link block ml-0"
-        href="typography">Typography</a>
+      <h2 class="h6 capitalize">elements</h2>
+      <ul class="p-0 list-none">
+        <li><a class="o-navigation-link ml-0" href="breadcrumbs">Breadcrumbs</a>
+        </li>
+        <li><a class="o-navigation-link ml-0" href="buttons">Buttons</a></li>
+        <li><a class="o-navigation-link ml-0" href="icons">Icons</a></li>
+        <li><a class="o-navigation-link ml-0" href="layout">Layout</a></li>
+        <li><a class="o-navigation-link ml-0" href="links">Links</a></li>
+        <li><a class="o-navigation-link ml-0" href="list">List</a></li>
+        <li><a class="o-navigation-link ml-0" href="sticker">Sticker</a></li>
+      </ul>
+      <h2 class="h6 capitalize">components</h2>
+      <ul class="p-0 list-none">
+        <li><a class="o-navigation-link ml-0" href="accordion">Accordion</a>
+        </li>
+        <li><a class="o-navigation-link ml-0" href="card">Cards</a></li>
+        <li><a class="o-navigation-link ml-0" href="hero">Hero</a></li>
+        <li><a class="o-navigation-link ml-0" href="jumbotron">Jumbotron</a>
+        </li>
+        <li><a class="o-navigation-link ml-0" href="share">Share</a></li>
+      </ul>
+      <h2 class="h6 capitalize">objects</h2>
+      <ul class="p-0 list-none">
+        <li><a class="o-navigation-link ml-0" href="footer">Footer</a></li>
+        <li><a class="o-navigation-link ml-0" href="navigation">Navigation</a>
+        </li>
+      </ul>
+      <h2 class="h6 capitalize">utilities</h2>
+      <ul class="p-0 list-none">
+        <li><a class="o-navigation-link ml-0" href="anchor">Anchor</a></li>
+        <li><a class="o-navigation-link ml-0" href="color">Color</a></li>
+        <li><a class="o-navigation-link ml-0" href="gradient">Gradient</a></li>
+        <li><a class="o-navigation-link ml-0" href="pagination">Pagination</a>
+        </li>
+        <li><a class="o-navigation-link ml-0" href="typography">Typography</a>
+        </li>
+      </ul>
     </div>
   </aside>
-  <main class="px-4">
+  <main class="px-4 desktop:w-3/4 m-auto mb-6">
     <section class="bg-white p-4">
       <h2 class="h4">Navigation</h2>
       <p><strong>Source:</strong> <code>src/objects/navigation/navigation</code>
@@ -90,8 +104,8 @@
       <nav class="o-navigation bg-black text-white">
         <div class="flex items-end"><a class="o-navigation-logo text-white"
             href="/"><span class="sr-only">Generation NYC</span><svg
-              aria-hidden="true" class="icon-logo">
-              <use xlink:href="#pttrn-logo-gen"></use>
+              aria-hidden="true" class="logo">
+              <use xlink:href="#logo-gen"></use>
             </svg></a><span class="o-navigation__text text-white">NYC’s Official
             Guide for<br>Young New Yorkers</br></span></div>
         <div
@@ -112,35 +126,33 @@
               <option value="zh-hant">Traditional Chinese</option>
               <option value="ur">Urdu</option>
             </select><svg aria-hidden="true" class="select__icon icon-xs">
-              <use xlink:href="#pttrn-icon-chevron-down"></use>
+              <use xlink:href="#icon-chevron-down"></use>
             </svg></div>
           <div class="o-navigation-links tablet:pt-6"><a
-              class="hidden tablet:inline o-navigation-link"
-              href="#">Topics</a><a
-              class="hidden tablet:inline o-navigation-link"
-              href="#">Inspirations</a><a
-              class="hidden tablet:inline o-navigation-link"
-              href="#">Trips</a><button
-              class="button--icon hidden tablet:inline"><svg aria-hidden="true"
-                class="select__icon icon-sm text-white">
-                <use xlink:href="#pttrn-icon-search"></use>
-              </svg></button></div>
-        </div><button aria-controls="toggle-mobile-menu"
+              class="o-navigation-link" href="#">Topics</a><a
+              class="o-navigation-link" href="#">Inspirations</a><a
+              class="o-navigation-link" href="#">Opportunities</a><a
+              class="o-navigation-link" href="#">Trips</a><a
+              class="o-navigation-link inline-flex" href="#">Search<svg
+                aria-hidden="true" class="icon-sm ml-1">
+                <use xlink:href="#icon-search"></use>
+              </svg></a></div>
+        </div><button aria-controls="toggle-test-menu"
           class="btn--secondary tablet:hidden"
           data-js="navigation"><span>Menu</span></button>
       </nav>
       <aside aria-hidden="true"
         class="o-navigation-mobile bg-gradient-y-1 hidden tablet:hidden"
-        id="toggle-mobile-menu">
+        id="toggle-test-menu">
         <div class="grid grid-cols-2 pb-4">
           <div class="flex items-center"><a class="o-navigation-logo text-black"
               href="/"><span class="sr-only">Generation NYC</span><svg
-                aria-hidden="true" class="icon-logo">
-                <use xlink:href="#pttrn-logo-gen"></use>
+                aria-hidden="true" class="logo">
+                <use xlink:href="#logo-gen"></use>
               </svg></a><span class="o-navigation__text text-black">NYC’s
               Official Guide for<br>Young New Yorkers</br></span></div>
           <div class="flex items-center justify-end"><button
-              aria-controls="toggle-mobile-menu"
+              aria-controls="toggle-test-menu"
               class="btn--primary tablet:hidden"
               data-js="navigation"><span>Close</span></button></div>
         </div>
@@ -160,28 +172,28 @@
               <option value="zh-hant">Traditional Chinese</option>
               <option value="ur">Urdu</option>
             </select><svg aria-hidden="true" class="select__icon icon-xs">
-              <use xlink:href="#pttrn-icon-chevron-down"></use>
+              <use xlink:href="#icon-chevron-down"></use>
             </svg></div>
         </div><a class="link--outline border-black" href="#">Topics<span
             class="link--icon"><svg aria-hidden="true"
               class="icon-xs text-white">
-              <use xlink:href="#pttrn-icon-chevron-right"></use>
+              <use xlink:href="#icon-chevron-right"></use>
             </svg></span></a><a class="link--outline border-black"
           href="#">Inspirations<span class="link--icon"><svg aria-hidden="true"
               class="icon-xs text-white">
-              <use xlink:href="#pttrn-icon-chevron-right"></use>
+              <use xlink:href="#icon-chevron-right"></use>
             </svg></span></a><a class="link--outline border-black"
           href="#">Trips<span class="link--icon"><svg aria-hidden="true"
               class="icon-xs text-white">
-              <use xlink:href="#pttrn-icon-chevron-right"></use>
+              <use xlink:href="#icon-chevron-right"></use>
             </svg></span></a>
       </aside>
       <h3 class="h5">Markup</h3>
       <pre class="p-4">&lt;nav class=&quot;o-navigation bg-black text-white&quot;&gt;
   &lt;div class=&quot;flex items-end&quot;&gt;&lt;a class=&quot;o-navigation-logo text-white&quot;
       href=&quot;/&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Generation NYC&lt;/span&gt;&lt;svg
-        aria-hidden=&quot;true&quot; class=&quot;icon-logo&quot;&gt;
-        &lt;use xlink:href=&quot;#pttrn-logo-gen&quot;&gt;&lt;/use&gt;
+        aria-hidden=&quot;true&quot; class=&quot;logo&quot;&gt;
+        &lt;use xlink:href=&quot;#logo-gen&quot;&gt;&lt;/use&gt;
       &lt;/svg&gt;&lt;/a&gt;&lt;span class=&quot;o-navigation__text text-white&quot;&gt;NYC’s Official Guide
       for&lt;br&gt;Young New Yorkers&lt;/br&gt;&lt;/span&gt;&lt;/div&gt;
   &lt;div
@@ -201,33 +213,32 @@
         &lt;option value=&quot;zh-hant&quot;&gt;Traditional Chinese&lt;/option&gt;
         &lt;option value=&quot;ur&quot;&gt;Urdu&lt;/option&gt;
       &lt;/select&gt;&lt;svg aria-hidden=&quot;true&quot; class=&quot;select__icon icon-xs&quot;&gt;
-        &lt;use xlink:href=&quot;#pttrn-icon-chevron-down&quot;&gt;&lt;/use&gt;
+        &lt;use xlink:href=&quot;#icon-chevron-down&quot;&gt;&lt;/use&gt;
       &lt;/svg&gt;&lt;/div&gt;
-    &lt;div class=&quot;o-navigation-links tablet:pt-6&quot;&gt;&lt;a
-        class=&quot;hidden tablet:inline o-navigation-link&quot; href=&quot;#&quot;&gt;Topics&lt;/a&gt;&lt;a
-        class=&quot;hidden tablet:inline o-navigation-link&quot;
-        href=&quot;#&quot;&gt;Inspirations&lt;/a&gt;&lt;a
-        class=&quot;hidden tablet:inline o-navigation-link&quot; href=&quot;#&quot;&gt;Trips&lt;/a&gt;&lt;button
-        class=&quot;button--icon hidden tablet:inline&quot;&gt;&lt;svg aria-hidden=&quot;true&quot;
-          class=&quot;select__icon icon-sm text-white&quot;&gt;
-          &lt;use xlink:href=&quot;#pttrn-icon-search&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;&lt;/button&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;button aria-controls=&quot;toggle-mobile-menu&quot;
+    &lt;div class=&quot;o-navigation-links tablet:pt-6&quot;&gt;&lt;a class=&quot;o-navigation-link&quot;
+        href=&quot;#&quot;&gt;Topics&lt;/a&gt;&lt;a class=&quot;o-navigation-link&quot;
+        href=&quot;#&quot;&gt;Inspirations&lt;/a&gt;&lt;a class=&quot;o-navigation-link&quot;
+        href=&quot;#&quot;&gt;Opportunities&lt;/a&gt;&lt;a class=&quot;o-navigation-link&quot;
+        href=&quot;#&quot;&gt;Trips&lt;/a&gt;&lt;a class=&quot;o-navigation-link inline-flex&quot;
+        href=&quot;#&quot;&gt;Search&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-sm ml-1&quot;&gt;
+          &lt;use xlink:href=&quot;#icon-search&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;button aria-controls=&quot;toggle-test-menu&quot;
     class=&quot;btn--secondary tablet:hidden&quot;
     data-js=&quot;navigation&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/button&gt;
 &lt;/nav&gt;
 &lt;aside aria-hidden=&quot;true&quot;
   class=&quot;o-navigation-mobile bg-gradient-y-1 hidden tablet:hidden&quot;
-  id=&quot;toggle-mobile-menu&quot;&gt;
+  id=&quot;toggle-test-menu&quot;&gt;
   &lt;div class=&quot;grid grid-cols-2 pb-4&quot;&gt;
     &lt;div class=&quot;flex items-center&quot;&gt;&lt;a class=&quot;o-navigation-logo text-black&quot;
         href=&quot;/&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Generation NYC&lt;/span&gt;&lt;svg
-          aria-hidden=&quot;true&quot; class=&quot;icon-logo&quot;&gt;
-          &lt;use xlink:href=&quot;#pttrn-logo-gen&quot;&gt;&lt;/use&gt;
+          aria-hidden=&quot;true&quot; class=&quot;logo&quot;&gt;
+          &lt;use xlink:href=&quot;#logo-gen&quot;&gt;&lt;/use&gt;
         &lt;/svg&gt;&lt;/a&gt;&lt;span class=&quot;o-navigation__text text-black&quot;&gt;NYC’s Official
         Guide for&lt;br&gt;Young New Yorkers&lt;/br&gt;&lt;/span&gt;&lt;/div&gt;
     &lt;div class=&quot;flex items-center justify-end&quot;&gt;&lt;button
-        aria-controls=&quot;toggle-mobile-menu&quot; class=&quot;btn--primary tablet:hidden&quot;
+        aria-controls=&quot;toggle-test-menu&quot; class=&quot;btn--primary tablet:hidden&quot;
         data-js=&quot;navigation&quot;&gt;&lt;span&gt;Close&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;o-navigation-items&quot;&gt;
@@ -245,24 +256,31 @@
         &lt;option value=&quot;zh-hant&quot;&gt;Traditional Chinese&lt;/option&gt;
         &lt;option value=&quot;ur&quot;&gt;Urdu&lt;/option&gt;
       &lt;/select&gt;&lt;svg aria-hidden=&quot;true&quot; class=&quot;select__icon icon-xs&quot;&gt;
-        &lt;use xlink:href=&quot;#pttrn-icon-chevron-down&quot;&gt;&lt;/use&gt;
+        &lt;use xlink:href=&quot;#icon-chevron-down&quot;&gt;&lt;/use&gt;
       &lt;/svg&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;a class=&quot;link--outline border-black&quot; href=&quot;#&quot;&gt;Topics&lt;span
       class=&quot;link--icon&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-xs text-white&quot;&gt;
-        &lt;use xlink:href=&quot;#pttrn-icon-chevron-right&quot;&gt;&lt;/use&gt;
+        &lt;use xlink:href=&quot;#icon-chevron-right&quot;&gt;&lt;/use&gt;
       &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;&lt;a class=&quot;link--outline border-black&quot;
     href=&quot;#&quot;&gt;Inspirations&lt;span class=&quot;link--icon&quot;&gt;&lt;svg aria-hidden=&quot;true&quot;
         class=&quot;icon-xs text-white&quot;&gt;
-        &lt;use xlink:href=&quot;#pttrn-icon-chevron-right&quot;&gt;&lt;/use&gt;
+        &lt;use xlink:href=&quot;#icon-chevron-right&quot;&gt;&lt;/use&gt;
       &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;&lt;a class=&quot;link--outline border-black&quot; href=&quot;#&quot;&gt;Trips&lt;span
       class=&quot;link--icon&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-xs text-white&quot;&gt;
-        &lt;use xlink:href=&quot;#pttrn-icon-chevron-right&quot;&gt;&lt;/use&gt;
+        &lt;use xlink:href=&quot;#icon-chevron-right&quot;&gt;&lt;/use&gt;
       &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
 &lt;/aside&gt;</pre>
     </section>
   </main>
-  <footer class="text-center p-4 text-white">
-    <p>Last updated February 17, 2021</p>
+  <footer class="p-4 bg-black text-white">
+    <div class="m-4"><span class="block">Maintained by</span><a
+        class="o-navigation-logo h-auto text-white"
+        href="https://nyc.gov/opportunity"><span class="sr-only">NYC
+          Opportunity</span><svg aria-hidden="true" class="logo">
+          <use xlink:href="#logo-nycopportunity"></use>
+        </svg></a><small class="block">© City of New York, 2021 All Rights
+        Reserved. NYC is a trademark and service mark of the City of New
+        York.</small></div>
   </footer>
   <script src="js/default.js"></script>
   <script
