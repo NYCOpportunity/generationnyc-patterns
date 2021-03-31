@@ -1,0 +1,4 @@
+= mixin('copy', 'name')
+  div class='text-right'
+    button class="btn--tag" data-js='${this.name}'
+      = "Copy"

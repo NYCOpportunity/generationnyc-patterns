@@ -2,5 +2,5 @@
 
 / container
 div class='text-center mx-4'
-  button class='btn btn--pill'
+  button class='btn btn--tag'
     span = 'Tag'

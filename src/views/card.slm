@@ -1,5 +1,7 @@
 = extend('/slm/layouts/default')
 
+= partial('/slm/mixins/copy.mixin.slm');
+
 - title = 'Faq-card'
 
 = content('main')
@@ -14,7 +16,8 @@
 
     h3 Markup
 
-    pre class='p-4'
+    = mixin('copy', 'copy-faq-card')
+    pre class='p-4 mt-1' data-content='copy-faq-card'
       = this.include('components/card/faq-card.slm');
 
   section class='bg-white p-4'
@@ -28,7 +31,8 @@
 
     h3 Markup
 
-    pre class='p-4'
+    = mixin('copy', 'copy-info-card')
+    pre class='p-4 mt-1' data-content='copy-info-card'
       = this.include('components/card/info-card.slm');
 
   section class='bg-white p-4'
@@ -42,7 +46,8 @@
 
     h3 Markup
 
-    pre class='p-4'
+    = mixin('copy', 'copy-info-card--outline')
+    pre class='p-4 mt-1' data-content='copy-info-card--outline'
       = this.include('components/card/info-card--outline.slm');
 
   section class='bg-white p-4'
@@ -56,6 +61,7 @@
 
     h3 Markup
 
-    pre class='p-4'
+    = mixin('copy', 'copy-inspiration-card')
+    pre class='p-4 mt-1' data-content='copy-inspiration-card'
       = this.include('components/card/inspiration-card.slm');
 = content('scripts')

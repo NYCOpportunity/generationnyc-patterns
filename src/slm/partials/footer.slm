@@ -1,7 +1,15 @@
-footer class='text-center p-4 text-white'
+- let date = new Date();
+- let opts = {year: 'numeric', month: 'long', day: 'numeric'};
 
-  / = partial('/slm/partials/nav.slm');
-  
-  - let date = new Date();
-  - let opts = {year: 'numeric', month: 'long', day: 'numeric'};
-  p = `Last updated ${date.toLocaleDateString('en-US', opts)}`
+footer class='p-4 bg-black text-white'
+  div
+    span class='block'
+      = 'Maintained by'
+    a href='https://nyc.gov/opportunity' class='o-navigation-logo h-auto text-white'
+      span class='sr-only' NYC Opportunity
+
+      svg class='logo-nyco' aria-hidden='true'
+        use xlink:href='#logo-nycopportunity'
+
+    small class='block'
+      = `© City of New York, ${date.getFullYear()} All Rights Reserved. NYC is a trademark and service mark of the City of New York.`

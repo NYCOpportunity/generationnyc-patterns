@@ -1,2 +1,2 @@
 svg class="icon-md" role="img"
-  use xlink:href="#pttrn-${value}"
+  use xlink:href="#${value}"

@@ -1,5 +1,7 @@
 = extend('/slm/layouts/default')
 
+= partial('/slm/mixins/copy.mixin.slm');
+
 - title = 'Buttons'
 
 = content('main')
@@ -14,7 +16,8 @@
 
     h3 class='h5' = 'Markup'
 
-    pre class='p-4'
+    = mixin('copy', 'copy-button--primary')
+    pre class='p-4 mt-1' data-content='copy-button--primary'
       = this.include('elements/buttons/button--primary.slm');
 
   section class='bg-white p-4 mt-2'
@@ -26,7 +29,8 @@
 
     h3 class='h5' = 'Markup'
 
-    pre class='p-4'
+    = mixin('copy', 'copy-button--secondary')
+    pre class='p-4 mt-1' data-content='copy-button--secondary'
       = this.include('elements/buttons/button--secondary.slm');
   
   section class='bg-white p-4 mt-2'
@@ -38,22 +42,24 @@
 
     h3 class='h5' = 'Markup'
 
-    pre class='p-4'
+    = mixin('copy', 'copy-button--tertiary')
+    pre class='p-4 mt-1' data-content='copy-button--tertiary'
       = this.include('elements/buttons/button--tertiary.slm');
 
   section class='bg-white p-4 mt-2'
-    h2 class='h4' = 'Pill Button'
+    h2 class='h4' = 'Tag Button'
 
-    == this.include('elements/buttons/button--pill.md');
+    == this.include('elements/buttons/button--tag.md');
 
     h3 class='h5' = 'Demonstration'
 
-    == this.include('elements/buttons/button--pill.slm');
+    == this.include('elements/buttons/button--tag.slm');
 
     h3 class='h5' = 'Markup'
 
-    pre class='p-4'
-      = this.include('elements/buttons/button--pill.slm');
+    = mixin('copy', 'copy-button--tag')
+    pre class='p-4 mt-1' data-content='copy-button--tag'
+      = this.include('elements/buttons/button--tag.slm');
 
   section class='bg-white p-4 mt-2'
     h2 class='h4' = 'Round Button'
@@ -64,7 +70,8 @@
 
     h3 class='h5' = 'Markup'
 
-    pre class='p-4'
+    = mixin('copy', 'copy-button--round')
+    pre class='p-4 mt-1' data-content='copy-button--round'
       = this.include('elements/buttons/button--round.slm');
 
   section class='bg-white p-4 mt-2'
@@ -76,7 +83,8 @@
 
     h3 class='h5' = 'Markup'
 
-    pre class='p-4'
+    = mixin('copy', 'copy-button--icon')
+    pre class='p-4 mt-1' data-content='copy-button--icon'
       = this.include('elements/buttons/button--icon.slm');
 
 = content('scripts')

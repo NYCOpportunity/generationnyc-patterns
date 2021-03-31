@@ -1,5 +1,8 @@
 = extend('/slm/layouts/default')
 
+= partial('/slm/mixins/copy.mixin.slm');
+
+
 - title = 'Jumbotron'
 
 = content('main')
@@ -14,7 +17,8 @@
 
     h3 Markup
 
-    pre class='p-4'
+    = mixin('copy', 'copy-jumbotron')
+    pre class='p-4 mt-1' data-content='copy-jumbotron'
       = this.include('components/jumbotron/jumbotron.slm');
 
 = content('scripts')

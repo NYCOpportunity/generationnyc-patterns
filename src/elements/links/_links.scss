@@ -2,12 +2,10 @@
  * Links
  */
 
-// Dependencies
 @use 'config/tokens' as *;
 @use 'config/buttons';
 @use 'config/color';
 
-// Declarations
 .link--outline {
   @include buttons.button(transparent, color.$black);
   // border-color: color.$black;

@@ -1,5 +1,7 @@
 = extend('/slm/layouts/default')
 
+= partial('/slm/mixins/copy.mixin.slm');
+
 - title = 'Hero'
 
 = content('main')
@@ -13,8 +15,9 @@
     == this.include('components/hero/hero.slm');
 
     h3 Markup
-
-    pre class='p-4'
+    
+    = mixin('copy', 'copy-hero')
+    pre class='p-4 mt-1' data-content='copy-hero'
       = this.include('components/hero/hero.slm');
 
   section class='bg-white p-4'
@@ -27,8 +30,9 @@
     == this.include('components/hero/hero-2-cols.slm');
 
     h3 Markup
-
-    pre class='p-4'
+    
+    = mixin('copy', 'copy-hero-2-cols')
+    pre class='p-4 mt-1' data-content='copy-hero-2-cols'
       = this.include('components/hero/hero-2-cols.slm');
 
 = content('scripts')

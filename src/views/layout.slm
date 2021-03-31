@@ -1,10 +1,10 @@
 = extend('/slm/layouts/default')
 
+= partial('/slm/mixins/copy.mixin.slm');
+
 - title = 'Layout'
 
 = content('main')
-  section class='bc-white p-4'
-    h2 = title
   section class='bc-white p-4'
     h2 = 'Masonry'
 
@@ -16,7 +16,8 @@
 
     h3 Markup
 
-    pre class='p-4'
+    = mixin('copy', 'copy-masonry')
+    pre class='p-4 mt-1' data-content='copy-masonry'
       = this.include('elements/layout/masonry.slm');
 
 = content('scripts')

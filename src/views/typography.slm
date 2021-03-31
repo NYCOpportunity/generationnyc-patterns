@@ -1,5 +1,7 @@
 = extend('/slm/layouts/default')
 
+= partial('/slm/mixins/copy.mixin.slm');
+
 - title = 'Typography'
 
 = content('main')
@@ -14,7 +16,8 @@
 
     h3 Markup
 
-    pre class='p-4'
+    = mixin('copy', 'copy-typography')
+    pre class='p-4' data-content='copy-typography'
       = this.include('utilities/typography/typography.slm');
 
 = content('scripts')

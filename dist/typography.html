@@ -28,13 +28,13 @@
   </script>
 </head>
 
-<body class="bg-black">
-  <nav class="o-navigation bg-black text-white">
-    <div class="flex items-end"><a class="o-navigation-logo h-auto text-white"
+<body class="bg-gradient-x-1">
+  <nav class="o-navigation bg-gradient-x-1 tablet:px-8">
+    <div class="flex items-end"><a class="o-navigation-logo h-auto text-black"
         href="/"><span class="sr-only">Generation NYC</span><svg
           aria-hidden="true" class="logo-small">
-          <use xlink:href="#pttrn-logo-gen"></use>
-        </svg></a><span class="o-navigation__text text-white">Patterns
+          <use xlink:href="#logo-gen"></use>
+        </svg></a><span class="o-navigation__text text-black">Patterns
         v1.0.0-1</span></div><button aria-controls="toggle-navigation"
       class="btn--secondary" data-js="navigation"><span>Menu</span></button>
   </nav>
@@ -45,7 +45,7 @@
           class="o-navigation-logo mb-0 h-auto text-black" href="/"><span
             class="sr-only">Generation NYC</span><svg aria-hidden="true"
             class="logo-small">
-            <use xlink:href="#pttrn-logo-gen"></use>
+            <use xlink:href="#logo-gen"></use>
           </svg></span><span class="o-navigation__text text-black">Patterns
           v1.0.0-1</span></div>
       <div class="flex items-end justify-end"><button
@@ -53,32 +53,46 @@
           data-js="navigation"><span>Close</span></button></div>
     </div>
     <div class="text-center">
-      <h2 class="h6">elements</h2><a class="o-navigation-link block ml-0"
-        href="breadcrumbs">Breadcrumbs</a><a
-        class="o-navigation-link block ml-0" href="buttons">Buttons</a><a
-        class="o-navigation-link block ml-0" href="icons">Icons</a><a
-        class="o-navigation-link block ml-0" href="layout">Layout</a><a
-        class="o-navigation-link block ml-0" href="links">Links</a><a
-        class="o-navigation-link block ml-0" href="list">List</a><a
-        class="o-navigation-link block ml-0" href="sticker">Sticker</a>
-      <h2 class="h6">components</h2><a class="o-navigation-link block ml-0"
-        href="accordion">Accordion</a><a class="o-navigation-link block ml-0"
-        href="card">Cards</a><a class="o-navigation-link block ml-0"
-        href="hero">Hero</a><a class="o-navigation-link block ml-0"
-        href="jumbotron">Jumbotron</a><a class="o-navigation-link block ml-0"
-        href="share">Share</a>
-      <h2 class="h6">objects</h2><a class="o-navigation-link block ml-0"
-        href="footer">Footer</a><a class="o-navigation-link block ml-0"
-        href="navigation">Navigation</a>
-      <h2 class="h6">utilities</h2><a class="o-navigation-link block ml-0"
-        href="anchor">Anchor</a><a class="o-navigation-link block ml-0"
-        href="color">Color</a><a class="o-navigation-link block ml-0"
-        href="gradient">Gradient</a><a class="o-navigation-link block ml-0"
-        href="pagination">Pagination</a><a class="o-navigation-link block ml-0"
-        href="typography">Typography</a>
+      <h2 class="h6 capitalize">elements</h2>
+      <ul class="p-0 list-none">
+        <li><a class="link ml-0" href="breadcrumbs"
+            tabindex="-1">Breadcrumbs</a></li>
+        <li><a class="link ml-0" href="buttons" tabindex="-1">Buttons</a></li>
+        <li><a class="link ml-0" href="icons" tabindex="-1">Icons</a></li>
+        <li><a class="link ml-0" href="layout" tabindex="-1">Layout</a></li>
+        <li><a class="link ml-0" href="links" tabindex="-1">Links</a></li>
+        <li><a class="link ml-0" href="list" tabindex="-1">List</a></li>
+        <li><a class="link ml-0" href="sticker" tabindex="-1">Sticker</a></li>
+      </ul>
+      <h2 class="h6 capitalize">components</h2>
+      <ul class="p-0 list-none">
+        <li><a class="link ml-0" href="accordion" tabindex="-1">Accordion</a>
+        </li>
+        <li><a class="link ml-0" href="card" tabindex="-1">Cards</a></li>
+        <li><a class="link ml-0" href="hero" tabindex="-1">Hero</a></li>
+        <li><a class="link ml-0" href="jumbotron" tabindex="-1">Jumbotron</a>
+        </li>
+        <li><a class="link ml-0" href="share" tabindex="-1">Share</a></li>
+      </ul>
+      <h2 class="h6 capitalize">objects</h2>
+      <ul class="p-0 list-none">
+        <li><a class="link ml-0" href="footer" tabindex="-1">Footer</a></li>
+        <li><a class="link ml-0" href="navigation" tabindex="-1">Navigation</a>
+        </li>
+      </ul>
+      <h2 class="h6 capitalize">utilities</h2>
+      <ul class="p-0 list-none">
+        <li><a class="link ml-0" href="anchor" tabindex="-1">Anchor</a></li>
+        <li><a class="link ml-0" href="color" tabindex="-1">Color</a></li>
+        <li><a class="link ml-0" href="gradient" tabindex="-1">Gradient</a></li>
+        <li><a class="link ml-0" href="pagination" tabindex="-1">Pagination</a>
+        </li>
+        <li><a class="link ml-0" href="typography" tabindex="-1">Typography</a>
+        </li>
+      </ul>
     </div>
   </aside>
-  <main class="px-4">
+  <main class="px-4 desktop:w-3/4 m-auto mb-6">
     <section class="bc-white p-4">
       <h2>Typography</h2>
       <h3>Demonstration</h3>
@@ -90,7 +104,9 @@
       <h6>Header 6</h6>
       <p>Paragraph</p>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;h1&gt;Header 1&lt;/h1&gt;
+      <div class="text-right"><button class="btn--tag"
+          data-js="copy-typography">Copy</button></div>
+      <pre class="p-4" data-content="copy-typography">&lt;h1&gt;Header 1&lt;/h1&gt;
 &lt;h2&gt;Header 2&lt;/h2&gt;
 &lt;h3&gt;Header 3&lt;/h3&gt;
 &lt;h4&gt;Header 4&lt;/h4&gt;
@@ -99,8 +115,15 @@
 &lt;p&gt;Paragraph&lt;/p&gt;</pre>
     </section>
   </main>
-  <footer class="text-center p-4 text-white">
-    <p>Last updated February 23, 2021</p>
+  <footer class="p-4 bg-black text-white">
+    <div><span class="block">Maintained by</span><a
+        class="o-navigation-logo h-auto text-white"
+        href="https://nyc.gov/opportunity"><span class="sr-only">NYC
+          Opportunity</span><svg aria-hidden="true" class="logo-nyco">
+          <use xlink:href="#logo-nycopportunity"></use>
+        </svg></a><small class="block">© City of New York, 2021 All Rights
+        Reserved. NYC is a trademark and service mark of the City of New
+        York.</small></div>
   </footer>
   <script src="js/default.js"></script>
   <script
@@ -109,6 +132,7 @@
   <script type="text/javascript">
     var MyPatterns = new Default();
     new Icons('svgs.svg');
+    MyPatterns.copy();
     MyPatterns.faq()
     MyPatterns.navigation()
   </script>

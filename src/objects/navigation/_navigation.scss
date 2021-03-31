@@ -45,31 +45,25 @@
 }
 
 .o-navigation-logo {
-  height: 51.81px;
+  height: 52x;
   @include media.mq('tablet') {
     height: 115px;
-  }
-}
-
-.o-navigation-links {
-  @include media.mq('tablet') {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
   }
 }
 
 .o-navigation-link {
   color: inherit;
   @include type.set('body');
+  margin-left: 10px;
+  display: none;
 
   &:hover {
     color: color.$light-gray;
   }
 
-  // @include media.mq('tablet') {
-  //   font-size: 16px;
-  // }
+  @include media.mq('tablet') {
+    display: inline;
+  }
 
   // @include media.mq('desktop') {
   //   font-size: 24px;

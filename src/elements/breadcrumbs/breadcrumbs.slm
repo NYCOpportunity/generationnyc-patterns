@@ -1,9 +1,9 @@
 / Breadcrumbs
 
 nav class='breadcrumbs text-center'
-  a href='#' 
+  a href='#' class="mr-1"
     ='Topics' 
   svg class='icon-xs text-dark-gray-dark' aria-hidden='true'
-    use xlink:href='#pttrn-icon-chevron-right'
-  a href='#' 
+    use xlink:href='#icon-chevron-right'
+  a href='#' class="ml-1" 
     = 'Banking and Credit'

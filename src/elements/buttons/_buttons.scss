@@ -53,7 +53,7 @@ a.btn--inspiration {
 
 }
 
-.btn--pill {
+.btn--tag {
   @include buttons.pill(color.$light-gray, color.$black);
   
   &:hover {

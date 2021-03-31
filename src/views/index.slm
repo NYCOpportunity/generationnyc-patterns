@@ -1,16 +1,27 @@
 = extend('/slm/layouts/default')
 
+= partial('/slm/mixins/copy.mixin.slm');
+
 = content('main')
-  header class='text-center text-white p-4'
-    h1 class='break-words h3'
-      = 'Welcome to'
-      br
+  header class='text-center text-black p-4'
+    h1 class='break-words mb-0'
       = 'Generation NYC Patterns'
 
-    p class='h6'
-      = `${this.package.description}`
 
   section class='bg-white p-4'
-    h2 Getting Started
+    div 
+      p 
+        = `On Generation NYC, ${this.package.description}`
+      
+      p
+        == this.include('/slm/content/intro.md');
+    
+    div
+      h2 = 'Getting Started'
+
+    = mixin('copy', 'copy-npm')
+    div
+      pre id="npm-install" class="overflow-y-hidden mt-1" data-content='copy-npm'
+        = "npm install git+ssh://git@github.com/NYCOpportunity/generationnyc-patterns.git#dev"
 
 = content('scripts')

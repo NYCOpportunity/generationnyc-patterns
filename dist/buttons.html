@@ -28,13 +28,13 @@
   </script>
 </head>
 
-<body class="bg-black">
-  <nav class="o-navigation bg-black text-white">
-    <div class="flex items-end"><a class="o-navigation-logo h-auto text-white"
+<body class="bg-gradient-x-1">
+  <nav class="o-navigation bg-gradient-x-1 tablet:px-8">
+    <div class="flex items-end"><a class="o-navigation-logo h-auto text-black"
         href="/"><span class="sr-only">Generation NYC</span><svg
           aria-hidden="true" class="logo-small">
-          <use xlink:href="#pttrn-logo-gen"></use>
-        </svg></a><span class="o-navigation__text text-white">Patterns
+          <use xlink:href="#logo-gen"></use>
+        </svg></a><span class="o-navigation__text text-black">Patterns
         v1.0.0-1</span></div><button aria-controls="toggle-navigation"
       class="btn--secondary" data-js="navigation"><span>Menu</span></button>
   </nav>
@@ -45,7 +45,7 @@
           class="o-navigation-logo mb-0 h-auto text-black" href="/"><span
             class="sr-only">Generation NYC</span><svg aria-hidden="true"
             class="logo-small">
-            <use xlink:href="#pttrn-logo-gen"></use>
+            <use xlink:href="#logo-gen"></use>
           </svg></span><span class="o-navigation__text text-black">Patterns
           v1.0.0-1</span></div>
       <div class="flex items-end justify-end"><button
@@ -53,32 +53,46 @@
           data-js="navigation"><span>Close</span></button></div>
     </div>
     <div class="text-center">
-      <h2 class="h6">elements</h2><a class="o-navigation-link block ml-0"
-        href="breadcrumbs">Breadcrumbs</a><a
-        class="o-navigation-link block ml-0" href="buttons">Buttons</a><a
-        class="o-navigation-link block ml-0" href="icons">Icons</a><a
-        class="o-navigation-link block ml-0" href="layout">Layout</a><a
-        class="o-navigation-link block ml-0" href="links">Links</a><a
-        class="o-navigation-link block ml-0" href="list">List</a><a
-        class="o-navigation-link block ml-0" href="sticker">Sticker</a>
-      <h2 class="h6">components</h2><a class="o-navigation-link block ml-0"
-        href="accordion">Accordion</a><a class="o-navigation-link block ml-0"
-        href="card">Cards</a><a class="o-navigation-link block ml-0"
-        href="hero">Hero</a><a class="o-navigation-link block ml-0"
-        href="jumbotron">Jumbotron</a><a class="o-navigation-link block ml-0"
-        href="share">Share</a>
-      <h2 class="h6">objects</h2><a class="o-navigation-link block ml-0"
-        href="footer">Footer</a><a class="o-navigation-link block ml-0"
-        href="navigation">Navigation</a>
-      <h2 class="h6">utilities</h2><a class="o-navigation-link block ml-0"
-        href="anchor">Anchor</a><a class="o-navigation-link block ml-0"
-        href="color">Color</a><a class="o-navigation-link block ml-0"
-        href="gradient">Gradient</a><a class="o-navigation-link block ml-0"
-        href="pagination">Pagination</a><a class="o-navigation-link block ml-0"
-        href="typography">Typography</a>
+      <h2 class="h6 capitalize">elements</h2>
+      <ul class="p-0 list-none">
+        <li><a class="link ml-0" href="breadcrumbs"
+            tabindex="-1">Breadcrumbs</a></li>
+        <li><a class="link ml-0" href="buttons" tabindex="-1">Buttons</a></li>
+        <li><a class="link ml-0" href="icons" tabindex="-1">Icons</a></li>
+        <li><a class="link ml-0" href="layout" tabindex="-1">Layout</a></li>
+        <li><a class="link ml-0" href="links" tabindex="-1">Links</a></li>
+        <li><a class="link ml-0" href="list" tabindex="-1">List</a></li>
+        <li><a class="link ml-0" href="sticker" tabindex="-1">Sticker</a></li>
+      </ul>
+      <h2 class="h6 capitalize">components</h2>
+      <ul class="p-0 list-none">
+        <li><a class="link ml-0" href="accordion" tabindex="-1">Accordion</a>
+        </li>
+        <li><a class="link ml-0" href="card" tabindex="-1">Cards</a></li>
+        <li><a class="link ml-0" href="hero" tabindex="-1">Hero</a></li>
+        <li><a class="link ml-0" href="jumbotron" tabindex="-1">Jumbotron</a>
+        </li>
+        <li><a class="link ml-0" href="share" tabindex="-1">Share</a></li>
+      </ul>
+      <h2 class="h6 capitalize">objects</h2>
+      <ul class="p-0 list-none">
+        <li><a class="link ml-0" href="footer" tabindex="-1">Footer</a></li>
+        <li><a class="link ml-0" href="navigation" tabindex="-1">Navigation</a>
+        </li>
+      </ul>
+      <h2 class="h6 capitalize">utilities</h2>
+      <ul class="p-0 list-none">
+        <li><a class="link ml-0" href="anchor" tabindex="-1">Anchor</a></li>
+        <li><a class="link ml-0" href="color" tabindex="-1">Color</a></li>
+        <li><a class="link ml-0" href="gradient" tabindex="-1">Gradient</a></li>
+        <li><a class="link ml-0" href="pagination" tabindex="-1">Pagination</a>
+        </li>
+        <li><a class="link ml-0" href="typography" tabindex="-1">Typography</a>
+        </li>
+      </ul>
     </div>
   </aside>
-  <main class="px-4">
+  <main class="px-4 desktop:w-3/4 m-auto mb-6">
     <section class="bg-white p-4">
       <h2 class="h4">Primary Button</h2>
       <p><strong>Source:</strong> <code>src/elements/buttons/buttons</code></p>
@@ -90,8 +104,10 @@
       <div class="text-center mx-4"><button
           class="btn btn--primary"><span>Submit</span></button></div>
       <h3 class="h5">Markup</h3>
-      <pre
-        class="p-4">&lt;div class=&quot;text-center mx-4&quot;&gt;&lt;button
+      <div class="text-right"><button class="btn--tag"
+          data-js="copy-button--primary">Copy</button></div>
+      <pre class="p-4 mt-1"
+        data-content="copy-button--primary">&lt;div class=&quot;text-center mx-4&quot;&gt;&lt;button
     class=&quot;btn btn--primary&quot;&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</pre>
     </section>
     <section class="bg-white p-4 mt-2">
@@ -100,8 +116,10 @@
       <div class="bg-black p-4 text-center mx-4"><button
           class="btn btn--secondary"><span>Submit</span></button></div>
       <h3 class="h5">Markup</h3>
-      <pre
-        class="p-4">&lt;div class=&quot;bg-black p-4 text-center mx-4&quot;&gt;&lt;button
+      <div class="text-right"><button class="btn--tag"
+          data-js="copy-button--secondary">Copy</button></div>
+      <pre class="p-4 mt-1"
+        data-content="copy-button--secondary">&lt;div class=&quot;bg-black p-4 text-center mx-4&quot;&gt;&lt;button
     class=&quot;btn btn--secondary&quot;&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</pre>
     </section>
     <section class="bg-white p-4 mt-2">
@@ -111,22 +129,26 @@
           class="btn btn--tertiary bg-green-light"><span>Submit</span></button>
       </div>
       <h3 class="h5">Markup</h3>
-      <pre
-        class="p-4">&lt;div class=&quot;text-center mx-4&quot;&gt;&lt;button
+      <div class="text-right"><button class="btn--tag"
+          data-js="copy-button--tertiary">Copy</button></div>
+      <pre class="p-4 mt-1"
+        data-content="copy-button--tertiary">&lt;div class=&quot;text-center mx-4&quot;&gt;&lt;button
     class=&quot;btn btn--tertiary bg-green-light&quot;&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</pre>
     </section>
     <section class="bg-white p-4 mt-2">
-      <h2 class="h4">Pill Button</h2>
-      <p><strong>Source:</strong> <code>src/elements/buttons/button--pill</code>
+      <h2 class="h4">Tag Button</h2>
+      <p><strong>Source:</strong> <code>src/elements/buttons/button--tag</code>
       </p>
       <p>The pill button is primarily used for taxonomies.</p>
       <h3 class="h5">Demonstration</h3>
       <div class="text-center mx-4"><button
-          class="btn btn--pill"><span>Tag</span></button></div>
+          class="btn btn--tag"><span>Tag</span></button></div>
       <h3 class="h5">Markup</h3>
-      <pre
-        class="p-4">&lt;div class=&quot;text-center mx-4&quot;&gt;&lt;button
-    class=&quot;btn btn--pill&quot;&gt;&lt;span&gt;Tag&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</pre>
+      <div class="text-right"><button class="btn--tag"
+          data-js="copy-button--tag">Copy</button></div>
+      <pre class="p-4 mt-1"
+        data-content="copy-button--tag">&lt;div class=&quot;text-center mx-4&quot;&gt;&lt;button
+    class=&quot;btn btn--tag&quot;&gt;&lt;span&gt;Tag&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</pre>
     </section>
     <section class="bg-white p-4 mt-2">
       <h2 class="h4">Round Button</h2>
@@ -134,8 +156,10 @@
       <div class="text-center mx-4 flex items-center justify-center"><a
           class="btn btn--round" href="#main"><span>Back to top</span></a></div>
       <h3 class="h5">Markup</h3>
-      <pre
-        class="p-4">&lt;div class=&quot;text-center mx-4 flex items-center justify-center&quot;&gt;&lt;a
+      <div class="text-right"><button class="btn--tag"
+          data-js="copy-button--round">Copy</button></div>
+      <pre class="p-4 mt-1"
+        data-content="copy-button--round">&lt;div class=&quot;text-center mx-4 flex items-center justify-center&quot;&gt;&lt;a
     class=&quot;btn btn--round&quot; href=&quot;#main&quot;&gt;&lt;span&gt;Back to top&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;</pre>
     </section>
     <section class="bg-white p-4 mt-2">
@@ -143,17 +167,26 @@
       <h3 class="h5">Demonstration</h3>
       <div class="text-center"><button class="button--icon"><svg
             aria-hidden="true" class="icon-sm text-black">
-            <use xlink:href="#pttrn-icon-search"></use>
+            <use xlink:href="#icon-search"></use>
           </svg></button></div>
       <h3 class="h5">Markup</h3>
-      <pre class="p-4">&lt;div class=&quot;text-center&quot;&gt;&lt;button class=&quot;button--icon&quot;&gt;&lt;svg aria-hidden=&quot;true&quot;
+      <div class="text-right"><button class="btn--tag"
+          data-js="copy-button--icon">Copy</button></div>
+      <pre class="p-4 mt-1" data-content="copy-button--icon">&lt;div class=&quot;text-center&quot;&gt;&lt;button class=&quot;button--icon&quot;&gt;&lt;svg aria-hidden=&quot;true&quot;
       class=&quot;icon-sm text-black&quot;&gt;
-      &lt;use xlink:href=&quot;#pttrn-icon-search&quot;&gt;&lt;/use&gt;
+      &lt;use xlink:href=&quot;#icon-search&quot;&gt;&lt;/use&gt;
     &lt;/svg&gt;&lt;/button&gt;&lt;/div&gt;</pre>
     </section>
   </main>
-  <footer class="text-center p-4 text-white">
-    <p>Last updated February 22, 2021</p>
+  <footer class="p-4 bg-black text-white">
+    <div><span class="block">Maintained by</span><a
+        class="o-navigation-logo h-auto text-white"
+        href="https://nyc.gov/opportunity"><span class="sr-only">NYC
+          Opportunity</span><svg aria-hidden="true" class="logo-nyco">
+          <use xlink:href="#logo-nycopportunity"></use>
+        </svg></a><small class="block">© City of New York, 2021 All Rights
+        Reserved. NYC is a trademark and service mark of the City of New
+        York.</small></div>
   </footer>
   <script src="js/default.js"></script>
   <script
@@ -162,6 +195,7 @@
   <script type="text/javascript">
     var MyPatterns = new Default();
     new Icons('svgs.svg');
+    MyPatterns.copy();
     MyPatterns.faq()
     MyPatterns.navigation()
   </script>

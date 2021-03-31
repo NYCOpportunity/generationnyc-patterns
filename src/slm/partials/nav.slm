@@ -1,15 +1,14 @@
 
 
-nav class='o-navigation bg-black text-white'
-
+nav class='o-navigation bg-gradient-x-1 tablet:px-8'
   div class='flex items-end'
-    a href='/' class='o-navigation-logo h-auto text-white'
+    a href='/' class='o-navigation-logo h-auto text-black'
       span class='sr-only' Generation NYC
 
       svg class='logo-small' aria-hidden='true'
-        use xlink:href='#pttrn-logo-gen'
+        use xlink:href='#logo-gen'
     
-    span class='o-navigation__text text-white' 
+    span class='o-navigation__text text-black' 
       = `Patterns v${this.package.version}`
 
   button class='btn--secondary' data-js='navigation' aria-controls='toggle-navigation'
@@ -22,7 +21,7 @@ aside aria-hidden="true" class='o-navigation-mobile bg-gradient-y-1 hidden' id="
         span class='sr-only' Generation NYC
 
         svg class='logo-small' aria-hidden='true'
-          use xlink:href='#pttrn-logo-gen'
+          use xlink:href='#logo-gen'
       
       span class='o-navigation__text text-black' 
         = `Patterns v${this.package.version}`
@@ -33,8 +32,11 @@ aside aria-hidden="true" class='o-navigation-mobile bg-gradient-y-1 hidden' id="
 
   div class='text-center'
     - for (var key in this.patterns)
-      h2 class='h6' = key
+      h2 class='h6 capitalize' = key
       - let pk = Object.keys(this.patterns[key])
       - let pl = Object.values(this.patterns[key])
-      - for (var i=0; i < pk.length; i++)  
-        a class='o-navigation-link block ml-0' href=pk[i] = pl[i]
+      ul class='p-0 list-none'
+        - for (var i=0; i < pk.length; i++)
+          li
+            a class='link ml-0' href=pk[i] tabindex='-1'
+              = pl[i]

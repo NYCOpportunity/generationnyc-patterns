@@ -28,10 +28,10 @@ html lang='en'
           });
       });
 
-  body class='bg-black'
+  body class='bg-gradient-x-1'
     = partial('/slm/partials/nav.slm');
 
-    main class='px-4'
+    main class='px-4 desktop:w-3/4 m-auto mb-6'
       = content('main')
 
     = partial('/slm/partials/footer.slm');
@@ -43,6 +43,7 @@ html lang='en'
       var MyPatterns = new Default();
 
       new Icons('svgs.svg');
+      MyPatterns.copy();
       MyPatterns.faq()
       MyPatterns.navigation()
 

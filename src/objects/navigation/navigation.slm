@@ -7,7 +7,7 @@ nav class='o-navigation bg-black text-white'
       span class='sr-only' Generation NYC
 
       svg class='logo' aria-hidden='true'
-        use xlink:href='#pttrn-logo-gen'
+        use xlink:href='#logo-gen'
     
     span class='o-navigation__text text-white' 
       = 'NYC’s Official Guide for'
@@ -29,37 +29,37 @@ nav class='o-navigation bg-black text-white'
         option value='zh-hant' = 'Traditional Chinese'
         option value='ur' = 'Urdu'
       svg class='select__icon icon-xs' aria-hidden='true'
-        use xlink:href='#pttrn-icon-chevron-down'
+        use xlink:href='#icon-chevron-down'
 
     div class='o-navigation-links tablet:pt-6'
-      a href='#' class='hidden tablet:inline o-navigation-link' = 'Topics'
-      a href='#' class='hidden tablet:inline o-navigation-link' = 'Inspirations'
-      a href='#' class='hidden tablet:inline o-navigation-link' = 'Opportunities'
-      a href='#' class='hidden tablet:inline o-navigation-link' = 'Trips'
-      
-      a href='#' class='hidden tablet:inline o-navigation-link'
-        svg class='select__icon icon-sm text-white' aria-hidden='true'
-          use xlink:href='#pttrn-icon-search'
+      a href='#' class='o-navigation-link' = 'Topics'
+      a href='#' class='o-navigation-link' = 'Inspirations'
+      a href='#' class='o-navigation-link' = 'Opportunities'
+      a href='#' class='o-navigation-link' = 'Trips'
+      a href='#' class='o-navigation-link inline-flex'
+        = 'Search'
+        svg class='icon-sm ml-1' aria-hidden='true'
+          use xlink:href='#icon-search'
   
-  button class='btn--secondary tablet:hidden' data-js='navigation' aria-controls='toggle-mobile-menu'
+  button class='btn--secondary tablet:hidden' data-js='navigation' aria-controls='toggle-test-menu'
     span class='' Menu
 
 / Mobile Menu
-aside aria-hidden="true" class='o-navigation-mobile bg-gradient-y-1 hidden tablet:hidden' id="toggle-mobile-menu"
+aside aria-hidden="true" class='o-navigation-mobile bg-gradient-y-1 hidden tablet:hidden' id="toggle-test-menu"
   div class='grid grid-cols-2 pb-4'
     div class='flex items-center'
       a href='/' class='o-navigation-logo text-black'
         span class='sr-only' Generation NYC
 
         svg class='logo' aria-hidden='true'
-          use xlink:href='#pttrn-logo-gen'
+          use xlink:href='#logo-gen'
       
       span class='o-navigation__text text-black' 
         = 'NYC’s Official Guide for'
         br =  'Young New Yorkers'
 
     div class='flex items-center justify-end'
-      button class='btn--primary tablet:hidden' data-js='navigation' aria-controls='toggle-mobile-menu'
+      button class='btn--primary tablet:hidden' data-js='navigation' aria-controls='toggle-test-menu'
         span class='' Close
 
   div class='o-navigation-items'
@@ -77,20 +77,20 @@ aside aria-hidden="true" class='o-navigation-mobile bg-gradient-y-1 hidden table
         option value='zh-hant' = 'Traditional Chinese'
         option value='ur' = 'Urdu'
       svg class='select__icon icon-xs' aria-hidden='true'
-        use xlink:href='#pttrn-icon-chevron-down'
+        use xlink:href='#icon-chevron-down'
 
   a href='#' class='link--outline border-black'
     = 'Topics'
     span class='link--icon'
       svg class='icon-xs text-white' aria-hidden='true'
-        use xlink:href='#pttrn-icon-chevron-right'
+        use xlink:href='#icon-chevron-right'
   a href='#' class='link--outline border-black'
     = 'Inspirations'
     span class='link--icon'
       svg class='icon-xs text-white' aria-hidden='true'
-        use xlink:href='#pttrn-icon-chevron-right'
+        use xlink:href='#icon-chevron-right'
   a href='#' class='link--outline border-black'
     = 'Trips'
     span class='link--icon'
       svg class='icon-xs text-white' aria-hidden='true'
-        use xlink:href='#pttrn-icon-chevron-right'
+        use xlink:href='#icon-chevron-right'

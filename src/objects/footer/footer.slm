@@ -8,7 +8,7 @@ div class='o-footer block'
         span class='sr-only' Generation NYC
 
         svg class='' aria-hidden='true'
-          use xlink:href='#pttrn-logo-gen'
+          use xlink:href='#logo-gen'
       div class='flex items-end justify-between w-full'
         div
           a href='#' class='o-footer__link' = 'Topics'
@@ -28,7 +28,7 @@ div class='o-footer block'
         span class='sr-only' = 'NYC Children\'s Cabinet'
 
         svg class='' aria-hidden='true'
-          use xlink:href='#pttrn-logo-nyc-cc-nyco'
+          use xlink:href='#logo-nyc-cc-nyco'
 
       div class='flex items-end justify-between w-full'
         div

@@ -7,7 +7,7 @@ div class="c-jumbotron bg-gradient-y-2"
     div class="block tablet:grid grid-cols-2"
       div class='text-center tablet:px-4'
         svg aria-hidden="true" class="logo tablet:icon-full text-white"
-          use xlink:href="#pttrn-logo-gen-text"
+          use xlink:href="#logo-gen-text"
       div class=''
         h1 class='h4 mt-2 mb-0'
           = 'NYC’s official guide for young New Yorkers'

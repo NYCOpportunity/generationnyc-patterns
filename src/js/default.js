@@ -13,6 +13,7 @@ import Navigation from '../objects/navigation/navigation';
  * Utilities
  */
 import Anchor from '../utilities/anchor/anchor';
+import Copy from '../utilities/copy/copy';
 import Pagination from '../utilities/pagination/pagination';
 
 /**
@@ -42,6 +43,10 @@ class Default {
 
   anchor() {
     return new Anchor();
+  }
+
+  copy() {
+    return new Copy();
   }
 
   back2Top() {

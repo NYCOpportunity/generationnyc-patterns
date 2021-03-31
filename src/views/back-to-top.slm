@@ -1,5 +1,7 @@
 = extend('/slm/layouts/default')
 
+= partial('/slm/mixins/copy.mixin.slm');
+
 - title = 'Back-to-top'
 
 = content('main')
@@ -14,7 +16,8 @@
 
     h3 Markup
 
-    pre class='p-4'
+    = mixin('copy', 'copy-back-to-top')
+    pre class='p-4 mt-1' data-content='copy-back-to-top'
       = this.include('components/back-to-top/back-to-top.slm');
 
 = content('scripts')
