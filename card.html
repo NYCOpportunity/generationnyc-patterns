@@ -29,7 +29,7 @@
 </head>
 
 <body class="bg-gradient-x-1">
-  <nav class="o-navigation bg-gradient-x-1">
+  <nav class="o-navigation bg-gradient-x-1 tablet:px-8">
     <div class="flex items-end"><a class="o-navigation-logo h-auto text-black"
         href="/"><span class="sr-only">Generation NYC</span><svg
           aria-hidden="true" class="logo-small">
@@ -55,39 +55,39 @@
     <div class="text-center">
       <h2 class="h6 capitalize">elements</h2>
       <ul class="p-0 list-none">
-        <li><a class="o-navigation-link ml-0" href="breadcrumbs">Breadcrumbs</a>
-        </li>
-        <li><a class="o-navigation-link ml-0" href="buttons">Buttons</a></li>
-        <li><a class="o-navigation-link ml-0" href="icons">Icons</a></li>
-        <li><a class="o-navigation-link ml-0" href="layout">Layout</a></li>
-        <li><a class="o-navigation-link ml-0" href="links">Links</a></li>
-        <li><a class="o-navigation-link ml-0" href="list">List</a></li>
-        <li><a class="o-navigation-link ml-0" href="sticker">Sticker</a></li>
+        <li><a class="link ml-0" href="breadcrumbs"
+            tabindex="-1">Breadcrumbs</a></li>
+        <li><a class="link ml-0" href="buttons" tabindex="-1">Buttons</a></li>
+        <li><a class="link ml-0" href="icons" tabindex="-1">Icons</a></li>
+        <li><a class="link ml-0" href="layout" tabindex="-1">Layout</a></li>
+        <li><a class="link ml-0" href="links" tabindex="-1">Links</a></li>
+        <li><a class="link ml-0" href="list" tabindex="-1">List</a></li>
+        <li><a class="link ml-0" href="sticker" tabindex="-1">Sticker</a></li>
       </ul>
       <h2 class="h6 capitalize">components</h2>
       <ul class="p-0 list-none">
-        <li><a class="o-navigation-link ml-0" href="accordion">Accordion</a>
+        <li><a class="link ml-0" href="accordion" tabindex="-1">Accordion</a>
         </li>
-        <li><a class="o-navigation-link ml-0" href="card">Cards</a></li>
-        <li><a class="o-navigation-link ml-0" href="hero">Hero</a></li>
-        <li><a class="o-navigation-link ml-0" href="jumbotron">Jumbotron</a>
+        <li><a class="link ml-0" href="card" tabindex="-1">Cards</a></li>
+        <li><a class="link ml-0" href="hero" tabindex="-1">Hero</a></li>
+        <li><a class="link ml-0" href="jumbotron" tabindex="-1">Jumbotron</a>
         </li>
-        <li><a class="o-navigation-link ml-0" href="share">Share</a></li>
+        <li><a class="link ml-0" href="share" tabindex="-1">Share</a></li>
       </ul>
       <h2 class="h6 capitalize">objects</h2>
       <ul class="p-0 list-none">
-        <li><a class="o-navigation-link ml-0" href="footer">Footer</a></li>
-        <li><a class="o-navigation-link ml-0" href="navigation">Navigation</a>
+        <li><a class="link ml-0" href="footer" tabindex="-1">Footer</a></li>
+        <li><a class="link ml-0" href="navigation" tabindex="-1">Navigation</a>
         </li>
       </ul>
       <h2 class="h6 capitalize">utilities</h2>
       <ul class="p-0 list-none">
-        <li><a class="o-navigation-link ml-0" href="anchor">Anchor</a></li>
-        <li><a class="o-navigation-link ml-0" href="color">Color</a></li>
-        <li><a class="o-navigation-link ml-0" href="gradient">Gradient</a></li>
-        <li><a class="o-navigation-link ml-0" href="pagination">Pagination</a>
+        <li><a class="link ml-0" href="anchor" tabindex="-1">Anchor</a></li>
+        <li><a class="link ml-0" href="color" tabindex="-1">Color</a></li>
+        <li><a class="link ml-0" href="gradient" tabindex="-1">Gradient</a></li>
+        <li><a class="link ml-0" href="pagination" tabindex="-1">Pagination</a>
         </li>
-        <li><a class="o-navigation-link ml-0" href="typography">Typography</a>
+        <li><a class="link ml-0" href="typography" tabindex="-1">Typography</a>
         </li>
       </ul>
     </div>
@@ -126,7 +126,9 @@
         </article>
       </section>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;section class=&quot;bg-green-light p-4&quot;&gt;
+      <div class="text-right"><button class="btn--tag"
+          data-js="copy-faq-card">Copy</button></div>
+      <pre class="p-4 mt-1" data-content="copy-faq-card">&lt;section class=&quot;bg-green-light p-4&quot;&gt;
   &lt;article class=&quot;c-faq-card bg-white w-1/2 m-auto&quot;&gt;
     &lt;div class=&quot;c-faq-card-marker&quot;&gt;&lt;span&gt;FAQ&lt;/span&gt;&lt;/div&gt;
     &lt;header class=&quot;c-faq-card-title&quot;&gt;
@@ -169,7 +171,9 @@
         </div>
       </article>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;article class=&quot;c-info-card w-1/2 m-auto&quot;&gt;
+      <div class="text-right"><button class="btn--tag"
+          data-js="copy-info-card">Copy</button></div>
+      <pre class="p-4 mt-1" data-content="copy-info-card">&lt;article class=&quot;c-info-card w-1/2 m-auto&quot;&gt;
   &lt;header&gt;
     &lt;h3 class=&quot;c-info-card__title bg-red-light&quot;&gt;Credit Limit&lt;/h3&gt;
   &lt;/header&gt;
@@ -202,7 +206,9 @@
         </div>
       </article>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;article class=&quot;c-info-card--outline border-red-light w-1/2 m-auto&quot;&gt;
+      <div class="text-right"><button class="btn--tag"
+          data-js="copy-info-card--outline">Copy</button></div>
+      <pre class="p-4 mt-1" data-content="copy-info-card--outline">&lt;article class=&quot;c-info-card--outline border-red-light w-1/2 m-auto&quot;&gt;
   &lt;header&gt;
     &lt;h3 class=&quot;c-info-card--outline__title border-red-light&quot;&gt;Credit Limit&lt;/h3&gt;
   &lt;/header&gt;
@@ -244,7 +250,9 @@
         </article>
       </section>
       <h3>Markup</h3>
-      <pre class="p-4">&lt;section class=&quot;bg-yellow p-4&quot;&gt;
+      <div class="text-right"><button class="btn--tag"
+          data-js="copy-inspiration-card">Copy</button></div>
+      <pre class="p-4 mt-1" data-content="copy-inspiration-card">&lt;section class=&quot;bg-yellow p-4&quot;&gt;
   &lt;article class=&quot;c-inspiration-card bg-white w-1/2 m-auto&quot;&gt;
     &lt;header class=&quot;c-inspiration-card__header&quot;&gt;
       &lt;div class=&quot;sticker&quot;&gt;&lt;/div&gt;
@@ -271,10 +279,10 @@
     </section>
   </main>
   <footer class="p-4 bg-black text-white">
-    <div class="m-4"><span class="block">Maintained by</span><a
+    <div><span class="block">Maintained by</span><a
         class="o-navigation-logo h-auto text-white"
         href="https://nyc.gov/opportunity"><span class="sr-only">NYC
-          Opportunity</span><svg aria-hidden="true" class="logo">
+          Opportunity</span><svg aria-hidden="true" class="logo-nyco">
           <use xlink:href="#logo-nycopportunity"></use>
         </svg></a><small class="block">© City of New York, 2021 All Rights
         Reserved. NYC is a trademark and service mark of the City of New
@@ -287,6 +295,7 @@
   <script type="text/javascript">
     var MyPatterns = new Default();
     new Icons('svgs.svg');
+    MyPatterns.copy();
     MyPatterns.faq()
     MyPatterns.navigation()
   </script>
