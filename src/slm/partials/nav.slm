@@ -14,7 +14,7 @@ nav class='o-navigation bg-gradient-x-1 tablet:px-8'
   button class='btn--secondary' data-js='navigation' aria-controls='toggle-navigation'
     span class='' Menu
 
-aside aria-hidden="true" class='o-navigation-mobile bg-gradient-y-1 hidden' id="toggle-navigation"
+aside aria-hidden="true" class='o-navigation-mobile bg-gradient-y-1 tablet:px-8 hidden' id="toggle-navigation"
   div class='grid grid-cols-2 pb-4'
     div class='flex items-end'
       span href='/' class='o-navigation-logo mb-0 h-auto text-black'
